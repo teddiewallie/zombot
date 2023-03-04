@@ -1,0 +1,2 @@
+[03-03-23 23:17:36.392][INFO] user "hornta" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 23:17:42.944][INFO] user "sn1ckers" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.

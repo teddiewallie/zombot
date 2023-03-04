@@ -1,0 +1,124 @@
+[04-03-23 09:00:04.929] added connection index=0 213.89.214.205.
+[04-03-23 09:00:05.849] 76561197992531878 "DerpToby" attempting to join.
+[04-03-23 09:00:05.851] 76561197992531878 "DerpToby" allowed to join.
+[04-03-23 09:00:31.711] 76561197992531878 "DerpToby" attempting to join used queue.
+[04-03-23 09:00:45.743] player DerpToby loading time was: 13358 ms.
+[04-03-23 09:00:53.625] 76561197992531878 "DerpToby" fully connected (10919,10134,0).
+[04-03-23 09:02:08.966] added connection index=1 10.2.0.3.
+[04-03-23 09:02:09.804] 76561198321407958 "Ted" attempting to join.
+[04-03-23 09:02:09.805] 76561198321407958 "Ted" allowed to join.
+[04-03-23 09:02:50.616] 76561198321407958 "Ted" attempting to join used queue.
+[04-03-23 09:03:09.065] player Ted loading time was: 17570 ms.
+[04-03-23 09:03:14.330] 76561198321407958 "Ted" fully connected (10851,9846,0).
+[04-03-23 09:05:32.030] user Ted died at (10856,9862,0) (non pvp).
+[04-03-23 09:05:48.958] 76561198321407958 "Ted" disconnected player (10856,9862,0).
+[04-03-23 09:05:51.204] 76561198321407958 "Ted" fully connected (10872,9489,0).
+[04-03-23 09:07:42.370] user Ted died at (10901,9477,0) (non pvp).
+[04-03-23 09:07:55.527] 76561198321407958 "Ted" disconnected player (10901,9477,0).
+[04-03-23 09:07:57.692] 76561198321407958 "Ted" fully connected (10854,9894,0).
+[04-03-23 09:10:55.485] user Ted died at (10886,9891,0) (non pvp).
+[04-03-23 09:17:38.701] 76561198321407958 "Ted" disconnected player (10886,9891,0).
+[04-03-23 09:17:40.793] 76561198321407958 "Ted" fully connected (10917,10093,0).
+[04-03-23 09:22:20.706] user Ted died at (10920,10051,0) (non pvp).
+[04-03-23 09:23:13.355] 76561198321407958 "Ted" removed connection index=1.
+[04-03-23 09:23:13.367] 76561198321407958 "Ted" disconnected player (10920,10051,0).
+[04-03-23 09:55:06.593] 76561197992531878 "DerpToby" removed connection index=0.
+[04-03-23 09:55:06.604] 76561197992531878 "DerpToby" disconnected player (10844,10080,0).
+[04-03-23 12:17:02.871] added connection index=0 90.230.50.89.
+[04-03-23 12:17:03.802] 76561198857409048 "hornta" attempting to join.
+[04-03-23 12:17:03.803] 76561198857409048 "hornta" allowed to join.
+[04-03-23 12:18:34.365] 76561198857409048 "hornta" attempting to join used queue.
+[04-03-23 12:18:46.868] player hornta loading time was: 11936 ms.
+[04-03-23 12:18:53.631] 76561198857409048 "hornta" fully connected (10920,10137,1).
+[04-03-23 12:26:51.698] user hornta died at (10774,10238,0) (non pvp).
+[04-03-23 12:28:33.508] 76561198857409048 "hornta" disconnected player (10774,10238,0).
+[04-03-23 12:28:35.490] 76561198857409048 "hornta" fully connected (10803,10073,0).
+[04-03-23 13:31:51.177] user hornta died at (10892,10062,0) (non pvp).
+[04-03-23 13:32:08.125] 76561198857409048 "hornta" disconnected player (10892,10062,0).
+[04-03-23 13:32:10.299] 76561198857409048 "hornta" fully connected (10916,10133,0).
+[04-03-23 13:37:27.242] 76561198857409048 "hornta" removed connection index=0.
+[04-03-23 13:37:27.253] 76561198857409048 "hornta" disconnected player (10921,10135,0).
+[04-03-23 14:26:08.038] added connection index=0 90.230.50.89.
+[04-03-23 14:26:08.884] 76561198857409048 "hornta" attempting to join.
+[04-03-23 14:26:08.884] 76561198857409048 "hornta" allowed to join.
+[04-03-23 14:26:13.352] 76561198857409048 "hornta" attempting to join used queue.
+[04-03-23 14:26:18.631] player hornta loading time was: 5146 ms.
+[04-03-23 14:26:31.795] 76561198857409048 "hornta" fully connected (10921,10135,0).
+[04-03-23 14:45:52.466] user hornta died at (10881,10082,0) (non pvp).
+[04-03-23 14:46:05.057] 76561198857409048 "hornta" disconnected player (10881,10082,0).
+[04-03-23 14:46:06.982] 76561198857409048 "hornta" fully connected (10803,10073,0).
+[04-03-23 15:20:36.335] added connection index=1 10.2.0.3.
+[04-03-23 15:20:37.304] 76561198321407958 "Ted" attempting to join.
+[04-03-23 15:20:37.306] 76561198321407958 "Ted" allowed to join.
+[04-03-23 15:21:30.637] 76561198321407958 "Ted" attempting to join used queue.
+[04-03-23 15:21:48.713] player Ted loading time was: 17224 ms.
+[04-03-23 15:21:53.571] 76561198321407958 "Ted" fully connected (10803,10073,0).
+[04-03-23 15:23:12.576] 76561198321407958 "Ted" removed connection index=1.
+[04-03-23 15:23:12.588] 76561198321407958 "Ted" disconnected player (10803,10073,0).
+[04-03-23 15:27:02.422] added connection index=1 10.2.0.3.
+[04-03-23 15:27:03.313] 76561198321407958 "Ted" attempting to join.
+[04-03-23 15:27:03.313] 76561198321407958 "Ted" allowed to join.
+[04-03-23 15:27:32.011] 76561198321407958 "Ted" attempting to join used queue.
+[04-03-23 15:27:38.232] player Ted loading time was: 5957 ms.
+[04-03-23 15:27:45.294] 76561198321407958 "Ted" fully connected (10803,10073,0).
+[04-03-23 15:28:43.746] 76561198321407958 "Ted" removed connection index=1.
+[04-03-23 15:28:43.757] 76561198321407958 "Ted" disconnected player (10803,10073,0).
+[04-03-23 15:29:59.034] added connection index=1 10.2.0.3.
+[04-03-23 15:29:59.904] 76561198321407958 "Ted" attempting to join.
+[04-03-23 15:29:59.905] 76561198321407958 "Ted" allowed to join.
+[04-03-23 15:30:28.710] 76561198321407958 "Ted" attempting to join used queue.
+[04-03-23 15:30:34.708] player Ted loading time was: 5725 ms.
+[04-03-23 15:30:38.836] 76561198321407958 "Ted" fully connected (10803,10073,0).
+[04-03-23 15:32:53.558] 76561198321407958 "Ted" removed connection index=1.
+[04-03-23 15:32:53.569] 76561198321407958 "Ted" disconnected player (10803,10073,0).
+[04-03-23 15:34:52.702] 76561198857409048 "hornta" removed connection index=0.
+[04-03-23 15:34:52.713] 76561198857409048 "hornta" disconnected player (10919,10129,0).
+[04-03-23 15:36:56.168] added connection index=0 10.2.0.3.
+[04-03-23 15:36:57.111] 76561198321407958 "Ted" attempting to join.
+[04-03-23 15:36:57.112] 76561198321407958 "Ted" allowed to join.
+[04-03-23 15:37:25.682] 76561198321407958 "Ted" attempting to join used queue.
+[04-03-23 15:37:31.448] player Ted loading time was: 5530 ms.
+[04-03-23 15:37:32.928] 76561198321407958 "Ted" fully connected (10803,10073,0).
+[04-03-23 15:45:42.918] user Ted died at (10803,10073,0) (non pvp).
+[04-03-23 15:47:52.716] 76561198321407958 "Ted" disconnected player (10803,10073,0).
+[04-03-23 15:47:54.803] 76561198321407958 "Ted" fully connected (10944,9374,0).
+[04-03-23 15:48:18.125] user Ted died at (10944,9374,0) (non pvp).
+[04-03-23 15:51:24.977] 76561198321407958 "Ted" removed connection index=0.
+[04-03-23 15:51:24.988] 76561198321407958 "Ted" disconnected player (10944,9374,0).
+[04-03-23 15:52:09.017] added connection index=0 10.2.0.3.
+[04-03-23 15:52:09.911] 76561198321407958 "Ted" attempting to join.
+[04-03-23 15:52:09.912] 76561198321407958 "Ted" allowed to join.
+[04-03-23 15:53:34.548] 76561198321407958 "Ted" attempting to join used queue.
+[04-03-23 15:53:40.129] player Ted loading time was: 5339 ms.
+[04-03-23 15:53:41.091] 76561198321407958 "Ted" fully connected (10951,9490,0).
+[04-03-23 15:53:52.098] 76561198321407958 "Ted" removed connection index=0.
+[04-03-23 15:53:52.109] 76561198321407958 "Ted" disconnected player (10951,9490,0).
+[04-03-23 16:06:30.010] added connection index=0 10.2.0.3.
+[04-03-23 16:06:30.900] 76561198321407958 "Ted" attempting to join.
+[04-03-23 16:06:30.901] 76561198321407958 "Ted" allowed to join.
+[04-03-23 16:06:59.576] 76561198321407958 "Ted" attempting to join used queue.
+[04-03-23 16:07:05.091] player Ted loading time was: 5272 ms.
+[04-03-23 16:07:06.474] 76561198321407958 "Ted" fully connected (10951,9490,0).
+[04-03-23 16:08:07.498] 76561198321407958 "Ted" removed connection index=0.
+[04-03-23 16:08:07.509] 76561198321407958 "Ted" disconnected player (10951,9490,0).
+[04-03-23 16:13:39.579] added connection index=0 10.2.0.3.
+[04-03-23 16:13:40.511] 76561198321407958 "Ted" attempting to join.
+[04-03-23 16:13:40.512] 76561198321407958 "Ted" allowed to join.
+[04-03-23 16:14:09.002] 76561198321407958 "Ted" attempting to join used queue.
+[04-03-23 16:14:14.450] player Ted loading time was: 5205 ms.
+[04-03-23 16:14:28.648] 76561198321407958 "Ted" fully connected (10951,9490,0).
+[04-03-23 16:14:46.332] 76561198321407958 "Ted" removed connection index=0.
+[04-03-23 16:14:46.343] 76561198321407958 "Ted" disconnected player (10951,9490,0).
+[04-03-23 16:18:00.728] added connection index=0 10.2.0.3.
+[04-03-23 16:18:01.601] 76561198321407958 "Ted" attempting to join.
+[04-03-23 16:18:01.601] 76561198321407958 "Ted" allowed to join.
+[04-03-23 16:18:30.159] 76561198321407958 "Ted" attempting to join used queue.
+[04-03-23 16:18:35.676] player Ted loading time was: 5278 ms.
+[04-03-23 16:19:34.110] 76561198321407958 "Ted" fully connected (10951,9490,0).
+[04-03-23 16:19:44.522] 76561198321407958 "Ted" removed connection index=0.
+[04-03-23 16:19:44.533] 76561198321407958 "Ted" disconnected player (10951,9490,0).
+[04-03-23 16:25:22.559] added connection index=0 10.2.0.3.
+[04-03-23 16:25:23.506] 76561198321407958 "Ted" attempting to join.
+[04-03-23 16:25:23.507] 76561198321407958 "Ted" allowed to join.
+[04-03-23 16:25:52.310] 76561198321407958 "Ted" attempting to join used queue.
+[04-03-23 16:25:57.582] player Ted loading time was: 5031 ms.

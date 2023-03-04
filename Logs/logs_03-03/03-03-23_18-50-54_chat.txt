@@ -1,0 +1,406 @@
+[03-03-23 18:50:54.203][info] Start chat server initialization....
+[03-03-23 18:50:54.206][info] General chat has id = 0.
+[03-03-23 18:50:54.206][info] Say chat has id = 1.
+[03-03-23 18:50:54.206][info] Shout chat has id = 2.
+[03-03-23 18:50:54.206][info] Radio chat has id = 3.
+[03-03-23 18:50:54.206][info] Admin chat has id = 4.
+[03-03-23 18:50:54.207][info] Server chat has id = 5.
+[03-03-23 18:50:54.207][info] Chat server successfully initialized.
+[03-03-23 18:56:06.510][info] Player with id = '0' tries to connect.
+[03-03-23 18:56:06.510][info] Adding player '0' to chat server.
+[03-03-23 18:56:06.511][info] Player joined to default chats.
+[03-03-23 18:56:06.511][info] Player Ted(0) joined to chat server successfully.
+[03-03-23 19:17:36.241][info] Player 0 disconnecting....
+[03-03-23 19:17:36.241][info] Disconnecting player 0 finished.
+[03-03-23 19:17:58.949][info] Player 0 disconnecting....
+[03-03-23 19:17:58.949][info] Disconnecting player 0 finished.
+[03-03-23 19:17:58.950][info] Player with id = '0' tries to connect.
+[03-03-23 19:17:58.950][info] Adding player '0' to chat server.
+[03-03-23 19:17:58.950][error] Player or connection is not found on server!.
+[03-03-23 19:17:58.950][error] player = null.
+[03-03-23 19:18:01.050][info] Player with id = '0' tries to connect.
+[03-03-23 19:18:01.050][info] Adding player '0' to chat server.
+[03-03-23 19:18:01.050][info] Player joined to default chats.
+[03-03-23 19:18:01.050][info] Player Ted(0) joined to chat server successfully.
+[03-03-23 19:19:42.841][info] Player with id = '4' tries to connect.
+[03-03-23 19:19:42.841][info] Adding player '4' to chat server.
+[03-03-23 19:19:42.841][info] Player joined to default chats.
+[03-03-23 19:19:42.841][info] Player hornta(4) joined to chat server successfully.
+[03-03-23 19:28:13.527][info] Player 4 disconnecting....
+[03-03-23 19:28:13.527][info] Disconnecting player 4 finished.
+[03-03-23 19:28:53.534][info] Player 4 disconnecting....
+[03-03-23 19:28:53.534][info] Disconnecting player 4 finished.
+[03-03-23 19:28:53.535][info] Player with id = '4' tries to connect.
+[03-03-23 19:28:53.535][info] Adding player '4' to chat server.
+[03-03-23 19:28:53.535][error] Player or connection is not found on server!.
+[03-03-23 19:28:53.535][error] player = null.
+[03-03-23 19:28:55.662][info] Player with id = '4' tries to connect.
+[03-03-23 19:28:55.662][info] Adding player '4' to chat server.
+[03-03-23 19:28:55.662][info] Player joined to default chats.
+[03-03-23 19:28:55.662][info] Player hornta(4) joined to chat server successfully.
+[03-03-23 19:37:38.581][info] Player 0 disconnecting....
+[03-03-23 19:37:38.581][info] Disconnecting player 0 finished.
+[03-03-23 19:39:29.615][info] Player 0 disconnecting....
+[03-03-23 19:39:29.615][info] Disconnecting player 0 finished.
+[03-03-23 19:39:29.615][info] Player with id = '0' tries to connect.
+[03-03-23 19:39:29.615][info] Adding player '0' to chat server.
+[03-03-23 19:39:29.615][error] Player or connection is not found on server!.
+[03-03-23 19:39:29.615][error] player = null.
+[03-03-23 19:39:31.854][info] Player with id = '0' tries to connect.
+[03-03-23 19:39:31.854][info] Adding player '0' to chat server.
+[03-03-23 19:39:31.854][info] Player joined to default chats.
+[03-03-23 19:39:31.854][info] Player Ted(0) joined to chat server successfully.
+[03-03-23 19:48:29.531][info] Player 0 disconnecting....
+[03-03-23 19:48:29.531][info] Disconnecting player 0 finished.
+[03-03-23 19:49:16.655][info] Player 0 disconnecting....
+[03-03-23 19:49:16.655][info] Disconnecting player 0 finished.
+[03-03-23 19:49:16.655][info] Player with id = '0' tries to connect.
+[03-03-23 19:49:16.655][info] Adding player '0' to chat server.
+[03-03-23 19:49:16.655][error] Player or connection is not found on server!.
+[03-03-23 19:49:16.655][error] player = null.
+[03-03-23 19:49:18.847][info] Player with id = '0' tries to connect.
+[03-03-23 19:49:18.847][info] Adding player '0' to chat server.
+[03-03-23 19:49:18.847][info] Player joined to default chats.
+[03-03-23 19:49:18.847][info] Player Ted(0) joined to chat server successfully.
+[03-03-23 19:53:59.462][info] Player 0 disconnecting....
+[03-03-23 19:53:59.462][info] Disconnecting player 0 finished.
+[03-03-23 19:54:24.410][info] Player 0 disconnecting....
+[03-03-23 19:54:24.410][info] Disconnecting player 0 finished.
+[03-03-23 19:54:24.410][info] Player with id = '0' tries to connect.
+[03-03-23 19:54:24.410][info] Adding player '0' to chat server.
+[03-03-23 19:54:24.410][error] Player or connection is not found on server!.
+[03-03-23 19:54:24.410][error] player = null.
+[03-03-23 19:54:26.459][info] Player with id = '0' tries to connect.
+[03-03-23 19:54:26.459][info] Adding player '0' to chat server.
+[03-03-23 19:54:26.459][info] Player joined to default chats.
+[03-03-23 19:54:26.459][info] Player Ted(0) joined to chat server successfully.
+[03-03-23 19:54:40.658][info] Player 4 disconnecting....
+[03-03-23 19:54:40.658][info] Disconnecting player 4 finished.
+[03-03-23 19:56:07.442][info] Player 4 disconnecting....
+[03-03-23 19:56:07.442][info] Disconnecting player 4 finished.
+[03-03-23 19:56:07.442][info] Player with id = '4' tries to connect.
+[03-03-23 19:56:07.442][info] Adding player '4' to chat server.
+[03-03-23 19:56:07.442][error] Player or connection is not found on server!.
+[03-03-23 19:56:07.442][error] player = null.
+[03-03-23 19:56:09.649][info] Player with id = '4' tries to connect.
+[03-03-23 19:56:09.649][info] Adding player '4' to chat server.
+[03-03-23 19:56:09.649][info] Player joined to default chats.
+[03-03-23 19:56:09.649][info] Player hornta(4) joined to chat server successfully.
+[03-03-23 20:03:22.913][info] Player with id = '8' tries to connect.
+[03-03-23 20:03:22.913][info] Adding player '8' to chat server.
+[03-03-23 20:03:22.913][info] Player joined to default chats.
+[03-03-23 20:03:22.913][info] Player sn1ckers(8) joined to chat server successfully.
+[03-03-23 20:15:50.255][info] Player 4 disconnecting....
+[03-03-23 20:15:50.255][info] Disconnecting player 4 finished.
+[03-03-23 20:34:00.537][info] Player 4 disconnecting....
+[03-03-23 20:34:00.537][info] Disconnecting player 4 finished.
+[03-03-23 20:34:00.537][info] Player with id = '4' tries to connect.
+[03-03-23 20:34:00.537][info] Adding player '4' to chat server.
+[03-03-23 20:34:00.537][error] Player or connection is not found on server!.
+[03-03-23 20:34:00.537][error] player = null.
+[03-03-23 20:34:02.633][info] Player with id = '4' tries to connect.
+[03-03-23 20:34:02.633][info] Adding player '4' to chat server.
+[03-03-23 20:34:02.633][info] Player joined to default chats.
+[03-03-23 20:34:02.633][info] Player hornta(4) joined to chat server successfully.
+[03-03-23 20:35:33.309][info] Player 0 disconnecting....
+[03-03-23 20:35:33.309][info] Disconnecting player 0 finished.
+[03-03-23 20:35:33.309][info] Player 0 disconnecting....
+[03-03-23 20:35:33.309][info] Disconnecting player 0 finished.
+[03-03-23 20:35:39.824][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY YOU!'}.
+[03-03-23 20:35:39.825][info] Message ChatMessage{chat=Local, author='hornta', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 20:40:47.997][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 20:40:47.997][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 21:07:40.283][info] Player with id = '0' tries to connect.
+[03-03-23 21:07:40.283][info] Adding player '0' to chat server.
+[03-03-23 21:07:40.283][info] Player joined to default chats.
+[03-03-23 21:07:40.284][info] Player Ted(0) joined to chat server successfully.
+[03-03-23 21:25:30.608][info] Player 0 disconnecting....
+[03-03-23 21:25:30.608][info] Disconnecting player 0 finished.
+[03-03-23 21:25:50.952][info] Player 0 disconnecting....
+[03-03-23 21:25:50.952][info] Disconnecting player 0 finished.
+[03-03-23 21:25:50.952][info] Player with id = '0' tries to connect.
+[03-03-23 21:25:50.952][info] Adding player '0' to chat server.
+[03-03-23 21:25:50.952][error] Player or connection is not found on server!.
+[03-03-23 21:25:50.952][error] player = null.
+[03-03-23 21:25:53.038][info] Player with id = '0' tries to connect.
+[03-03-23 21:25:53.038][info] Adding player '0' to chat server.
+[03-03-23 21:25:53.038][info] Player joined to default chats.
+[03-03-23 21:25:53.038][info] Player Ted(0) joined to chat server successfully.
+[03-03-23 21:42:41.370][info] Player 0 disconnecting....
+[03-03-23 21:42:41.370][info] Disconnecting player 0 finished.
+[03-03-23 21:43:13.163][info] Player 4 disconnecting....
+[03-03-23 21:43:13.163][info] Disconnecting player 4 finished.
+[03-03-23 21:43:28.193][info] Player 4 disconnecting....
+[03-03-23 21:43:28.193][info] Disconnecting player 4 finished.
+[03-03-23 21:43:28.193][info] Player with id = '4' tries to connect.
+[03-03-23 21:43:28.193][info] Adding player '4' to chat server.
+[03-03-23 21:43:28.193][error] Player or connection is not found on server!.
+[03-03-23 21:43:28.193][error] player = null.
+[03-03-23 21:43:30.251][info] Player with id = '4' tries to connect.
+[03-03-23 21:43:30.252][info] Adding player '4' to chat server.
+[03-03-23 21:43:30.252][info] Player joined to default chats.
+[03-03-23 21:43:30.252][info] Player hornta(4) joined to chat server successfully.
+[03-03-23 21:44:33.294][info] Player 0 disconnecting....
+[03-03-23 21:44:33.294][info] Disconnecting player 0 finished.
+[03-03-23 21:44:33.294][info] Player with id = '0' tries to connect.
+[03-03-23 21:44:33.294][info] Adding player '0' to chat server.
+[03-03-23 21:44:33.294][error] Player or connection is not found on server!.
+[03-03-23 21:44:33.294][error] player = null.
+[03-03-23 21:44:35.343][info] Player with id = '0' tries to connect.
+[03-03-23 21:44:35.343][info] Adding player '0' to chat server.
+[03-03-23 21:44:35.343][info] Player joined to default chats.
+[03-03-23 21:44:35.343][info] Player Ted(0) joined to chat server successfully.
+[03-03-23 21:46:34.241][info] Player 0 disconnecting....
+[03-03-23 21:46:34.241][info] Disconnecting player 0 finished.
+[03-03-23 21:46:53.430][info] Player 0 disconnecting....
+[03-03-23 21:46:53.430][info] Disconnecting player 0 finished.
+[03-03-23 21:46:53.430][info] Player with id = '0' tries to connect.
+[03-03-23 21:46:53.431][info] Adding player '0' to chat server.
+[03-03-23 21:46:53.431][error] Player or connection is not found on server!.
+[03-03-23 21:46:53.431][error] player = null.
+[03-03-23 21:46:55.648][info] Player with id = '0' tries to connect.
+[03-03-23 21:46:55.648][info] Adding player '0' to chat server.
+[03-03-23 21:46:55.648][info] Player joined to default chats.
+[03-03-23 21:46:55.649][info] Player Ted(0) joined to chat server successfully.
+[03-03-23 22:09:05.535][info] Player 4 disconnecting....
+[03-03-23 22:09:05.535][info] Disconnecting player 4 finished.
+[03-03-23 22:09:30.172][info] Player 4 disconnecting....
+[03-03-23 22:09:30.172][info] Disconnecting player 4 finished.
+[03-03-23 22:09:30.173][info] Player with id = '4' tries to connect.
+[03-03-23 22:09:30.173][info] Adding player '4' to chat server.
+[03-03-23 22:09:30.173][error] Player or connection is not found on server!.
+[03-03-23 22:09:30.173][error] player = null.
+[03-03-23 22:09:32.343][info] Player with id = '4' tries to connect.
+[03-03-23 22:09:32.343][info] Adding player '4' to chat server.
+[03-03-23 22:09:32.343][info] Player joined to default chats.
+[03-03-23 22:09:32.343][info] Player hornta(4) joined to chat server successfully.
+[03-03-23 22:19:04.878][info] Player with id = '12' tries to connect.
+[03-03-23 22:19:04.878][info] Adding player '12' to chat server.
+[03-03-23 22:19:04.878][info] Player joined to default chats.
+[03-03-23 22:19:04.878][info] Player DerpToby(12) joined to chat server successfully.
+[03-03-23 22:25:22.700][info] Player 0 disconnecting....
+[03-03-23 22:25:22.700][info] Disconnecting player 0 finished.
+[03-03-23 22:25:47.647][info] Player 0 disconnecting....
+[03-03-23 22:25:47.647][info] Disconnecting player 0 finished.
+[03-03-23 22:25:47.647][info] Player with id = '0' tries to connect.
+[03-03-23 22:25:47.647][info] Adding player '0' to chat server.
+[03-03-23 22:25:47.647][error] Player or connection is not found on server!.
+[03-03-23 22:25:47.647][error] player = null.
+[03-03-23 22:25:49.665][info] Player with id = '0' tries to connect.
+[03-03-23 22:25:49.665][info] Adding player '0' to chat server.
+[03-03-23 22:25:49.665][info] Player joined to default chats.
+[03-03-23 22:25:49.665][info] Player Ted(0) joined to chat server successfully.
+[03-03-23 22:28:52.979][info] Player 0 disconnecting....
+[03-03-23 22:28:52.979][info] Disconnecting player 0 finished.
+[03-03-23 22:29:29.574][info] Player 0 disconnecting....
+[03-03-23 22:29:29.574][info] Disconnecting player 0 finished.
+[03-03-23 22:29:29.575][info] Player with id = '0' tries to connect.
+[03-03-23 22:29:29.575][info] Adding player '0' to chat server.
+[03-03-23 22:29:29.575][error] Player or connection is not found on server!.
+[03-03-23 22:29:29.575][error] player = null.
+[03-03-23 22:29:31.747][info] Player with id = '0' tries to connect.
+[03-03-23 22:29:31.747][info] Adding player '0' to chat server.
+[03-03-23 22:29:31.747][info] Player joined to default chats.
+[03-03-23 22:29:31.747][info] Player Ted(0) joined to chat server successfully.
+[03-03-23 22:29:35.417][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 22:29:35.418][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:29:37.634][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:29:37.634][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:29:40.034][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:29:40.034][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:29:43.136][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 22:29:43.137][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:29:46.520][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 22:29:46.520][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:29:48.418][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 22:29:48.419][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:29:58.039][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:29:58.039][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:30:05.455][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:30:05.455][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:30:08.704][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:30:08.704][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:31:31.460][info] Player 0 disconnecting....
+[03-03-23 22:31:31.460][info] Disconnecting player 0 finished.
+[03-03-23 22:31:51.720][info] Player 0 disconnecting....
+[03-03-23 22:31:51.720][info] Disconnecting player 0 finished.
+[03-03-23 22:31:51.720][info] Player with id = '0' tries to connect.
+[03-03-23 22:31:51.720][info] Adding player '0' to chat server.
+[03-03-23 22:31:51.720][error] Player or connection is not found on server!.
+[03-03-23 22:31:51.721][error] player = null.
+[03-03-23 22:31:53.766][info] Player with id = '0' tries to connect.
+[03-03-23 22:31:53.766][info] Adding player '0' to chat server.
+[03-03-23 22:31:53.766][info] Player joined to default chats.
+[03-03-23 22:31:53.766][info] Player Ted(0) joined to chat server successfully.
+[03-03-23 22:42:13.366][info] Player 0 disconnecting....
+[03-03-23 22:42:13.366][info] Disconnecting player 0 finished.
+[03-03-23 22:42:39.692][info] Player 0 disconnecting....
+[03-03-23 22:42:39.692][info] Disconnecting player 0 finished.
+[03-03-23 22:42:39.693][info] Player with id = '0' tries to connect.
+[03-03-23 22:42:39.693][info] Adding player '0' to chat server.
+[03-03-23 22:42:39.693][error] Player or connection is not found on server!.
+[03-03-23 22:42:39.693][error] player = null.
+[03-03-23 22:42:41.850][info] Player with id = '0' tries to connect.
+[03-03-23 22:42:41.850][info] Adding player '0' to chat server.
+[03-03-23 22:42:41.850][info] Player joined to default chats.
+[03-03-23 22:42:41.850][info] Player Ted(0) joined to chat server successfully.
+[03-03-23 22:47:10.805][info] Player 0 disconnecting....
+[03-03-23 22:47:10.805][info] Disconnecting player 0 finished.
+[03-03-23 22:47:36.839][info] Player 0 disconnecting....
+[03-03-23 22:47:36.839][info] Disconnecting player 0 finished.
+[03-03-23 22:47:36.839][info] Player with id = '0' tries to connect.
+[03-03-23 22:47:36.839][info] Adding player '0' to chat server.
+[03-03-23 22:47:36.839][error] Player or connection is not found on server!.
+[03-03-23 22:47:36.839][error] player = null.
+[03-03-23 22:47:38.975][info] Player with id = '0' tries to connect.
+[03-03-23 22:47:38.975][info] Adding player '0' to chat server.
+[03-03-23 22:47:38.975][info] Player joined to default chats.
+[03-03-23 22:47:38.976][info] Player Ted(0) joined to chat server successfully.
+[03-03-23 22:57:45.603][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:57:45.604][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:57:47.021][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:57:47.022][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:57:48.503][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:57:48.504][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:57:49.978][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY YOU!'}.
+[03-03-23 22:57:49.979][info] Message ChatMessage{chat=Local, author='hornta', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:57:50.100][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:57:50.100][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:57:50.579][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY YOU!'}.
+[03-03-23 22:57:50.580][info] Message ChatMessage{chat=Local, author='hornta', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:57:50.825][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY!'}.
+[03-03-23 22:57:50.826][info] Message ChatMessage{chat=Local, author='hornta', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:51.011][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY YOU!'}.
+[03-03-23 22:57:51.012][info] Message ChatMessage{chat=Local, author='hornta', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:57:51.204][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY!'}.
+[03-03-23 22:57:51.204][info] Message ChatMessage{chat=Local, author='hornta', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:51.367][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:57:51.368][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:57:51.704][info] Got message:ChatMessage{chat=Local, author='hornta', text='OVER HERE!'}.
+[03-03-23 22:57:51.705][info] Message ChatMessage{chat=Local, author='hornta', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:57:51.917][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY!'}.
+[03-03-23 22:57:51.917][info] Message ChatMessage{chat=Local, author='hornta', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:52.903][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 22:57:52.903][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:54.119][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 22:57:54.119][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:55.384][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:57:55.385][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:57:55.535][info] Got message:ChatMessage{chat=Local, author='hornta', text='OVER HERE!'}.
+[03-03-23 22:57:55.536][info] Message ChatMessage{chat=Local, author='hornta', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:57:56.122][info] Got message:ChatMessage{chat=Local, author='hornta', text='OVER HERE!'}.
+[03-03-23 22:57:56.123][info] Message ChatMessage{chat=Local, author='hornta', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:57:56.332][info] Got message:ChatMessage{chat=Local, author='hornta', text='OVER HERE!'}.
+[03-03-23 22:57:56.333][info] Message ChatMessage{chat=Local, author='hornta', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:57:56.466][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY YOU!'}.
+[03-03-23 22:57:56.467][info] Message ChatMessage{chat=Local, author='hornta', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:57:56.668][info] Got message:ChatMessage{chat=Local, author='hornta', text='OVER HERE!'}.
+[03-03-23 22:57:56.669][info] Message ChatMessage{chat=Local, author='hornta', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:57:56.853][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY!'}.
+[03-03-23 22:57:56.854][info] Message ChatMessage{chat=Local, author='hornta', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:57.040][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY!'}.
+[03-03-23 22:57:57.040][info] Message ChatMessage{chat=Local, author='hornta', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:57.239][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY YOU!'}.
+[03-03-23 22:57:57.239][info] Message ChatMessage{chat=Local, author='hornta', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:57:57.419][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY!'}.
+[03-03-23 22:57:57.420][info] Message ChatMessage{chat=Local, author='hornta', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:57.596][info] Got message:ChatMessage{chat=Local, author='hornta', text='OVER HERE!'}.
+[03-03-23 22:57:57.597][info] Message ChatMessage{chat=Local, author='hornta', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:57:57.764][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY!'}.
+[03-03-23 22:57:57.765][info] Message ChatMessage{chat=Local, author='hornta', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:57.963][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY!'}.
+[03-03-23 22:57:57.963][info] Message ChatMessage{chat=Local, author='hornta', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:58.144][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY!'}.
+[03-03-23 22:57:58.144][info] Message ChatMessage{chat=Local, author='hornta', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:58.335][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY!'}.
+[03-03-23 22:57:58.335][info] Message ChatMessage{chat=Local, author='hornta', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:58.511][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY!'}.
+[03-03-23 22:57:58.512][info] Message ChatMessage{chat=Local, author='hornta', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:58.709][info] Got message:ChatMessage{chat=Local, author='hornta', text='OVER HERE!'}.
+[03-03-23 22:57:58.709][info] Message ChatMessage{chat=Local, author='hornta', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:57:58.901][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY YOU!'}.
+[03-03-23 22:57:58.902][info] Message ChatMessage{chat=Local, author='hornta', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:57:59.082][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY YOU!'}.
+[03-03-23 22:57:59.082][info] Message ChatMessage{chat=Local, author='hornta', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:57:59.288][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY!'}.
+[03-03-23 22:57:59.289][info] Message ChatMessage{chat=Local, author='hornta', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:59.516][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY!'}.
+[03-03-23 22:57:59.517][info] Message ChatMessage{chat=Local, author='hornta', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:59.651][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 22:57:59.652][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:57:59.738][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY YOU!'}.
+[03-03-23 22:57:59.738][info] Message ChatMessage{chat=Local, author='hornta', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:57:59.940][info] Got message:ChatMessage{chat=Local, author='hornta', text='OVER HERE!'}.
+[03-03-23 22:57:59.941][info] Message ChatMessage{chat=Local, author='hornta', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:58:00.159][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY YOU!'}.
+[03-03-23 22:58:00.160][info] Message ChatMessage{chat=Local, author='hornta', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:58:01.111][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY!'}.
+[03-03-23 22:58:01.112][info] Message ChatMessage{chat=Local, author='hornta', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:58:01.287][info] Got message:ChatMessage{chat=Local, author='hornta', text='HEY YOU!'}.
+[03-03-23 22:58:01.288][info] Message ChatMessage{chat=Local, author='hornta', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:58:01.467][info] Got message:ChatMessage{chat=Local, author='hornta', text='OVER HERE!'}.
+[03-03-23 22:58:01.467][info] Message ChatMessage{chat=Local, author='hornta', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:58:05.367][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:58:05.368][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:58:06.717][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:58:06.717][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:58:08.221][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:58:08.221][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:58:11.206][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:58:11.207][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:58:13.435][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:58:13.436][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:58:15.135][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:58:15.135][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:58:16.938][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:58:16.939][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:58:19.120][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:58:19.121][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:58:21.233][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:58:21.234][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:58:22.966][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:58:22.967][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:58:29.185][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:58:29.185][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:58:30.906][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:58:30.906][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:58:34.602][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:58:34.602][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:58:43.555][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:58:43.556][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:58:44.640][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 22:58:44.640][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:58:46.388][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:58:46.388][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:58:47.852][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:58:47.853][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:58:49.905][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 22:58:49.906][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:58:52.805][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:58:52.806][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:58:59.255][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 22:58:59.255][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:59:00.573][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:59:00.573][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:59:02.859][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:59:02.860][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 22:59:03.824][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 22:59:03.824][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:59:07.272][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 22:59:07.272][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 22:59:18.640][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'}.
+[03-03-23 22:59:18.641][info] Message ChatMessage{chat=Local, author='sn1ckers', text='OVER HERE!'} sent to chat (id = 2) members.
+[03-03-23 22:59:41.224][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 22:59:41.225][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 23:00:38.412][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 23:00:38.412][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 23:00:40.443][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 23:00:40.443][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 23:00:41.860][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 23:00:41.860][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 23:00:44.680][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'}.
+[03-03-23 23:00:44.680][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY YOU!'} sent to chat (id = 2) members.
+[03-03-23 23:00:47.649][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 23:00:47.649][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.
+[03-03-23 23:00:54.950][info] Got message:ChatMessage{chat=Local, author='sn1ckers', text='HEY!'}.
+[03-03-23 23:00:54.950][info] Message ChatMessage{chat=Local, author='sn1ckers', text='HEY!'} sent to chat (id = 2) members.

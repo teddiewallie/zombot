@@ -1,0 +1,194 @@
+[04-03-23 08:58:33.289][info] Start chat server initialization....
+[04-03-23 08:58:33.293][info] General chat has id = 0.
+[04-03-23 08:58:33.293][info] Say chat has id = 1.
+[04-03-23 08:58:33.293][info] Shout chat has id = 2.
+[04-03-23 08:58:33.294][info] Radio chat has id = 3.
+[04-03-23 08:58:33.294][info] Admin chat has id = 4.
+[04-03-23 08:58:33.294][info] Server chat has id = 5.
+[04-03-23 08:58:33.294][info] Chat server successfully initialized.
+[04-03-23 09:00:53.615][info] Player with id = '0' tries to connect.
+[04-03-23 09:00:53.615][info] Adding player '0' to chat server.
+[04-03-23 09:00:53.616][info] Player joined to default chats.
+[04-03-23 09:00:53.616][info] Player DerpToby(0) joined to chat server successfully.
+[04-03-23 09:03:14.328][info] Player with id = '4' tries to connect.
+[04-03-23 09:03:14.328][info] Adding player '4' to chat server.
+[04-03-23 09:03:14.328][info] Player joined to default chats.
+[04-03-23 09:03:14.328][info] Player Ted(4) joined to chat server successfully.
+[04-03-23 09:05:32.029][info] Player 4 disconnecting....
+[04-03-23 09:05:32.029][info] Disconnecting player 4 finished.
+[04-03-23 09:05:48.957][info] Player 4 disconnecting....
+[04-03-23 09:05:48.957][info] Disconnecting player 4 finished.
+[04-03-23 09:05:48.958][info] Player with id = '4' tries to connect.
+[04-03-23 09:05:48.958][info] Adding player '4' to chat server.
+[04-03-23 09:05:48.959][error] Player or connection is not found on server!.
+[04-03-23 09:05:48.959][error] player = null.
+[04-03-23 09:05:51.202][info] Player with id = '4' tries to connect.
+[04-03-23 09:05:51.202][info] Adding player '4' to chat server.
+[04-03-23 09:05:51.202][info] Player joined to default chats.
+[04-03-23 09:05:51.203][info] Player Ted(4) joined to chat server successfully.
+[04-03-23 09:07:42.370][info] Player 4 disconnecting....
+[04-03-23 09:07:42.370][info] Disconnecting player 4 finished.
+[04-03-23 09:07:55.527][info] Player 4 disconnecting....
+[04-03-23 09:07:55.527][info] Disconnecting player 4 finished.
+[04-03-23 09:07:55.528][info] Player with id = '4' tries to connect.
+[04-03-23 09:07:55.528][info] Adding player '4' to chat server.
+[04-03-23 09:07:55.528][error] Player or connection is not found on server!.
+[04-03-23 09:07:55.528][error] player = null.
+[04-03-23 09:07:57.690][info] Player with id = '4' tries to connect.
+[04-03-23 09:07:57.690][info] Adding player '4' to chat server.
+[04-03-23 09:07:57.690][info] Player joined to default chats.
+[04-03-23 09:07:57.690][info] Player Ted(4) joined to chat server successfully.
+[04-03-23 09:10:55.485][info] Player 4 disconnecting....
+[04-03-23 09:10:55.485][info] Disconnecting player 4 finished.
+[04-03-23 09:17:38.700][info] Player 4 disconnecting....
+[04-03-23 09:17:38.700][info] Disconnecting player 4 finished.
+[04-03-23 09:17:38.701][info] Player with id = '4' tries to connect.
+[04-03-23 09:17:38.701][info] Adding player '4' to chat server.
+[04-03-23 09:17:38.701][error] Player or connection is not found on server!.
+[04-03-23 09:17:38.701][error] player = null.
+[04-03-23 09:17:40.790][info] Player with id = '4' tries to connect.
+[04-03-23 09:17:40.790][info] Adding player '4' to chat server.
+[04-03-23 09:17:40.791][info] Player joined to default chats.
+[04-03-23 09:17:40.791][info] Player Ted(4) joined to chat server successfully.
+[04-03-23 09:22:20.705][info] Player 4 disconnecting....
+[04-03-23 09:22:20.705][info] Disconnecting player 4 finished.
+[04-03-23 09:23:13.366][info] Player 4 disconnecting....
+[04-03-23 09:23:13.366][info] Disconnecting player 4 finished.
+[04-03-23 09:23:13.366][info] Player 4 disconnecting....
+[04-03-23 09:23:13.367][info] Disconnecting player 4 finished.
+[04-03-23 09:55:06.603][info] Player 0 disconnecting....
+[04-03-23 09:55:06.603][info] Disconnecting player 0 finished.
+[04-03-23 09:55:06.604][info] Player 0 disconnecting....
+[04-03-23 09:55:06.604][info] Disconnecting player 0 finished.
+[04-03-23 12:18:53.630][info] Player with id = '0' tries to connect.
+[04-03-23 12:18:53.630][info] Adding player '0' to chat server.
+[04-03-23 12:18:53.630][info] Player joined to default chats.
+[04-03-23 12:18:53.630][info] Player hornta(0) joined to chat server successfully.
+[04-03-23 12:26:51.697][info] Player 0 disconnecting....
+[04-03-23 12:26:51.697][info] Disconnecting player 0 finished.
+[04-03-23 12:28:33.508][info] Player 0 disconnecting....
+[04-03-23 12:28:33.508][info] Disconnecting player 0 finished.
+[04-03-23 12:28:33.508][info] Player with id = '0' tries to connect.
+[04-03-23 12:28:33.508][info] Adding player '0' to chat server.
+[04-03-23 12:28:33.508][error] Player or connection is not found on server!.
+[04-03-23 12:28:33.508][error] player = null.
+[04-03-23 12:28:35.489][info] Player with id = '0' tries to connect.
+[04-03-23 12:28:35.489][info] Adding player '0' to chat server.
+[04-03-23 12:28:35.489][info] Player joined to default chats.
+[04-03-23 12:28:35.489][info] Player hornta(0) joined to chat server successfully.
+[04-03-23 13:31:51.176][info] Player 0 disconnecting....
+[04-03-23 13:31:51.176][info] Disconnecting player 0 finished.
+[04-03-23 13:32:08.124][info] Player 0 disconnecting....
+[04-03-23 13:32:08.124][info] Disconnecting player 0 finished.
+[04-03-23 13:32:08.125][info] Player with id = '0' tries to connect.
+[04-03-23 13:32:08.125][info] Adding player '0' to chat server.
+[04-03-23 13:32:08.125][error] Player or connection is not found on server!.
+[04-03-23 13:32:08.125][error] player = null.
+[04-03-23 13:32:10.298][info] Player with id = '0' tries to connect.
+[04-03-23 13:32:10.298][info] Adding player '0' to chat server.
+[04-03-23 13:32:10.298][info] Player joined to default chats.
+[04-03-23 13:32:10.298][info] Player hornta(0) joined to chat server successfully.
+[04-03-23 13:37:27.253][info] Player 0 disconnecting....
+[04-03-23 13:37:27.253][info] Disconnecting player 0 finished.
+[04-03-23 13:37:27.253][info] Player 0 disconnecting....
+[04-03-23 13:37:27.253][info] Disconnecting player 0 finished.
+[04-03-23 14:26:31.794][info] Player with id = '0' tries to connect.
+[04-03-23 14:26:31.794][info] Adding player '0' to chat server.
+[04-03-23 14:26:31.794][info] Player joined to default chats.
+[04-03-23 14:26:31.794][info] Player hornta(0) joined to chat server successfully.
+[04-03-23 14:45:52.465][info] Player 0 disconnecting....
+[04-03-23 14:45:52.465][info] Disconnecting player 0 finished.
+[04-03-23 14:46:05.056][info] Player 0 disconnecting....
+[04-03-23 14:46:05.056][info] Disconnecting player 0 finished.
+[04-03-23 14:46:05.057][info] Player with id = '0' tries to connect.
+[04-03-23 14:46:05.057][info] Adding player '0' to chat server.
+[04-03-23 14:46:05.057][error] Player or connection is not found on server!.
+[04-03-23 14:46:05.057][error] player = null.
+[04-03-23 14:46:06.981][info] Player with id = '0' tries to connect.
+[04-03-23 14:46:06.981][info] Adding player '0' to chat server.
+[04-03-23 14:46:06.981][info] Player joined to default chats.
+[04-03-23 14:46:06.981][info] Player hornta(0) joined to chat server successfully.
+[04-03-23 15:21:53.570][info] Player with id = '4' tries to connect.
+[04-03-23 15:21:53.570][info] Adding player '4' to chat server.
+[04-03-23 15:21:53.570][info] Player joined to default chats.
+[04-03-23 15:21:53.570][info] Player Ted(4) joined to chat server successfully.
+[04-03-23 15:23:12.586][info] Player 4 disconnecting....
+[04-03-23 15:23:12.587][info] Disconnecting player 4 finished.
+[04-03-23 15:23:12.587][info] Player 4 disconnecting....
+[04-03-23 15:23:12.587][info] Disconnecting player 4 finished.
+[04-03-23 15:27:45.293][info] Player with id = '4' tries to connect.
+[04-03-23 15:27:45.293][info] Adding player '4' to chat server.
+[04-03-23 15:27:45.293][info] Player joined to default chats.
+[04-03-23 15:27:45.293][info] Player Ted(4) joined to chat server successfully.
+[04-03-23 15:28:43.756][info] Player 4 disconnecting....
+[04-03-23 15:28:43.756][info] Disconnecting player 4 finished.
+[04-03-23 15:28:43.756][info] Player 4 disconnecting....
+[04-03-23 15:28:43.756][info] Disconnecting player 4 finished.
+[04-03-23 15:30:38.835][info] Player with id = '4' tries to connect.
+[04-03-23 15:30:38.835][info] Adding player '4' to chat server.
+[04-03-23 15:30:38.835][info] Player joined to default chats.
+[04-03-23 15:30:38.835][info] Player Ted(4) joined to chat server successfully.
+[04-03-23 15:32:53.568][info] Player 4 disconnecting....
+[04-03-23 15:32:53.568][info] Disconnecting player 4 finished.
+[04-03-23 15:32:53.568][info] Player 4 disconnecting....
+[04-03-23 15:32:53.568][info] Disconnecting player 4 finished.
+[04-03-23 15:34:52.713][info] Player 0 disconnecting....
+[04-03-23 15:34:52.713][info] Disconnecting player 0 finished.
+[04-03-23 15:34:52.713][info] Player 0 disconnecting....
+[04-03-23 15:34:52.713][info] Disconnecting player 0 finished.
+[04-03-23 15:37:32.927][info] Player with id = '0' tries to connect.
+[04-03-23 15:37:32.927][info] Adding player '0' to chat server.
+[04-03-23 15:37:32.927][info] Player joined to default chats.
+[04-03-23 15:37:32.927][info] Player Ted(0) joined to chat server successfully.
+[04-03-23 15:37:37.647][info] Got message:ChatMessage{chat=Local, author='Ted', text='eee'}.
+[04-03-23 15:37:37.648][info] Message ChatMessage{chat=Local, author='Ted', text='eee'} sent to chat (id = 1) members.
+[04-03-23 15:45:42.918][info] Player 0 disconnecting....
+[04-03-23 15:45:42.918][info] Disconnecting player 0 finished.
+[04-03-23 15:47:52.716][info] Player 0 disconnecting....
+[04-03-23 15:47:52.716][info] Disconnecting player 0 finished.
+[04-03-23 15:47:52.717][info] Player with id = '0' tries to connect.
+[04-03-23 15:47:52.717][info] Adding player '0' to chat server.
+[04-03-23 15:47:52.717][error] Player or connection is not found on server!.
+[04-03-23 15:47:52.717][error] player = null.
+[04-03-23 15:47:54.802][info] Player with id = '0' tries to connect.
+[04-03-23 15:47:54.802][info] Adding player '0' to chat server.
+[04-03-23 15:47:54.802][info] Player joined to default chats.
+[04-03-23 15:47:54.802][info] Player Ted(0) joined to chat server successfully.
+[04-03-23 15:48:18.124][info] Player 0 disconnecting....
+[04-03-23 15:48:18.124][info] Disconnecting player 0 finished.
+[04-03-23 15:51:24.987][info] Player 0 disconnecting....
+[04-03-23 15:51:24.987][info] Disconnecting player 0 finished.
+[04-03-23 15:51:24.987][info] Player 0 disconnecting....
+[04-03-23 15:51:24.987][info] Disconnecting player 0 finished.
+[04-03-23 15:53:41.090][info] Player with id = '0' tries to connect.
+[04-03-23 15:53:41.090][info] Adding player '0' to chat server.
+[04-03-23 15:53:41.090][info] Player joined to default chats.
+[04-03-23 15:53:41.090][info] Player Ted(0) joined to chat server successfully.
+[04-03-23 15:53:52.109][info] Player 0 disconnecting....
+[04-03-23 15:53:52.109][info] Disconnecting player 0 finished.
+[04-03-23 15:53:52.109][info] Player 0 disconnecting....
+[04-03-23 15:53:52.109][info] Disconnecting player 0 finished.
+[04-03-23 16:07:06.473][info] Player with id = '0' tries to connect.
+[04-03-23 16:07:06.473][info] Adding player '0' to chat server.
+[04-03-23 16:07:06.474][info] Player joined to default chats.
+[04-03-23 16:07:06.474][info] Player Ted(0) joined to chat server successfully.
+[04-03-23 16:08:07.509][info] Player 0 disconnecting....
+[04-03-23 16:08:07.509][info] Disconnecting player 0 finished.
+[04-03-23 16:08:07.509][info] Player 0 disconnecting....
+[04-03-23 16:08:07.509][info] Disconnecting player 0 finished.
+[04-03-23 16:14:28.647][info] Player with id = '0' tries to connect.
+[04-03-23 16:14:28.648][info] Adding player '0' to chat server.
+[04-03-23 16:14:28.648][info] Player joined to default chats.
+[04-03-23 16:14:28.648][info] Player Ted(0) joined to chat server successfully.
+[04-03-23 16:14:46.342][info] Player 0 disconnecting....
+[04-03-23 16:14:46.342][info] Disconnecting player 0 finished.
+[04-03-23 16:14:46.342][info] Player 0 disconnecting....
+[04-03-23 16:14:46.342][info] Disconnecting player 0 finished.
+[04-03-23 16:19:34.109][info] Player with id = '0' tries to connect.
+[04-03-23 16:19:34.109][info] Adding player '0' to chat server.
+[04-03-23 16:19:34.109][info] Player joined to default chats.
+[04-03-23 16:19:34.109][info] Player Ted(0) joined to chat server successfully.
+[04-03-23 16:19:44.533][info] Player 0 disconnecting....
+[04-03-23 16:19:44.533][info] Disconnecting player 0 finished.
+[04-03-23 16:19:44.533][info] Player 0 disconnecting....
+[04-03-23 16:19:44.533][info] Disconnecting player 0 finished.

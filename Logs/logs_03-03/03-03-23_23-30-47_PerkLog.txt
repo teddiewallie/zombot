@@ -1,0 +1,22 @@
+[03-03-23 23:30:47.410] [76561198857409048][hornta][10942,9373,0][Login][Hours Survived: 0].
+[03-03-23 23:30:47.410] [76561198857409048][hornta][10942,9373,0][Cooking=0, Fitness=5, Strength=5, Blunt=0, Axe=0, Sprinting=0, Lightfoot=0, Nimble=0, Sneak=0, Woodwork=0, Aiming=0, Reloading=0, Farming=0, Fishing=0, Trapping=0, PlantScavenging=0, Doctor=4, Electricity=0, MetalWelding=0, Mechanics=0, Spear=0, Maintenance=0, SmallBlade=1, LongBlade=0, SmallBlunt=0, Tailoring=0][Hours Survived: 0].
+[03-03-23 23:31:56.507] [76561198042014603][sn1ckers][10976,9785,0][Login][Hours Survived: 0].
+[03-03-23 23:31:56.507] [76561198042014603][sn1ckers][10976,9785,0][Cooking=0, Fitness=5, Strength=5, Blunt=0, Axe=0, Sprinting=0, Lightfoot=0, Nimble=0, Sneak=0, Woodwork=3, Aiming=0, Reloading=0, Farming=0, Fishing=0, Trapping=0, PlantScavenging=0, Doctor=0, Electricity=0, MetalWelding=0, Mechanics=0, Spear=0, Maintenance=0, SmallBlade=0, LongBlade=0, SmallBlunt=1, Tailoring=0][Hours Survived: 0].
+[03-03-23 23:32:23.655] [76561198857409048][hornta][10945,9372,0][Died][Hours Survived: 0].
+[03-03-23 23:32:44.179] [76561198857409048][hornta][10803,10073,0][Created Player 1][Hours Survived: 0].
+[03-03-23 23:32:44.179] [76561198857409048][hornta][10803,10073,0][Cooking=0, Fitness=5, Strength=5, Blunt=0, Axe=0, Sprinting=0, Lightfoot=0, Nimble=0, Sneak=0, Woodwork=0, Aiming=0, Reloading=0, Farming=0, Fishing=0, Trapping=0, PlantScavenging=0, Doctor=4, Electricity=0, MetalWelding=0, Mechanics=0, Spear=0, Maintenance=0, SmallBlade=1, LongBlade=0, SmallBlunt=0, Tailoring=0][Hours Survived: 0].
+[03-03-23 23:39:11.159] [76561197992531878][DerpToby][10884,10159,0][Login][Hours Survived: 0].
+[03-03-23 23:39:11.159] [76561197992531878][DerpToby][10884,10159,0][Cooking=0, Fitness=3, Strength=9, Blunt=0, Axe=0, Sprinting=0, Lightfoot=1, Nimble=1, Sneak=0, Woodwork=0, Aiming=0, Reloading=0, Farming=0, Fishing=0, Trapping=0, PlantScavenging=0, Doctor=0, Electricity=0, MetalWelding=0, Mechanics=0, Spear=0, Maintenance=0, SmallBlade=0, LongBlade=0, SmallBlunt=0, Tailoring=0][Hours Survived: 0].
+[03-03-23 23:40:45.131] [76561198321407958][Ted][10916,10133,0][Login][Hours Survived: 0].
+[03-03-23 23:40:45.131] [76561198321407958][Ted][10916,10133,0][Cooking=0, Fitness=4, Strength=5, Blunt=0, Axe=0, Sprinting=0, Lightfoot=2, Nimble=2, Sneak=2, Woodwork=0, Aiming=0, Reloading=0, Farming=0, Fishing=0, Trapping=0, PlantScavenging=0, Doctor=0, Electricity=0, MetalWelding=0, Mechanics=0, Spear=0, Maintenance=0, SmallBlade=0, LongBlade=0, SmallBlunt=0, Tailoring=0][Hours Survived: 0].
+[03-03-23 23:46:45.344] [76561198321407958][Ted][10877,10150,0][Died][Hours Survived: 2].
+[03-03-23 23:47:38.988] [76561198321407958][Ted][10951,9490,0][Created Player 1][Hours Survived: 0].
+[03-03-23 23:47:38.989] [76561198321407958][Ted][10951,9490,0][Cooking=0, Fitness=4, Strength=5, Blunt=0, Axe=0, Sprinting=0, Lightfoot=2, Nimble=2, Sneak=2, Woodwork=0, Aiming=0, Reloading=0, Farming=0, Fishing=0, Trapping=0, PlantScavenging=0, Doctor=0, Electricity=0, MetalWelding=0, Mechanics=0, Spear=0, Maintenance=0, SmallBlade=0, LongBlade=0, SmallBlunt=0, Tailoring=0][Hours Survived: 0].
+[03-03-23 23:49:00.621] [76561198321407958][Ted][10956,9508,0][Died][Hours Survived: 0].
+[03-03-23 23:49:23.634] [76561198321407958][Ted][10976,9785,0][Created Player 1][Hours Survived: 0].
+[03-03-23 23:49:23.634] [76561198321407958][Ted][10976,9785,0][Cooking=0, Fitness=4, Strength=5, Blunt=0, Axe=0, Sprinting=0, Lightfoot=2, Nimble=2, Sneak=2, Woodwork=0, Aiming=0, Reloading=0, Farming=0, Fishing=0, Trapping=0, PlantScavenging=0, Doctor=0, Electricity=0, MetalWelding=0, Mechanics=0, Spear=0, Maintenance=0, SmallBlade=0, LongBlade=0, SmallBlunt=0, Tailoring=0][Hours Survived: 0].
+[03-03-23 23:51:44.542] [76561198321407958][Ted][10968,9761,0][Died][Hours Survived: 0].
+[03-03-23 23:54:17.627] [76561198857409048][hornta][10917,10131,1][Died][Hours Survived: 8].
+[03-03-23 23:54:35.796] [76561198857409048][hornta][10876,10028,0][Created Player 1][Hours Survived: 0].
+[03-03-23 23:54:35.797] [76561198857409048][hornta][10876,10028,0][Cooking=0, Fitness=5, Strength=5, Blunt=0, Axe=0, Sprinting=0, Lightfoot=0, Nimble=0, Sneak=0, Woodwork=0, Aiming=0, Reloading=0, Farming=0, Fishing=0, Trapping=0, PlantScavenging=0, Doctor=4, Electricity=0, MetalWelding=0, Mechanics=0, Spear=0, Maintenance=0, SmallBlade=1, LongBlade=0, SmallBlunt=0, Tailoring=0][Hours Survived: 0].
+[03-03-23 23:58:43.880] [76561198042014603][sn1ckers][10894,10078,0][Died][Hours Survived: 10].

@@ -1,0 +1,9 @@
+{
+  "debug": false,
+  "token": "TOKEN",
+  "root": "./",
+  "clientId": "CLIENT_ID",
+  "logChannelId": "LOG_CHANNEL_ID",
+  "prefix": "!"
+}
+

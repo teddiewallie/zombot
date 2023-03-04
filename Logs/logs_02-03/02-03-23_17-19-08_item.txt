@@ -1,0 +1,6 @@
+[02-03-23 17:19:08.974] 76561198321407958 "Ted" container -1 10817,10035,0 [Base.Pan].
+[02-03-23 17:19:11.971] 76561198321407958 "Ted" container -1 10817,10035,0 [Base.GridlePan].
+[02-03-23 17:19:26.974] 76561198321407958 "Ted" container -1 10817,10036,0 [Base.CannedCorn].
+[02-03-23 17:19:29.965] 76561198321407958 "Ted" container -3 10817,10036,0 [Base.CannedCornedBeef, Base.CannedPeas, Base.CannedPotato2].
+[02-03-23 17:19:32.974] 76561198321407958 "Ted" container -2 10817,10036,0 [Base.Dogfood, Base.TomatoPaste].
+[02-03-23 17:22:32.879] 76561198321407958 "Ted" floor +1 10781,10058,0 [Base.Hat_BaseballCap].

@@ -1,0 +1,36 @@
+[02-03-23 18:59:40.731][INFO] user "hornta" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[02-03-23 19:32:20.059][INFO] user "hornta" store safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[02-03-23 19:54:23.947][INFO] user "hornta" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[02-03-23 20:14:48.214] user "hornta" (10902,9990,0) enabled safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[02-03-23 20:14:48.214] user "hornta" (10902,9990,0) disabled safety enabled=false last=true cooldown=0.0 toggle=2.0.
+[02-03-23 20:14:52.024] user "hornta" (10902,9997,0) disabled safety enabled=false last=true cooldown=0.0 toggle=0.0.
+[02-03-23 20:14:52.024] user "hornta" (10902,9997,0) disabled safety enabled=false last=false cooldown=0.0 toggle=2.0.
+[02-03-23 20:30:46.964][INFO] user "sn1ckers" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 00:27:23.877][INFO] user "sn1ckers" clear safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 00:31:48.607][INFO] user "hornta" store safety enabled=true last=false cooldown=0.0 toggle=0.0.
+[03-03-23 08:12:32.356][INFO] user "Ted" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 08:14:36.583][INFO] user "Ted" clear safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 08:14:59.964][INFO] user "Ted" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 08:19:01.200][INFO] user "Ted" clear safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 08:19:19.459][INFO] user "Ted" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 08:25:20.828][INFO] user "Ted" clear safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 09:05:34.671][INFO] user "hornta" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 09:10:25.836][INFO] user "hornta" store safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 09:13:13.142][INFO] user "hornta" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 10:01:53.574][INFO] user "hornta" store safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 11:05:49.433][INFO] user "Ted" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 11:16:38.586][INFO] user "Ted" store safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 14:57:43.210][INFO] user "hornta" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 15:19:57.506][INFO] user "hornta" clear safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 15:30:53.250][INFO] user "Ted" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 15:54:45.557][INFO] user "Ted" clear safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 15:55:12.025][INFO] user "Ted" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 15:55:54.258][INFO] user "Ted" clear safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 15:57:47.339][INFO] user "Ted" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 16:20:24.219][INFO] user "Ted" clear safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 16:21:28.342][INFO] user "Ted" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 17:01:49.747][INFO] user "Ted" clear safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 17:13:36.276][INFO] user "Ted" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 17:14:54.388][INFO] user "Ted" clear safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 17:15:12.937][INFO] user "Ted" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
+[03-03-23 17:22:25.239][INFO] user "Ted" store safety enabled=true last=true cooldown=0.0 toggle=0.0.

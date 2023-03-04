@@ -1,0 +1,7 @@
+[03-03-23 23:13:31.233] 76561198857409048 "hornta" removed Door (walls_garage_01_17) at 10763,10348,0.
+[03-03-23 23:13:31.233] 76561198857409048 "hornta" removed Door (walls_garage_01_16) at 10763,10349,0.
+[03-03-23 23:13:31.233] 76561198857409048 "hornta" removed Door (walls_garage_01_18) at 10763,10347,0.
+[03-03-23 23:13:45.137] 76561198042014603 "sn1ckers" removed Door (fixtures_doors_02_5) at 10836,10083,0.
+[03-03-23 23:14:20.807] 76561198857409048 "hornta" removed Door (walls_garage_01_17) at 10763,10343,0.
+[03-03-23 23:14:20.808] 76561198857409048 "hornta" removed Door (walls_garage_01_16) at 10763,10344,0.
+[03-03-23 23:14:20.808] 76561198857409048 "hornta" removed Door (walls_garage_01_18) at 10763,10342,0.

@@ -1,0 +1,437 @@
+[04-03-23 09:01:34.590] 76561197992531878 "DerpToby" floor +1 10897,10120,0 [Base.Glasses_Reading].
+[04-03-23 09:02:38.564] 76561197992531878 "DerpToby" container -1 10916,10138,0 [Base.Sheet].
+[04-03-23 09:03:17.566] 76561197992531878 "DerpToby" container -1 10920,10130,0 [Base.Lemon].
+[04-03-23 09:03:29.367] 76561198321407958 "Ted" container -1 10848,9845,0 [Base.BreadKnife].
+[04-03-23 09:03:41.373] 76561198321407958 "Ted" container -1 10848,9846,0 [Base.GridlePan].
+[04-03-23 09:03:44.377] 76561198321407958 "Ted" container -1 10848,9846,0 [Base.Saucepan].
+[04-03-23 09:03:44.566] 76561197992531878 "DerpToby" container -1 10912,10135,0 [Base.Socks_Ankle].
+[04-03-23 09:03:47.370] 76561198321407958 "Ted" container -3 10848,9846,0 [Base.Popcorn, Base.Crisps4, Base.Marinara].
+[04-03-23 09:03:47.571] 76561197992531878 "DerpToby" container -1 10912,10135,0 [Base.Shoes_Random].
+[04-03-23 09:03:50.374] 76561198321407958 "Ted" container -2 10848,9846,0 [Base.DriedLentils].
+[04-03-23 09:03:50.559] 76561197992531878 "DerpToby" container -1 10912,10135,0 [Base.Trousers_Denim].
+[04-03-23 09:03:56.363] 76561198321407958 "Ted" container -3 10848,9845,0 [Base.CannedCornedBeef, Base.TinnedSoup, Base.CannedBolognese].
+[04-03-23 09:03:58.675] 76561198321407958 "Ted" container -1 10848,9845,0 [Base.CannedSardines].
+[04-03-23 09:04:01.850] 76561197992531878 "DerpToby" floor +1 10910,10134,0 [Base.Dress_Normal].
+[04-03-23 09:04:06.013] 76561197992531878 "DerpToby" floor +1 10908,10135,0 [Base.Plunger].
+[04-03-23 09:04:20.048] 76561197992531878 "DerpToby" floor +1 10908,10135,0 [Base.Shoes_Strapped].
+[04-03-23 09:05:02.524] 76561197992531878 "DerpToby" container -3 10878,10155,0 [Base.Rope, Base.HandTorch].
+[04-03-23 09:05:27.412] 76561198321407958 "Ted" floor +1 10856,9862,0 [Base.Glasses_Sun].
+[04-03-23 09:05:31.997] 76561198321407958 "Ted" floor +1 10856,9862,0 [Base.GridlePan].
+[04-03-23 09:05:52.491] 76561197992531878 "DerpToby" floor +1 10881,10152,0 [Base.Hat_BaseballCapKY].
+[04-03-23 09:06:14.572] 76561197992531878 "DerpToby" container -1 10867,10159,0 [Base.Rake].
+[04-03-23 09:06:44.376] 76561198321407958 "Ted" container -1 10889,9481,0 [Base.Plunger].
+[04-03-23 09:07:36.511] 76561198321407958 "Ted" floor +1 10902,9476,0 [Base.Hat_Bandana].
+[04-03-23 09:07:42.355] 76561198321407958 "Ted" floor +1 10901,9477,0 [Base.Plunger].
+[04-03-23 09:08:11.378] 76561198321407958 "Ted" container -1 10853,9896,0 [Base.RollingPin].
+[04-03-23 09:08:30.785] 76561197992531878 "DerpToby" floor +1 10841,10147,0 [Base.Glasses_Reading].
+[04-03-23 09:09:20.574] 76561197992531878 "DerpToby" container -2 10838,10152,0 [Base.Crackers, Base.Cereal].
+[04-03-23 09:09:23.577] 76561197992531878 "DerpToby" container -2 10838,10152,0 [Base.DriedWhiteBeans, Base.Pasta].
+[04-03-23 09:09:26.580] 76561197992531878 "DerpToby" container -1 10838,10153,0 [Base.TomatoPaste].
+[04-03-23 09:09:29.577] 76561197992531878 "DerpToby" container -3 10838,10153,0 [Base.CannedPeaches, Base.CannedMilk, Base.CannedTomato2].
+[04-03-23 09:10:08.579] 76561197992531878 "DerpToby" container -1 10840,10151,0 [Base.Bread].
+[04-03-23 09:10:38.581] 76561197992531878 "DerpToby" container -1 10840,10151,0 [Base.GranolaBar].
+[04-03-23 09:10:40.686] 76561197992531878 "DerpToby" container -1 10840,10151,0 [Base.GranolaBar].
+[04-03-23 09:10:53.587] 76561197992531878 "DerpToby" container -1 10842,10147,0 [Base.HoodieDOWN_WhiteTINT].
+[04-03-23 09:10:55.484] 76561198321407958 "Ted" floor +1 10886,9891,0 [Base.RollingPin].
+[04-03-23 09:12:05.581] 76561197992531878 "DerpToby" container -1 10839,10148,1 [Base.Saxophone].
+[04-03-23 09:12:35.590] 76561197992531878 "DerpToby" container -1 10838,10148,1 [Base.Shirt_Baseball_Rangers].
+[04-03-23 09:12:38.583] 76561197992531878 "DerpToby" container -1 10838,10148,1 [Base.Trousers_JeanBaggy].
+[04-03-23 09:13:45.750] 76561197992531878 "DerpToby" floor +1 10838,10149,1 [Base.Trousers_Denim].
+[04-03-23 09:14:32.593] 76561197992531878 "DerpToby" container -1 10839,10148,1 [Base.Shirt_CropTopTINT].
+[04-03-23 09:15:02.590] 76561197992531878 "DerpToby" container -2 10842,10152,1 [Base.PillsBeta, Base.PillsSleepingTablets].
+[04-03-23 09:15:05.593] 76561197992531878 "DerpToby" container -1 10842,10152,1 [Base.ToiletPaper].
+[04-03-23 09:15:08.592] 76561197992531878 "DerpToby" container -1 10842,10150,1 [Base.Plunger].
+[04-03-23 09:15:14.590] 76561197992531878 "DerpToby" container -1 10842,10151,1 [Base.Bandaid].
+[04-03-23 09:15:38.594] 76561197992531878 "DerpToby" container -1 10842,10144,1 [Base.Shorts_LongSport].
+[04-03-23 09:15:41.593] 76561197992531878 "DerpToby" container -1 10842,10144,1 [Base.Trousers].
+[04-03-23 09:16:08.599] 76561197992531878 "DerpToby" container -1 10841,10145,0 [Base.Socks_Long].
+[04-03-23 09:16:52.948] 76561197992531878 "DerpToby" floor -1 10884,10141,0 [Base.Hat_BaseballCap].
+[04-03-23 09:17:35.592] 76561197992531878 "DerpToby" container +0 10918,10129,0 [Base.CannedPeaches, Base.CannedMilk].
+[04-03-23 09:17:38.595] 76561197992531878 "DerpToby" container +0 10918,10129,0 [Base.CannedTomato2].
+[04-03-23 09:17:50.592] 76561197992531878 "DerpToby" container +0 10918,10129,0 [Base.Pasta].
+[04-03-23 09:18:37.844] 76561198321407958 "Ted" container -1 10920,10089,0 [Base.Saucepan].
+[04-03-23 09:19:20.598] 76561197992531878 "DerpToby" container +0 10916,10138,0 [Base.Saxophone].
+[04-03-23 09:19:56.599] 76561197992531878 "DerpToby" container +0 10916,10138,0 [Base.HandTorch, Base.Rope, Base.Plunger, Base.BookMechanic1].
+[04-03-23 09:19:59.602] 76561197992531878 "DerpToby" container +0 10916,10138,0 [Base.PillsSleepingTablets, Base.Rope, Base.Thread, Base.Socks_Ankle, Base.ToiletPaper].
+[04-03-23 09:20:35.054] 76561198321407958 "Ted" floor +1 10910,10104,0 [Base.Hat_BaseballCapKY].
+[04-03-23 09:21:02.602] 76561197992531878 "DerpToby" container -1 10923,10134,0 [Base.BookTailoring1].
+[04-03-23 09:21:25.126] 76561198321407958 "Ted" floor +1 10895,10058,0 [Base.Glasses_Reading].
+[04-03-23 09:22:05.136] 76561198321407958 "Ted" floor +1 10913,10054,0 [Base.Glasses_Reading].
+[04-03-23 09:22:12.734] 76561198321407958 "Ted" floor +1 10918,10053,0 [Base.Hat_BaseballCap].
+[04-03-23 09:22:15.737] 76561198321407958 "Ted" floor +1 10920,10051,0 [Base.Glasses_Sun].
+[04-03-23 09:27:02.620] 76561197992531878 "DerpToby" container -1 10923,10134,0 [Base.Book].
+[04-03-23 09:34:50.630] 76561197992531878 "DerpToby" container +0 10923,10134,0 [Base.BookTailoring1].
+[04-03-23 09:36:17.632] 76561197992531878 "DerpToby" container -1 10897,10119,0 [Base.HandFork].
+[04-03-23 09:37:14.638] 76561197992531878 "DerpToby" container -1 10920,10091,0 [Base.PeanutButter].
+[04-03-23 09:37:20.637] 76561197992531878 "DerpToby" container -2 10917,10089,0 [Base.Crackers, Base.Chocolate].
+[04-03-23 09:37:23.641] 76561197992531878 "DerpToby" container -4 10917,10089,0 [Base.Pepper, Base.Cereal, Base.Macandcheese].
+[04-03-23 09:37:26.639] 76561197992531878 "DerpToby" container -2 10917,10089,0 [Base.DriedSplitPeas, Base.DriedKidneyBeans].
+[04-03-23 09:37:32.639] 76561197992531878 "DerpToby" container -2 10917,10088,0 [Base.CannedCarrots2, Base.TomatoPaste].
+[04-03-23 09:37:38.636] 76561197992531878 "DerpToby" container -2 10920,10088,0 [farming.RedRadish, Base.Processedcheese].
+[04-03-23 09:37:41.639] 76561197992531878 "DerpToby" container -4 10920,10088,0 [Base.Pear, Base.Onion, farming.RemouladeFull, Base.Yoghurt].
+[04-03-23 09:37:44.636] 76561197992531878 "DerpToby" container -1 10920,10090,0 [Base.DishCloth].
+[04-03-23 09:37:47.080] 76561197992531878 "DerpToby" container -2 10920,10090,0 [Base.PopBottle, Base.WaterBottleFull].
+[04-03-23 09:37:52.816] 76561197992531878 "DerpToby" floor +1 10919,10046,0 [Base.Plank].
+[04-03-23 09:37:52.817] 76561197992531878 "DerpToby" floor +1 10919,10046,0 [Base.Plank].
+[04-03-23 09:38:05.635] 76561197992531878 "DerpToby" container -1 10912,10092,0 [Base.Shoes_ArmyBoots].
+[04-03-23 09:38:11.641] 76561197992531878 "DerpToby" container -5 10912,10092,0 [Base.Saw, Base.Shoes_Random, Base.LightBulb, Base.SewingKit, Radio.ElectricWire].
+[04-03-23 09:38:14.645] 76561197992531878 "DerpToby" container -1 10912,10092,0 [Base.Crowbar].
+[04-03-23 09:39:38.645] 76561197992531878 "DerpToby" container +0 10920,10130,0 [Base.DriedKidneyBeans].
+[04-03-23 09:39:41.644] 76561197992531878 "DerpToby" container +0 10920,10130,0 [Base.GranolaBar, Base.DriedSplitPeas, Base.DriedWhiteBeans].
+[04-03-23 09:39:44.639] 76561197992531878 "DerpToby" container +0 10920,10130,0 [Base.PopBottle, Base.PeanutButter, Base.Pop, Base.Onion, Base.Pear, Base.Macandcheese, farming.RedRadish, Base.Processedcheese].
+[04-03-23 09:39:47.650] 76561197992531878 "DerpToby" container +0 10920,10130,0 [farming.RemouladeFull, Base.Yoghurt, Base.TomatoPaste].
+[04-03-23 09:39:53.650] 76561197992531878 "DerpToby" container +0 10920,10130,0 [Base.CannedCarrots2, Base.Cereal, Base.Chocolate].
+[04-03-23 09:41:08.649] 76561197992531878 "DerpToby" container +0 10916,10138,0 [Base.Saw, Base.RippedSheets, Base.LightBulb, Base.SewingKit, Base.HandFork, Radio.ElectricWire].
+[04-03-23 09:41:11.649] 76561197992531878 "DerpToby" container +0 10916,10138,0 [Base.Shoes_Random].
+[04-03-23 09:43:53.648] 76561197992531878 "DerpToby" container -1 10895,10088,0 [Base.Bra_Strapless_Black].
+[04-03-23 09:44:02.657] 76561197992531878 "DerpToby" container -1 10895,10088,0 [Base.Underpants_Black].
+[04-03-23 09:44:20.659] 76561197992531878 "DerpToby" container -1 10894,10078,0 [Base.Bandage].
+[04-03-23 09:44:32.661] 76561197992531878 "DerpToby" container -2 10894,10078,0 [Base.TreeBranch].
+[04-03-23 09:44:35.658] 76561197992531878 "DerpToby" container -1 10894,10078,0 [Base.WaterTeacup].
+[04-03-23 09:44:38.660] 76561197992531878 "DerpToby" container -1 10894,10078,0 [Base.WaterMug].
+[04-03-23 09:44:44.591] 76561197992531878 "DerpToby" floor -1 10894,10078,0 [Base.ClosedUmbrellaBlack].
+[04-03-23 09:45:11.119] 76561197992531878 "DerpToby" floor +1 10885,10071,0 [Base.Hat_BaseballCap].
+[04-03-23 09:46:35.667] 76561197992531878 "DerpToby" container -1 10876,10074,0 [Base.Gloves_LeatherGloves].
+[04-03-23 09:46:47.662] 76561197992531878 "DerpToby" container -1 10877,10076,0 [Base.Shirt_Denim].
+[04-03-23 09:47:26.662] 76561197992531878 "DerpToby" container -1 10882,10079,0 [Base.MeatPatty].
+[04-03-23 09:49:02.665] 76561197992531878 "DerpToby" container -3 10879,10079,0 [Base.Pop2, Base.Pop, Base.WaterBottleFull].
+[04-03-23 09:49:08.670] 76561197992531878 "DerpToby" container -3 10879,10080,0 [Base.Marinara, Base.BeefJerky, Base.Chocolate].
+[04-03-23 09:49:11.668] 76561197992531878 "DerpToby" container -1 10879,10080,0 [Base.Pasta].
+[04-03-23 09:49:26.661] 76561197992531878 "DerpToby" container -2 10883,10081,0 [Base.Leek, Base.Orange].
+[04-03-23 09:49:29.670] 76561197992531878 "DerpToby" container -1 10883,10081,0 [Base.MeatPatty].
+[04-03-23 09:50:41.665] 76561197992531878 "DerpToby" container +0 10920,10130,0 [Base.Crackers, Base.WaterTeacup, Base.WaterMug, Base.WaterBottleFull, Base.BeefJerky, Base.Chocolate].
+[04-03-23 09:50:44.667] 76561197992531878 "DerpToby" container +0 10920,10130,0 [Base.Leek, Base.Orange, Base.MeatPatty, Base.Pasta].
+[04-03-23 09:51:29.675] 76561197992531878 "DerpToby" container -2 10920,10130,0 [Base.CannedCarrots2, Base.BeefJerky].
+[04-03-23 09:51:32.672] 76561197992531878 "DerpToby" container -5 10920,10130,0 [Base.CannedCornedBeef, Base.CannedMushroomSoup, Base.TinnedSoup, Base.CannedBolognese, Base.TunaTin].
+[04-03-23 09:51:35.670] 76561197992531878 "DerpToby" container -6 10920,10130,0 [Base.Crackers, Base.DriedKidneyBeans, Base.Cereal, Base.Chocolate].
+[04-03-23 09:51:38.673] 76561197992531878 "DerpToby" container -1 10920,10130,0 [Base.DriedSplitPeas].
+[04-03-23 09:51:41.674] 76561197992531878 "DerpToby" container -5 10920,10130,0 [Base.GranolaBar, Base.DriedWhiteBeans, Base.Macandcheese].
+[04-03-23 09:51:44.671] 76561197992531878 "DerpToby" container -4 10920,10130,0 [Base.PeanutButter, Base.TomatoPaste, Base.Pasta].
+[04-03-23 09:52:05.674] 76561197992531878 "DerpToby" container +0 10920,10129,0 [Base.CannedCornedBeef, Base.CannedCarrots2, Base.BeefJerky].
+[04-03-23 09:52:08.669] 76561197992531878 "DerpToby" container +0 10920,10129,0 [Base.CannedMushroomSoup, Base.TinnedSoup, Base.CannedBolognese, Base.Cereal, Base.Chocolate, Base.TunaTin].
+[04-03-23 09:52:11.669] 76561197992531878 "DerpToby" container +0 10920,10129,0 [Base.Crackers, Base.DriedKidneyBeans, Base.Chocolate].
+[04-03-23 09:52:14.676] 76561197992531878 "DerpToby" container +0 10920,10129,0 [Base.DriedSplitPeas].
+[04-03-23 09:52:17.673] 76561197992531878 "DerpToby" container +0 10920,10129,0 [Base.GranolaBar, Base.DriedWhiteBeans, Base.Macandcheese].
+[04-03-23 09:52:20.674] 76561197992531878 "DerpToby" container +0 10920,10129,0 [Base.PeanutButter, Base.TomatoPaste, Base.Pasta].
+[04-03-23 09:52:38.673] 76561197992531878 "DerpToby" container -1 10920,10129,0 [Base.Margarine].
+[04-03-23 09:52:44.672] 76561197992531878 "DerpToby" container +0 10920,10129,0 [Base.Margarine, Base.Marinara, Base.Pepper].
+[04-03-23 12:19:29.645] 76561198857409048 "hornta" container +0 10923,10134,0 [Base.BookFarming2].
+[04-03-23 12:19:32.643] 76561198857409048 "hornta" container +0 10923,10134,0 [Base.BookCooking1].
+[04-03-23 12:19:50.959] 76561198857409048 "hornta" floor +1 10922,10136,0 [Base.KeyRing].
+[04-03-23 12:20:14.644] 76561198857409048 "hornta" container +0 10920,10130,0 [Base.CannedPeas].
+[04-03-23 12:20:35.864] 76561198857409048 "hornta" floor +1 10915,10131,0 [Base.GridlePan].
+[04-03-23 12:20:50.336] 76561198857409048 "hornta" floor +1 10918,10131,0 [Base.GlassTumbler].
+[04-03-23 12:20:55.160] 76561198857409048 "hornta" floor +1 10918,10131,0 [Base.GlassTumblerWater].
+[04-03-23 12:21:01.068] 76561198857409048 "hornta" floor +1 10918,10131,0 [Base.WaterMugWhite].
+[04-03-23 12:21:11.095] 76561198857409048 "hornta" container -1 10920,10130,0 [Base.WaterBottleFull].
+[04-03-23 12:23:17.644] 76561198857409048 "hornta" container -1 10840,10151,0 [Base.Sugar].
+[04-03-23 12:23:41.635] 76561198857409048 "hornta" container -1 10840,10151,0 [Base.Cereal].
+[04-03-23 12:23:44.654] 76561198857409048 "hornta" floor +1 10839,10151,0 [Base.Belt2].
+[04-03-23 12:23:48.084] 76561198857409048 "hornta" floor +1 10839,10151,0 [Base.Cologne].
+[04-03-23 12:24:35.760] 76561198857409048 "hornta" floor +1 10820,10165,0 [Base.Hat_Fedora_Delmonte].
+[04-03-23 12:26:05.179] 76561198857409048 "hornta" floor +1 10794,10183,0 [Base.UnusableWood].
+[04-03-23 12:26:05.180] 76561198857409048 "hornta" floor +1 10794,10183,0 [Base.Doorknob].
+[04-03-23 12:26:05.181] 76561198857409048 "hornta" floor +1 10794,10183,0 [Base.Hinge].
+[04-03-23 12:26:05.182] 76561198857409048 "hornta" floor +1 10794,10183,0 [Base.Hinge].
+[04-03-23 12:26:51.689] 76561198857409048 "hornta" floor +1 10774,10238,0 [Base.HandAxe].
+[04-03-23 12:28:47.640] 76561198857409048 "hornta" container -2 10810,10078,0 [Base.CannedMushroomSoup, Base.CannedPeas].
+[04-03-23 12:28:50.645] 76561198857409048 "hornta" container -2 10810,10078,0 [Base.CannedPotato2, Base.CannedTomato2].
+[04-03-23 12:28:53.645] 76561198857409048 "hornta" container -1 10810,10077,0 [Base.RollingPin].
+[04-03-23 12:29:26.640] 76561198857409048 "hornta" container -1 10795,10074,0 [Base.MeatPatty].
+[04-03-23 12:29:59.636] 76561198857409048 "hornta" container -1 10790,10082,0 [Base.Trousers_Denim].
+[04-03-23 12:30:02.649] 76561198857409048 "hornta" container -1 10790,10082,0 [Base.Shoes_Random].
+[04-03-23 12:30:05.646] 76561198857409048 "hornta" container -2 10790,10082,0 [Base.Underpants_Black, Base.Bra_Straps_Black].
+[04-03-23 12:30:14.528] 76561198857409048 "hornta" floor +1 10790,10082,0 [Base.Bra_Straps_Black].
+[04-03-23 12:30:23.111] 76561198857409048 "hornta" container -1 10790,10082,0 [Base.Tshirt_PoloTINT].
+[04-03-23 12:30:32.647] 76561198857409048 "hornta" container -1 10782,10086,0 [Base.TinnedBeans].
+[04-03-23 12:30:35.642] 76561198857409048 "hornta" container -2 10782,10086,0 [Base.CannedPineapple, Base.CannedFruitCocktail].
+[04-03-23 12:30:50.645] 76561198857409048 "hornta" container -1 10780,10087,0 [Base.BeerCan].
+[04-03-23 12:30:51.970] 76561198857409048 "hornta" floor +1 10781,10087,0 [Base.CannedMushroomSoup].
+[04-03-23 12:30:52.579] 76561198857409048 "hornta" floor +1 10781,10087,0 [Base.CannedFruitCocktail].
+[04-03-23 12:30:53.179] 76561198857409048 "hornta" floor +1 10781,10087,0 [Base.TinnedBeans].
+[04-03-23 12:30:53.784] 76561198857409048 "hornta" floor +1 10781,10087,0 [Base.CannedPineapple].
+[04-03-23 12:31:11.644] 76561198857409048 "hornta" container -1 10785,10086,0 [Base.Bandaid].
+[04-03-23 12:31:28.561] 76561198857409048 "hornta" container -1 10770,10084,0 [Base.WaterBottleEmpty].
+[04-03-23 12:32:08.077] 76561198857409048 "hornta" floor -1 10759,10082,0 [Base.BleachEmpty].
+[04-03-23 12:32:29.647] 76561198857409048 "hornta" container -1 10758,10080,0 [Base.KitchenKnife].
+[04-03-23 12:33:44.644] 76561198857409048 "hornta" container -1 10759,10080,0 [Base.Pear].
+[04-03-23 12:33:49.220] 76561198857409048 "hornta" container -1 10759,10080,0 [Base.Eggplant].
+[04-03-23 12:33:56.637] 76561198857409048 "hornta" container -1 10759,10080,0 [Base.Broccoli].
+[04-03-23 12:33:59.639] 76561198857409048 "hornta" container -1 10757,10080,0 [Base.TinOpener].
+[04-03-23 12:35:44.644] 76561198857409048 "hornta" container -1 10753,10099,0 [Base.PipeWrench].
+[04-03-23 12:35:47.641] 76561198857409048 "hornta" container -2 10753,10099,0 [Base.SewingKit, Base.Bandaid].
+[04-03-23 12:35:53.643] 76561198857409048 "hornta" container -1 10753,10099,0 [Base.Sheet].
+[04-03-23 12:36:23.646] 76561198857409048 "hornta" container -1 10749,10100,0 [Base.BookCooking2].
+[04-03-23 12:37:05.008] 76561198857409048 "hornta" floor +1 10750,10101,0 [Base.CannedPotato2].
+[04-03-23 12:37:15.409] 76561198857409048 "hornta" floor +1 10750,10101,0 [Base.Shoes_Random].
+[04-03-23 12:37:29.643] 76561198857409048 "hornta" container -1 10750,10103,0 [Base.Lime].
+[04-03-23 12:37:35.647] 76561198857409048 "hornta" container -1 10750,10103,0 [farming.Strewberrie].
+[04-03-23 12:37:56.392] 76561198857409048 "hornta" floor -1 10756,10102,0 [Base.JamFruit].
+[04-03-23 12:38:05.639] 76561198857409048 "hornta" container -1 10754,10105,0 [Base.Shoes_ArmyBoots].
+[04-03-23 12:38:08.684] 76561198857409048 "hornta" floor +1 10755,10105,0 [Base.Shoes_Random].
+[04-03-23 12:38:53.639] 76561198857409048 "hornta" container -1 10749,10113,0 [Base.HandAxe].
+[04-03-23 12:39:45.950] 76561198857409048 "hornta" floor +1 10787,10167,0 [Base.Hat_Beret].
+[04-03-23 12:41:14.646] 76561198857409048 "hornta" container -1 10772,10211,0 [Base.Banana].
+[04-03-23 12:41:53.647] 76561198857409048 "hornta" container -1 10769,10216,0 [Base.BookTrapping1].
+[04-03-23 12:43:15.444] 76561198857409048 "hornta" floor +1 10755,10220,0 [Base.Tshirt_PoloTINT].
+[04-03-23 12:43:29.643] 76561198857409048 "hornta" container -1 10755,10220,0 [Base.Jacket_WhiteTINT].
+[04-03-23 12:44:40.168] 76561198857409048 "hornta" floor -1 10774,10238,0 [Base.HandAxe].
+[04-03-23 12:46:51.586] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.HandAxe].
+[04-03-23 12:46:58.725] 76561198857409048 "hornta" floor +1 10917,10132,0 [Base.KitchenKnife].
+[04-03-23 12:47:03.805] 76561198857409048 "hornta" floor +1 10915,10131,0 [Base.PipeWrench].
+[04-03-23 12:47:30.525] 76561198857409048 "hornta" floor -1 10915,10131,0 [Base.PipeWrench].
+[04-03-23 12:47:31.352] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.PipeWrench].
+[04-03-23 12:48:35.649] 76561198857409048 "hornta" container -1 10920,10130,0 [Base.Grapes].
+[04-03-23 12:49:20.644] 76561198857409048 "hornta" container +0 10923,10134,0 [Base.BookTrapping1].
+[04-03-23 12:49:23.641] 76561198857409048 "hornta" container +0 10923,10134,0 [Base.BookCooking2].
+[04-03-23 12:49:39.917] 76561198857409048 "hornta" floor +1 10915,10131,0 [Base.RollingPin].
+[04-03-23 12:50:00.328] 76561198857409048 "hornta" floor +1 10918,10131,0 [Base.WaterBleachBottle].
+[04-03-23 12:50:38.653] 76561198857409048 "hornta" container -1 10923,10134,0 [Base.BookTailoring1].
+[04-03-23 12:53:05.644] 76561198857409048 "hornta" container +0 10923,10134,0 [Base.BookTailoring1].
+[04-03-23 12:53:12.422] 76561198857409048 "hornta" floor +1 10919,10131,0 [Base.CannedPeas].
+[04-03-23 12:53:20.641] 76561198857409048 "hornta" container +0 10920,10130,0 [Base.TinOpener].
+[04-03-23 12:53:29.649] 76561198857409048 "hornta" container -1 10920,10130,0 [Base.Orange].
+[04-03-23 12:56:05.642] 76561198857409048 "hornta" container -1 10877,10191,0 [Base.OatsRaw].
+[04-03-23 12:56:44.380] 76561198857409048 "hornta" floor +1 10875,10189,1 [Base.FirstAidKit].
+[04-03-23 12:56:44.645] 76561198857409048 "hornta" container -1 10875,10190,1 [Base.FirstAidKit].
+[04-03-23 12:56:53.647] 76561198857409048 "hornta" container -3 10875,10189,1 [Base.AlcoholWipes, Base.Bandage, Base.Bandaid].
+[04-03-23 12:56:59.643] 76561198857409048 "hornta" container -1 10875,10190,1 [Base.Bandaid].
+[04-03-23 12:58:23.648] 76561198857409048 "hornta" container -1 10878,10186,1 [Base.AlarmClock2].
+[04-03-23 13:00:23.647] 76561198857409048 "hornta" container -1 10840,10246,0 [Base.Pills].
+[04-03-23 13:00:26.644] 76561198857409048 "hornta" container -1 10840,10246,0 [Base.PillsVitamins].
+[04-03-23 13:00:46.552] 76561198857409048 "hornta" container -1 10840,10246,0 [Base.Bandage].
+[04-03-23 13:01:08.647] 76561198857409048 "hornta" container -1 10841,10248,0 [Base.MeatCleaver].
+[04-03-23 13:01:41.649] 76561198857409048 "hornta" container -1 10835,10249,0 [Base.Crowbar].
+[04-03-23 13:02:10.195] 76561198857409048 "hornta" floor +1 10829,10258,0 [Base.Hat_Beret].
+[04-03-23 13:04:15.547] 76561198857409048 "hornta" floor +1 10796,10304,0 [Base.FirstAidKit].
+[04-03-23 13:04:17.645] 76561198857409048 "hornta" container -1 10794,10306,0 [Base.FirstAidKit].
+[04-03-23 13:04:20.645] 76561198857409048 "hornta" container -1 10794,10306,0 [Base.x4Scope].
+[04-03-23 13:05:49.416] 76561198857409048 "hornta" floor +1 10713,10319,0 [Base.BeerCanEmpty].
+[04-03-23 13:07:48.999] 76561198857409048 "hornta" floor +1 10607,10369,0 [Base.Doorknob].
+[04-03-23 13:07:49.000] 76561198857409048 "hornta" floor +1 10607,10369,0 [Base.Hinge].
+[04-03-23 13:07:49.001] 76561198857409048 "hornta" floor +1 10607,10369,0 [Base.Hinge].
+[04-03-23 13:07:51.503] 76561198857409048 "hornta" floor +1 10671,10313,0 [Base.SheetMetal].
+[04-03-23 13:07:51.504] 76561198857409048 "hornta" floor +1 10671,10313,0 [Base.Doorknob].
+[04-03-23 13:07:51.504] 76561198857409048 "hornta" floor +1 10671,10313,0 [Base.Hinge].
+[04-03-23 13:08:28.900] 76561198857409048 "hornta" floor +1 10677,10313,0 [Base.Doorknob].
+[04-03-23 13:08:28.901] 76561198857409048 "hornta" floor +1 10677,10313,0 [Base.Hinge].
+[04-03-23 13:08:35.720] 76561198857409048 "hornta" floor +1 10607,10328,0 [Base.Doorknob].
+[04-03-23 13:08:35.721] 76561198857409048 "hornta" floor +1 10607,10328,0 [Base.Hinge].
+[04-03-23 13:08:35.722] 76561198857409048 "hornta" floor +1 10607,10328,0 [Base.Hinge].
+[04-03-23 13:08:48.953] 76561198857409048 "hornta" floor +1 10675,10365,0 [Base.SheetMetal].
+[04-03-23 13:08:48.954] 76561198857409048 "hornta" floor +1 10675,10365,0 [Base.Doorknob].
+[04-03-23 13:08:54.324] 76561198857409048 "hornta" floor +1 10607,10325,0 [Base.Doorknob].
+[04-03-23 13:08:54.324] 76561198857409048 "hornta" floor +1 10607,10325,0 [Base.Hinge].
+[04-03-23 13:08:54.325] 76561198857409048 "hornta" floor +1 10607,10325,0 [Base.Hinge].
+[04-03-23 13:08:56.414] 76561198857409048 "hornta" floor +1 10614,10334,0 [Base.UnusableWood].
+[04-03-23 13:08:56.415] 76561198857409048 "hornta" floor +1 10614,10334,0 [Base.UnusableWood].
+[04-03-23 13:08:56.415] 76561198857409048 "hornta" floor +1 10614,10334,0 [Base.Doorknob].
+[04-03-23 13:08:58.857] 76561198857409048 "hornta" floor +1 10590,10383,0 [Base.AlarmClock2].
+[04-03-23 13:09:19.406] 76561198857409048 "hornta" floor +1 10604,10404,0 [Base.FirstAidKit].
+[04-03-23 13:09:20.646] 76561198857409048 "hornta" container -1 10606,10403,0 [Base.FirstAidKit].
+[04-03-23 13:09:23.646] 76561198857409048 "hornta" container -1 10604,10404,0 [Base.Bandaid].
+[04-03-23 13:09:36.641] 76561198857409048 "hornta" floor +1 10634,10420,0 [Base.Glasses_Normal].
+[04-03-23 13:09:54.020] 76561198857409048 "hornta" floor +1 10613,10346,0 [Base.UnusableWood].
+[04-03-23 13:09:54.021] 76561198857409048 "hornta" floor +1 10613,10346,0 [Base.Doorknob].
+[04-03-23 13:09:54.021] 76561198857409048 "hornta" floor +1 10613,10346,0 [Base.Hinge].
+[04-03-23 13:10:42.177] 76561198857409048 "hornta" floor +1 10639,10403,0 [Base.Glasses_Normal].
+[04-03-23 13:10:53.643] 76561198857409048 "hornta" container -1 10639,10401,0 [Base.HolsterDouble].
+[04-03-23 13:11:11.641] 76561198857409048 "hornta" container -1 10639,10400,0 [Base.Vest_BulletPolice].
+[04-03-23 13:11:34.507] 76561198857409048 "hornta" floor +1 10617,10369,0 [Base.SheetMetal].
+[04-03-23 13:11:34.508] 76561198857409048 "hornta" floor +1 10617,10369,0 [Base.Doorknob].
+[04-03-23 13:11:34.509] 76561198857409048 "hornta" floor +1 10617,10369,0 [Base.Hinge].
+[04-03-23 13:11:34.509] 76561198857409048 "hornta" floor +1 10617,10369,0 [Base.Hinge].
+[04-03-23 13:12:11.170] 76561198857409048 "hornta" floor +1 10635,10409,0 [Base.MetalBar].
+[04-03-23 13:12:11.170] 76561198857409048 "hornta" floor +1 10635,10409,0 [Base.Doorknob].
+[04-03-23 13:13:00.018] 76561198857409048 "hornta" floor +1 10637,10408,0 [Base.Doorknob].
+[04-03-23 13:13:02.650] 76561198857409048 "hornta" container -20 10634,10412,0 [Base.Cigarettes].
+[04-03-23 13:13:44.406] 76561198857409048 "hornta" floor +1 10607,10372,0 [Base.Doorknob].
+[04-03-23 13:13:54.438] 76561198857409048 "hornta" floor +1 10637,10404,0 [Base.Doorknob].
+[04-03-23 13:13:54.439] 76561198857409048 "hornta" floor +1 10637,10404,0 [Base.Hinge].
+[04-03-23 13:16:38.650] 76561198857409048 "hornta" container -1 10807,10307,0 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:17:38.649] 76561198857409048 "hornta" container -1 10808,10307,0 [Base.Shotgun].
+[04-03-23 13:17:41.648] 76561198857409048 "hornta" container -1 10808,10307,0 [Base.Vest_BulletPolice].
+[04-03-23 13:17:47.646] 76561198857409048 "hornta" container -1 10807,10307,0 [Base.Vest_BulletPolice].
+[04-03-23 13:18:35.647] 76561198857409048 "hornta" container -1 10805,10300,0 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:18:42.708] 76561198857409048 "hornta" floor +1 10808,10304,0 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:18:44.645] 76561198857409048 "hornta" container -1 10809,10305,0 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:18:57.946] 76561198857409048 "hornta" floor -1 10808,10304,0 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:20:02.644] 76561198857409048 "hornta" container -1 10804,10300,0 [Base.Grapes].
+[04-03-23 13:20:23.347] 76561198857409048 "hornta" floor +1 10804,10301,0 [Base.MeatCleaver].
+[04-03-23 13:20:59.651] 76561198857409048 "hornta" container -1 10805,10308,0 [Base.BookMechanic1].
+[04-03-23 13:23:35.643] 76561198857409048 "hornta" container -2 10809,10300,0 [Base.Pills].
+[04-03-23 13:23:38.644] 76561198857409048 "hornta" container -2 10809,10300,0 [Base.Bandage, Base.Bandaid].
+[04-03-23 13:23:40.573] 76561198857409048 "hornta" floor +1 10809,10300,0 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:23:41.653] 76561198857409048 "hornta" container -1 10809,10300,0 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:23:48.215] 76561198857409048 "hornta" floor -1 10809,10300,0 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:25:38.649] 76561198857409048 "hornta" container -1 10809,10300,0 [Base.Shoes_ArmyBoots].
+[04-03-23 13:25:41.650] 76561198857409048 "hornta" container -2 10809,10300,0 [Base.Bandage, Base.Bandaid].
+[04-03-23 13:28:27.249] 76561198857409048 "hornta" floor +1 10921,10131,1 [Base.Trousers_JeanBaggy].
+[04-03-23 13:28:29.645] 76561198857409048 "hornta" container -1 10921,10130,1 [Base.Trousers_JeanBaggy].
+[04-03-23 13:28:32.883] 76561198857409048 "hornta" floor +1 10921,10131,1 [Base.Trousers_Denim].
+[04-03-23 13:28:32.925] 76561198857409048 "hornta" floor +1 10921,10131,1 [Base.Belt2].
+[04-03-23 13:28:33.187] 76561198857409048 "hornta" floor +1 10921,10131,1 [Base.Shoes_Sandals].
+[04-03-23 13:28:35.418] 76561198857409048 "hornta" floor +1 10921,10131,1 [Base.Trousers_DefaultTEXTURE].
+[04-03-23 13:28:35.654] 76561198857409048 "hornta" container -4 10920,10130,1 [Base.Belt2, Base.Trousers_Denim, Base.Shoes_Sandals, Base.Trousers_DefaultTEXTURE].
+[04-03-23 13:28:41.650] 76561198857409048 "hornta" container +0 10920,10130,1 [Base.Thread, Base.CannedTomatoOpen, Base.JamFruit, Base.WaterBottleFull, Base.Bandage, Base.x4Scope, Base.Cigarettes, Base.Bandaid, Base.Pills, Base.BandageDirty, Base.AlcoholWipes, Base.Broccoli, Base.RippedSheetsDirty, Base.SewingKit, Base.Needle].
+[04-03-23 13:28:59.653] 76561198857409048 "hornta" container +0 10920,10130,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:29:05.651] 76561198857409048 "hornta" container +0 10920,10130,1 [Base.Vest_BulletPolice, Base.HandAxe].
+[04-03-23 13:29:08.645] 76561198857409048 "hornta" container +0 10920,10130,1 [Base.Jacket_WhiteTINT].
+[04-03-23 13:29:11.652] 76561198857409048 "hornta" container +0 10920,10130,1 [Base.Shoes_ArmyBoots].
+[04-03-23 13:29:14.644] 76561198857409048 "hornta" container +0 10920,10130,1 [Base.HolsterDouble].
+[04-03-23 13:29:19.368] 76561198857409048 "hornta" floor +1 10921,10131,1 [Base.KeyRing].
+[04-03-23 13:29:22.231] 76561198857409048 "hornta" floor +1 10921,10131,1 [Base.Belt2].
+[04-03-23 13:29:25.086] 76561198857409048 "hornta" floor +1 10921,10131,1 [Base.Underpants_Black].
+[04-03-23 13:29:27.987] 76561198857409048 "hornta" floor +1 10921,10131,1 [Base.Trousers_Denim].
+[04-03-23 13:32:23.646] 76561198857409048 "hornta" container -1 10920,10130,1 [Base.Jacket_WhiteTINT].
+[04-03-23 13:32:26.648] 76561198857409048 "hornta" container -2 10920,10130,1 [Base.Vest_BulletPolice, Base.Shoes_ArmyBoots].
+[04-03-23 13:32:29.651] 76561198857409048 "hornta" container -1 10920,10130,1 [Base.HolsterDouble].
+[04-03-23 13:32:33.922] 76561198857409048 "hornta" floor +1 10921,10131,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:32:35.648] 76561198857409048 "hornta" container -1 10920,10130,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:32:44.644] 76561198857409048 "hornta" container -1 10921,10131,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:32:59.645] 76561198857409048 "hornta" container -1 10921,10131,1 [Base.Shoes_ArmyBoots].
+[04-03-23 13:33:02.645] 76561198857409048 "hornta" container +0 10921,10131,1 [Base.Shoes_ArmyBoots].
+[04-03-23 13:33:09.408] 76561198857409048 "hornta" floor +1 10921,10131,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:33:09.664] 76561198857409048 "hornta" floor +1 10921,10131,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:33:11.650] 76561198857409048 "hornta" container -2 10921,10131,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:33:19.813] 76561198857409048 "hornta" floor -1 10921,10131,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:33:20.337] 76561198857409048 "hornta" floor -1 10921,10131,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:33:20.865] 76561198857409048 "hornta" floor -1 10921,10131,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:33:29.651] 76561198857409048 "hornta" container +0 10920,10130,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:33:32.653] 76561198857409048 "hornta" container +0 10920,10130,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:33:35.656] 76561198857409048 "hornta" container +0 10920,10130,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:33:44.648] 76561198857409048 "hornta" container -21 10920,10130,1 [Base.WaterBottleFull, Base.Cigarettes].
+[04-03-23 13:33:47.653] 76561198857409048 "hornta" container -2 10920,10130,1 [Base.Broccoli, Base.JamFruit].
+[04-03-23 13:33:50.651] 76561198857409048 "hornta" container -4 10920,10130,1 [Base.AlcoholWipes, Base.CannedTomatoOpen, Base.Bandaid].
+[04-03-23 13:33:53.651] 76561198857409048 "hornta" container -4 10920,10130,1 [Base.Bandage, Base.Bandaid].
+[04-03-23 13:33:56.651] 76561198857409048 "hornta" container -1 10920,10130,1 [Base.Pills].
+[04-03-23 13:33:59.649] 76561198857409048 "hornta" container -1 10920,10130,1 [Base.HandAxe].
+[04-03-23 13:34:02.653] 76561198857409048 "hornta" container -1 10920,10130,1 [Base.x4Scope].
+[04-03-23 13:34:24.483] 76561198857409048 "hornta" floor +1 10921,10131,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:34:26.648] 76561198857409048 "hornta" container -1 10920,10130,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:34:35.648] 76561198857409048 "hornta" container +0 10920,10130,1 [Base.Vest_BulletPolice].
+[04-03-23 13:34:38.648] 76561198857409048 "hornta" container -1 10921,10131,1 [Base.Vest_BulletPolice].
+[04-03-23 13:34:47.654] 76561198857409048 "hornta" container +0 10920,10130,1 [Base.Shoes_ArmyBoots].
+[04-03-23 13:34:50.646] 76561198857409048 "hornta" container -1 10921,10131,1 [Base.Shoes_ArmyBoots].
+[04-03-23 13:34:53.650] 76561198857409048 "hornta" container -1 10921,10131,1 [Base.Vest_BulletPolice].
+[04-03-23 13:34:53.651] 76561198857409048 "hornta" container +0 10920,10130,1 [Base.Vest_BulletPolice].
+[04-03-23 13:34:56.645] 76561198857409048 "hornta" container -3 10921,10131,1 [Base.OatsRaw, Base.BookMechanic1, Base.Bandaid].
+[04-03-23 13:34:59.655] 76561198857409048 "hornta" container -4 10921,10131,1 [Base.PillsVitamins, Base.Bandage, Base.Pills].
+[04-03-23 13:35:02.648] 76561198857409048 "hornta" container -1 10921,10131,1 [Base.Crowbar].
+[04-03-23 13:35:05.648] 76561198857409048 "hornta" container -1 10921,10131,1 [Base.Shotgun].
+[04-03-23 13:35:07.669] 76561198857409048 "hornta" floor -1 10921,10131,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:35:17.643] 76561198857409048 "hornta" container +0 10920,10130,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 13:35:34.137] 76561198857409048 "hornta" floor -1 10921,10131,1 [Base.Trousers_Denim].
+[04-03-23 13:35:47.651] 76561198857409048 "hornta" container +0 10916,10138,0 [Base.x4Scope].
+[04-03-23 13:35:50.648] 76561198857409048 "hornta" container +0 10916,10138,0 [Base.Shotgun].
+[04-03-23 13:35:50.939] 76561198857409048 "hornta" floor +1 10916,10137,0 [Base.Shoes_Random].
+[04-03-23 13:35:55.208] 76561198857409048 "hornta" floor +1 10916,10137,0 [Base.Crowbar].
+[04-03-23 13:35:56.767] 76561198857409048 "hornta" floor +1 10916,10137,0 [Base.HandAxe].
+[04-03-23 13:36:05.081] 76561198857409048 "hornta" floor -1 10916,10137,0 [Base.HandAxe].
+[04-03-23 13:36:05.654] 76561198857409048 "hornta" container +0 10916,10138,0 [Base.HandAxe].
+[04-03-23 13:36:07.588] 76561198857409048 "hornta" floor -1 10916,10137,0 [Base.Crowbar].
+[04-03-23 13:36:08.647] 76561198857409048 "hornta" container +0 10916,10138,0 [Base.Crowbar].
+[04-03-23 13:36:14.643] 76561198857409048 "hornta" container +0 10923,10134,0 [Base.BookMechanic1].
+[04-03-23 14:26:52.252] 76561198857409048 "hornta" floor -1 10916,10131,0 [Base.Hammer].
+[04-03-23 14:27:30.777] 76561198857409048 "hornta" floor -1 10918,10131,0 [Base.WaterBleachBottle].
+[04-03-23 14:27:40.798] 76561198857409048 "hornta" container -1 10920,10130,0 [Base.Leek].
+[04-03-23 14:30:49.808] 76561198857409048 "hornta" container -1 10790,10255,0 [Base.EmptyPetrolCan].
+[04-03-23 14:33:28.804] 76561198857409048 "hornta" container -1 10763,10311,0 [Base.Pineapple].
+[04-03-23 14:33:34.804] 76561198857409048 "hornta" container -1 10767,10312,0 [Base.Matches].
+[04-03-23 14:33:37.376] 76561198857409048 "hornta" floor +1 10770,10313,0 [Base.Glasses_Reading].
+[04-03-23 14:34:45.809] 76561198857409048 "hornta" floor +1 10767,10351,0 [Base.Hat_BaseballCap].
+[04-03-23 14:34:48.575] 76561198857409048 "hornta" floor +1 10768,10351,0 [Base.Hat_Bandana].
+[04-03-23 14:35:19.804] 76561198857409048 "hornta" container -1 10763,10366,0 [Base.PopBottle].
+[04-03-23 14:37:01.802] 76561198857409048 "hornta" container -1 10705,10378,0 [Base.Jacket_Police].
+[04-03-23 14:37:02.140] 76561198857409048 "hornta" floor +1 10705,10378,0 [Base.Jacket_WhiteTINT].
+[04-03-23 14:37:07.806] 76561198857409048 "hornta" container -1 10705,10378,0 [Base.Vest_BulletPolice].
+[04-03-23 14:37:13.804] 76561198857409048 "hornta" container -1 10705,10378,0 [Base.Revolver_Short].
+[04-03-23 14:40:12.087] 76561198857409048 "hornta" floor +1 10697,10365,0 [Base.UnusableWood].
+[04-03-23 14:40:12.088] 76561198857409048 "hornta" floor +1 10697,10365,0 [Base.Doorknob].
+[04-03-23 14:40:12.088] 76561198857409048 "hornta" floor +1 10697,10365,0 [Base.Hinge].
+[04-03-23 14:43:05.354] 76561198857409048 "hornta" floor +1 10916,10133,0 [Base.PetrolCan].
+[04-03-23 14:43:51.102] 76561198857409048 "hornta" floor +1 10920,10136,1 [Base.KeyRing].
+[04-03-23 14:44:04.608] 76561198857409048 "hornta" floor +1 10920,10136,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 14:48:22.810] 76561198857409048 "hornta" container -2 10920,10136,1 [Base.Trousers_Denim, Base.Shoes_ArmyBoots].
+[04-03-23 14:48:25.803] 76561198857409048 "hornta" container -2 10920,10136,1 [Base.Belt2, Base.Vest_BulletPolice].
+[04-03-23 14:48:28.806] 76561198857409048 "hornta" container -1 10920,10136,1 [Base.Jacket_Police].
+[04-03-23 14:48:31.803] 76561198857409048 "hornta" container -2 10920,10136,1 [Base.Vest_BulletPolice, Base.HolsterDouble].
+[04-03-23 14:48:36.807] 76561198857409048 "hornta" floor -1 10920,10136,1 [Base.Bag_InmateEscapedBag].
+[04-03-23 14:49:19.901] 76561198857409048 "hornta" floor +1 10919,10130,0 [Base.Belt2].
+[04-03-23 14:49:24.688] 76561198857409048 "hornta" floor +1 10919,10131,0 [Base.Belt2].
+[04-03-23 14:49:32.153] 76561198857409048 "hornta" floor -1 10919,10130,0 [Base.Belt2].
+[04-03-23 14:49:46.806] 76561198857409048 "hornta" container -1 10920,10129,0 [Base.Marinara].
+[04-03-23 14:49:52.105] 76561198857409048 "hornta" container -1 10920,10129,0 [Base.Chocolate].
+[04-03-23 14:50:19.804] 76561198857409048 "hornta" container +0 10916,10138,0 [Base.Revolver_Short].
+[04-03-23 14:50:35.247] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:36.000] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:36.765] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:37.547] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:38.678] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:39.639] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:41.945] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:44.162] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:45.059] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:45.958] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:46.887] 76561198857409048 "hornta" floor +1 10915,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:47.822] 76561198857409048 "hornta" floor +1 10915,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:48.454] 76561198857409048 "hornta" floor +1 10915,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:49.486] 76561198857409048 "hornta" floor +1 10915,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:52.275] 76561198857409048 "hornta" floor +1 10915,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:56.219] 76561198857409048 "hornta" floor +1 10915,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:57.770] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:58.373] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:58.939] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.Cigarettes].
+[04-03-23 14:50:59.492] 76561198857409048 "hornta" floor +1 10916,10131,0 [Base.Cigarettes].
+[04-03-23 14:54:47.062] 76561198857409048 "hornta" floor +1 10777,10339,0 [Base.Hat_Bandana].
+[04-03-23 14:55:28.805] 76561198857409048 "hornta" container -1 10765,10412,0 [Base.EmptyPetrolCan].
+[04-03-23 14:57:07.807] 76561198857409048 "hornta" container -1 10765,10424,0 [Base.Vest_BulletPolice].
+[04-03-23 14:58:13.914] 76561198857409048 "hornta" floor +1 10752,10422,0 [Base.Glasses_Normal].
+[04-03-23 14:58:25.808] 76561198857409048 "hornta" container -1 10752,10420,0 [Base.Screwdriver].
+[04-03-23 14:58:43.806] 76561198857409048 "hornta" container -1 10753,10422,0 [Base.Revolver_Long].
+[04-03-23 14:58:55.809] 76561198857409048 "hornta" container -1 10765,10424,0 [Base.Revolver].
+[04-03-23 14:59:01.807] 76561198857409048 "hornta" container -1 10765,10424,0 [Base.Shotgun].
+[04-03-23 14:59:46.466] 76561198857409048 "hornta" floor +1 10757,10433,0 [Base.FirstAidKit].
+[04-03-23 14:59:46.807] 76561198857409048 "hornta" container -1 10757,10431,0 [Base.FirstAidKit].
+[04-03-23 14:59:49.797] 76561198857409048 "hornta" container -1 10757,10433,0 [Base.Bandaid].
+[04-03-23 15:03:52.809] 76561198857409048 "hornta" container -1 10631,10418,0 [Base.WristWatch_Left_DigitalBlack].
+[04-03-23 15:04:07.805] 76561198857409048 "hornta" container -2 10624,10416,0 [Base.Pills].
+[04-03-23 15:04:43.194] 76561198857409048 "hornta" floor +1 10622,10418,0 [Base.Bag_MedicalBag].
+[04-03-23 15:04:43.806] 76561198857409048 "hornta" container -1 10624,10416,0 [Base.Bag_MedicalBag].
+[04-03-23 15:04:46.809] 76561198857409048 "hornta" container -1 10622,10418,0 [Base.Pills].
+[04-03-23 15:04:58.806] 76561198857409048 "hornta" container -1 10624,10416,0 [Base.EmptyPetrolCan].
+[04-03-23 15:07:01.809] 76561198857409048 "hornta" container -1 10604,10404,0 [Base.AlcoholWipes].
+[04-03-23 15:10:16.807] 76561198857409048 "hornta" container -1 10606,10442,0 [Base.EmptyPetrolCan].
+[04-03-23 15:12:16.529] 76561198857409048 "hornta" floor +1 10605,10434,0 [Base.PetrolCan].
+[04-03-23 15:12:42.651] 76561198857409048 "hornta" floor -1 10605,10434,0 [Base.PetrolCan].
+[04-03-23 15:12:58.802] 76561198857409048 "hornta" container +0 10606,10433,0 [Base.PetrolCan].
+[04-03-23 15:13:01.810] 76561198857409048 "hornta" container +0 10606,10433,0 [Base.EmptyPetrolCan].
+[04-03-23 15:14:13.808] 76561198857409048 "hornta" container -1 10606,10433,0 [Base.PetrolCan].
+[04-03-23 15:15:07.806] 76561198857409048 "hornta" container +0 10606,10433,0 [Base.PetrolCan].
+[04-03-23 15:16:43.803] 76561198857409048 "hornta" container -1 10606,10433,0 [Base.EmptyPetrolCan].
+[04-03-23 15:16:46.804] 76561198857409048 "hornta" container -2 10606,10433,0 [Base.PetrolCan].
+[04-03-23 15:19:21.401] 76561198857409048 "hornta" floor +1 10617,10328,0 [Base.SheetMetal].
+[04-03-23 15:19:21.402] 76561198857409048 "hornta" floor +1 10617,10328,0 [Base.Doorknob].
+[04-03-23 15:19:21.402] 76561198857409048 "hornta" floor +1 10617,10328,0 [Base.Hinge].
+[04-03-23 15:19:21.403] 76561198857409048 "hornta" floor +1 10617,10328,0 [Base.Hinge].
+[04-03-23 15:20:25.987] 76561198857409048 "hornta" floor +1 10729,10103,0 [Base.MetalPipe].
+[04-03-23 15:20:25.988] 76561198857409048 "hornta" floor +1 10729,10103,0 [Base.Doorknob].
+[04-03-23 15:20:25.989] 76561198857409048 "hornta" floor +1 10729,10104,0 [Base.MetalPipe].
+[04-03-23 15:20:25.989] 76561198857409048 "hornta" floor +1 10729,10104,0 [Base.Doorknob].
+[04-03-23 15:25:01.051] 76561198857409048 "hornta" floor +1 10911,10137,0 [Base.Hat_BaseballCap].
+[04-03-23 15:26:55.858] 76561198857409048 "hornta" floor +1 10906,10130,0 [Base.Key2].
+[04-03-23 15:27:37.708] 76561198857409048 "hornta" floor -1 10916,10133,0 [Base.PetrolCan].
+[04-03-23 15:28:10.805] 76561198857409048 "hornta" container +0 10916,10138,0 [Base.Revolver, Base.Revolver_Long].
+[04-03-23 15:28:13.803] 76561198857409048 "hornta" container +0 10916,10138,0 [Base.Screwdriver].
+[04-03-23 15:28:22.803] 76561198857409048 "hornta" container +0 10916,10138,0 [Base.Shotgun].
+[04-03-23 15:29:22.071] 76561198857409048 "hornta" floor +1 10914,10132,0 [Base.PetrolCan].
+[04-03-23 15:29:33.760] 76561198857409048 "hornta" floor +1 10914,10131,0 [Base.EmptyPetrolCan].
+[04-03-23 15:29:33.862] 76561198857409048 "hornta" floor +1 10914,10132,0 [Base.EmptyPetrolCan].
+[04-03-23 15:29:35.749] 76561198857409048 "hornta" floor +1 10914,10131,0 [Base.EmptyPetrolCan].
+[04-03-23 15:31:49.805] 76561198857409048 "hornta" container -1 10920,10129,0 [Base.BeefJerky].
+[04-03-23 15:34:19.812] 76561198857409048 "hornta" container -1 10920,10129,0 [Base.GranolaBar].
+[04-03-23 15:34:31.812] 76561198857409048 "hornta" container -1 10920,10129,0 [Base.Chocolate].
+[04-03-23 15:34:40.812] 76561198857409048 "hornta" container -1 10920,10129,0 [Base.ChocolateChips].
+[04-03-23 15:45:19.025] 76561198321407958 "Ted" floor +1 10803,10074,0 [Base.Hat_BandanaMaskTINT].
+[04-03-23 15:45:25.612] 76561198321407958 "Ted" floor +1 10803,10073,0 [Base.Glasses_Normal].
+[04-03-23 15:47:57.119] 76561198321407958 "Ted" floor +1 10945,9374,0 [Base.Hat_Beany].
