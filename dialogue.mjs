@@ -21,7 +21,7 @@ const disconnected = (name) => {
     variation('', name, 'has had enough zombie blood on their shirt for now.')
   ];
 
-  return `🔴${pick(variations)}`;
+  return `🔴 ${pick(variations)}`;
 };
 
 export { connected, disconnected };
