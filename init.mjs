@@ -1,13 +1,13 @@
 import config from './config.json' assert { type: 'json' };
+
 global.config = config;
+global.players = {};
 
 import { loginit } from './logevent.mjs';
 import { Client, GatewayIntentBits } from 'discord.js';
 import { parse } from './commands.mjs';
 
 if (!config.debug) {
-
-
   const client = new Client({
     intents: [
       GatewayIntentBits.Guilds,
