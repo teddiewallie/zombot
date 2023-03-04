@@ -7,7 +7,7 @@ const connected = (name) => {
     variation('To everyone\'s delight', name, 'has joined the server.'),
     variation('It looks like', name, 'is ready for some action.'),
     variation('Is that', `${name}'s`, 'footsteps i hear entering the server?'),
-    variation('To the zombies\' demise ', name, 'just arrived.')
+    variation('To the zombies\' demise', name, 'just arrived.')
   ];
 
   return `🟢 ${pick(variations)}`;
