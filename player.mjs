@@ -5,6 +5,8 @@ const tick = (line) => {
   const healthRaw = entities.find((entity) => entity.includes('health'))?.split('health=')[1];
 
   const name = entities[3].replace(/^"(.*)"$/, '$1');
+  const coordsRaw = entities[entities.length - 1].replace('(', '').replace(').', '').split(',');
+  const coords = `${coordsRaw[0]}x${coordsRaw[1]}x${global.config.zoom}`;
 
   const stats = statsRaw && JSON.parse(statsRaw);
   const perks = statsRaw && JSON.parse(perksRaw);
@@ -40,12 +42,12 @@ const tick = (line) => {
       messages = [...messages, ...bumpMessages];
     }
 
-    global.players[name] = { stats, perks, health };
+    global.players[name] = { stats, perks, health, coords };
 
     return messages;
   }
 
-  global.players[name] = { stats, perks, health };
+  global.players[name] = { stats, perks, health, coords };
 
   return [];
 };
