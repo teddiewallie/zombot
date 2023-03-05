@@ -1,11 +1,10 @@
-import config from './config.json' assert { type: 'json' };
-
-global.config = config;
-global.players = {};
-
+import { globalinit } from './global.mjs';
 import { loginit } from './logevent.mjs';
+import { storageinit } from './storage.mjs';
 import { Client, GatewayIntentBits } from 'discord.js';
 import { parse } from './commands.mjs';
+
+globalinit();
 
 if (!config.debug) {
   const client = new Client({
@@ -20,15 +19,23 @@ if (!config.debug) {
     console.log(`Logged in as ${client.user.tag}!`);
   });
 
-  client.on('messageCreate', (message) => {
-    const isPrefixed = message.content.startsWith(config.prefix);
+  client.on('messageCreate', async (message) => {
+    try {
+      const isPrefixed = message.content.startsWith(config.prefix);
 
-    if (!isPrefixed || message.author.bot) {
-      return;
-    }
+      if (!isPrefixed || message.author.bot) {
+        return;
+      }
 
-    const msg = message.content.slice(config.prefix.length);
-    message.channel.send(parse(msg));
+      const msg = message.content.slice(config.prefix.length);
+      const sender = message.author.username;
+      console.log(`${sender}: ${msg}`);
+
+      const reply = await parse(msg, sender);
+      message.channel.send(reply || '```something died```');
+      console.log(reply.replaceAll('`', '').replaceAll('"', ''));
+      console.log('');
+    } catch (e) {}
   });
 
   await client.login(config.token);
@@ -36,3 +43,4 @@ if (!config.debug) {
 }
 
 loginit();
+storageinit();

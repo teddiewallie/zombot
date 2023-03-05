@@ -1,4 +1,5 @@
 import { table } from 'table';
+import { servermsg } from './rcon.mjs';
 
 const wat = () => {
   return 'not implemented';
@@ -77,74 +78,122 @@ const info = (name) => {
   }
 };
 
-const parse = (msg) => {
+const parse = async (msg, sender) => {
   const words = msg.split(' ');
   const command = words.shift();
 
-  switch (command) {
-    case 'info': {
-      if (words.length >= 1) {
-        return info(words.join(' '));
-      } else {
-        return '```Gotta need a name on the dude, yo.```';
-      }
-    }
-
-    case 'stats': {
-      if (words.length >= 1) {
-        return `\`\`\`${stats(words.join(' '))}\`\`\``;
-      } else {
-        return '```Gotta need a name on the dude, yo.```';
-      }
-    }
-
-    case 'health': {
-      if (words.length >= 1) {
-        return `\`\`\`${health(words.join(' '))}\`\`\``;
-      } else {
-        return '```Gotta need a name on the dude, yo.```';
-      }
-    }
-
-    case 'perks': {
-      if (words.length >= 1) {
-        return `\`\`\`${perks(words.join(' '))}\`\`\``;
-      } else {
-        return '```Gotta need a name on the dude, yo.```';
-      }
-    }
-
-    case 'whereis': {
-      if (words.length >= 1) {
-
-        const name = words.join(' ');
-
-        if (name === 'safehouse') {
-          return `https://map.projectzomboid.com/#${global.config.safehousecoords}x${global.config.zoom}`;
-        }
-
-        const thing = global.players[name];
-
-        if (thing) {
-          return `https://map.projectzomboid.com/#${thing.coords}`;
+  try {
+    switch (command) {
+      case 'info': {
+        if (words.length >= 1) {
+          return info(words.join(' '));
         } else {
-          return `\`\`\`No data on ${name} right now. Try in a few ticks.\`\`\``;
+          return '```Gotta need a name on the dude, yo.```';
         }
-      } else {
-        return '```Gotta need a name on the dude, yo.```';
+      }
+
+      case 'stats': {
+        if (words.length >= 1) {
+          return `\`\`\`${stats(words.join(' '))}\`\`\``;
+        } else {
+          return '```Gotta need a name on the dude, yo.```';
+        }
+      }
+
+      case 'health': {
+        if (words.length >= 1) {
+          return `\`\`\`${health(words.join(' '))}\`\`\``;
+        } else {
+          return '```Gotta need a name on the dude, yo.```';
+        }
+      }
+
+      case 'perks': {
+        if (words.length >= 1) {
+          return `\`\`\`${perks(words.join(' '))}\`\`\``;
+        } else {
+          return '```Gotta need a name on the dude, yo.```';
+        }
+      }
+
+      case 'kills': {
+        if (words.length < 1) {
+          const persistent = global.players?.persistent;
+            return Number.isInteger(persistent?.totalKills) ?
+              `\`\`\`Total kills for all players is ${persistent.totalKills}.\`\`\`` :
+              `\`\`\`No total kills data right now.\`\`\``;
+        } else {
+          const persistentPlayer = global.players?.persistent[words.join(' ')];
+          return Number.isInteger(persistentPlayer?.totalKills) ?
+            `\`\`\`Total kills for ${words.join(' ')} is ${persistentPlayer.totalKills}.\`\`\`` :
+            `\`\`\` No total kills data for ${words.join(' ')}.\`\`\``;
+        }
+      }
+
+      case 'deaths': {
+        if (words.length < 1) {
+          const persistent = global.players?.persistent;
+            return Number.isInteger(persistent?.totalDeaths) ?
+              `\`\`\`Total deaths for all players is ${persistent.totalDeaths}.\`\`\`` :
+              `\`\`\`No total deaths data right now.\`\`\``;
+        } else {
+          const persistentPlayer = global.players?.persistent[words.join(' ')];
+          return Number.isInteger(persistentPlayer?.totalDeaths) ?
+            `\`\`\`Total deaths for ${words.join(' ')} is ${persistentPlayer.totalDeaths}.\`\`\`` :
+            `\`\`\` No total deaths data for ${words.join(' ')}.\`\`\``;
+        }
+      }
+
+      
+
+      case 'whereis': {
+        if (words.length >= 1) {
+
+          const name = words.join(' ');
+
+          if (name === 'safehouse') {
+            return `https://map.projectzomboid.com/#${global.config.safehousecoords}x${global.config.zoom}`;
+          }
+
+          const thing = global.players[name];
+
+          if (thing) {
+            return `https://map.projectzomboid.com/#${thing.coords}`;
+          } else {
+            return `\`\`\`No data on ${name} right now. Try in a few ticks.\`\`\``;
+          }
+        } else {
+          return '```Gotta need a name on the dude, yo.```';
+        }
+      }
+
+      case 'servermsg': case 'send': {
+        if (words.length < 1) {
+          return '```Can\'t just say nothing, boss. Give me a message to send.```';
+        }
+
+        const msg = await servermsg(sender, words.join(' '));
+        return `\`\`\`${msg}\`\`\``;
+      }
+
+      case 'json': {
+        const string = JSON.stringify({ players: global.players });
+        return `\`\`\`${string}\`\`\``
+      }
+
+      case 'help': {
+        const { prefix } = global.config;
+        return `\`\`\`${prefix}info Ted - full info on Ted
+${prefix}stats Ted - stats parts on Ted
+${prefix}health Ted - Ted's health
+${prefix}perks Ted - Ted's perks
+${prefix}whereis Ted - location of Ted
+${prefix}whereis safehouse - location of safe house
+${prefix}send - send a message to the ingame chat\`\`\``
       }
     }
-
-    case 'help': {
-      return `\`\`\`
-!info Ted - full info on Ted
-!stats Ted - stats parts on Ted
-!health Ted - Ted's health
-!perks Ted - Ted's perks
-!whereis Ted - location of Ted
-!whereis safehouse - location of safe house
-      \`\`\``
-    }
+  } catch (e) {
+    console.log(e);
   }
 };
 
