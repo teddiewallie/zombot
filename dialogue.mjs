@@ -17,7 +17,7 @@ const connected = (name) => {
   return `🟢 ${pick(variations)}`;
 };
 
-const died = (name) => {
+const died = (name, coords) => {
   const variations = [
     variation('', name, 'died a horrible death.'),
     variation('', name, 'died. They will not be missed since their family is busy eating brains.'),
@@ -26,11 +26,13 @@ const died = (name) => {
     variation('Oh, that looked nasty.', name, 'will not come back from that one.')
   ];
 
-  const stats = global.players[name] ?
-    ` They survived for ${global.players[name].stats.hours} hours and killed ${global.players[name].stats.kills} zombies.` :
-    '';
+  // const stats = global.players[name] ?
+  //   ` They survived for ${global.players[name].stats.hours} hours and killed approximately ${global.players[name].stats.kills} zombies.` :
+  //   '';
 
-  return `🪦${pick(variations)}${stats}`;
+  const url = coords ? ` https://map.projectzomboid.com/#${coords}` : '';
+  
+  return `🪦${pick(variations)}${url}`;
 };
 
 const disconnected = (name) => {
