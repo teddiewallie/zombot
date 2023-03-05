@@ -32,7 +32,7 @@ if (!config.debug) {
       console.log(`${sender}: ${msg}`);
 
       const reply = await parse(msg, sender);
-      message.channel.send(reply || '```something died```');
+      message.channel.send(reply || '`something died`');
       message.delete();
       console.log(reply.replaceAll('`', '').replaceAll('"', ''));
       console.log('');
