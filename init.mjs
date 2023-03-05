@@ -1,7 +1,7 @@
 import { globalinit } from './global.mjs';
 import { loginit } from './logevent.mjs';
-import { storageinit } from './storage.mjs';
-import { Client, GatewayIntentBits } from 'discord.js';
+import { storageinit, statusinit } from './storage.mjs';
+import { Client, GatewayIntentBits, ActivityType } from 'discord.js';
 import { parse } from './commands.mjs';
 
 globalinit();
@@ -33,14 +33,19 @@ if (!config.debug) {
 
       const reply = await parse(msg, sender);
       message.channel.send(reply || '```something died```');
+      message.delete();
       console.log(reply.replaceAll('`', '').replaceAll('"', ''));
       console.log('');
-    } catch (e) {}
+    } catch (e) {
+      console.error(e);
+    }
   });
 
   await client.login(config.token);
   global.getChannel = async (id) => await client.channels.cache.get(id);
+  global.setActivity = async (message) => client.user.setActivity(message, { type: ActivityType.CUSTOM });
 }
 
 loginit();
 storageinit();
+statusinit();

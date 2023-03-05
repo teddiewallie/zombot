@@ -42,7 +42,7 @@ const tick = (line) => {
 
       if (oldKills < newKills) {
         if (!global.players[name].dead) {
-          messages.push(`${name} has killed ${newKills} zombies since their last death.`);
+          messages.push(`☠ ${name} has killed ${newKills} zombies since their last death.`);
         }
 
         const deltaKills = newKills - oldKills;
@@ -54,16 +54,13 @@ const tick = (line) => {
 
         const playerTotalKills = global.players.persistent[name].totalKills || 0;
         global.players.persistent[name].totalKills = playerTotalKills + deltaKills;
-
-        console.log(totalKills);
-        console.log(playerTotalKills);
       }
 
 
 
       const bumpKeys = bumps.perks ? Object.keys(bumps.perks) : [];
       if (bumpKeys.length > 0 && !global.players[name].dead && global.players[name].health.health) {
-        const bumpMessages = bumpKeys.map((bumpKey) => `${name} reached ${bumpKey} level ${bumps[bumpKey]}.`);
+        const bumpMessages = bumpKeys.map((bumpKey) => `🎆 ${name} reached ${bumpKey} level ${bumps.perks[bumpKey]}.`);
         messages = [...messages, ...bumpMessages];
       }
 

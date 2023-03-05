@@ -1,4 +1,5 @@
 import { writeFile } from 'fs';
+import { countPlayers } from './rcon.mjs';
 
 const toStorage = (json) => {
   try {
@@ -6,6 +7,19 @@ const toStorage = (json) => {
   } catch (e) {
     console.error(e);
   }
+};
+
+const statusinit = () => {
+  setInterval(async () => {
+    try {
+      const players = await countPlayers();
+      const message = `with ${players} dude${players === 1 ? '' : 's'} (${global.players.persistent.totalKills}k/${global.players.persistent.totalDeaths}d)`;
+      console.log(message);
+      await global.setActivity(message);
+    } catch (e) {
+      console.error(e);
+    }
+  }, 60 * 1000);
 };
 
 const storageinit = () => {
@@ -33,4 +47,4 @@ const storageinit = () => {
   }, global.config.jsonDumpIntervalMinutes * 60 * 1000);
 };
 
-export { storageinit };
+export { storageinit, statusinit };

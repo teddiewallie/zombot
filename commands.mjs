@@ -1,5 +1,5 @@
 import { table } from 'table';
-import { servermsg } from './rcon.mjs';
+import { players, servermsg } from './rcon.mjs';
 
 const wat = () => {
   return 'not implemented';
@@ -82,37 +82,43 @@ const parse = async (msg, sender) => {
   const words = msg.split(' ');
   const command = words.shift();
 
+  const pretext = `(${sender})[!${command}${words.length ? ' ' + words.join(' ') : ''}] `;
+
   try {
     switch (command) {
+      case 'players': {
+        return `\`\`\`${pretext}${await players()}\`\`\``;
+      }
+
       case 'info': {
         if (words.length >= 1) {
           return info(words.join(' '));
         } else {
-          return '```Gotta need a name on the dude, yo.```';
+          return `\`\`\`${pretext}Gotta need a name on the dude, yo.\`\`\``;
         }
       }
 
       case 'stats': {
         if (words.length >= 1) {
-          return `\`\`\`${stats(words.join(' '))}\`\`\``;
+          return `\`\`\`${pretext}${stats(words.join(' '))}\`\`\``;
         } else {
-          return '```Gotta need a name on the dude, yo.```';
+          return `\`\`\`${pretext}Gotta need a name on the dude, yo.\`\`\``;
         }
       }
 
       case 'health': {
         if (words.length >= 1) {
-          return `\`\`\`${health(words.join(' '))}\`\`\``;
+          return `\`\`\`${pretext}${health(words.join(' '))}\`\`\``;
         } else {
-          return '```Gotta need a name on the dude, yo.```';
+          return `\`\`\`${pretext}Gotta need a name on the dude, yo.\`\`\``;
         }
       }
 
       case 'perks': {
         if (words.length >= 1) {
-          return `\`\`\`${perks(words.join(' '))}\`\`\``;
+          return `\`\`\`${pretext}${perks(words.join(' '))}\`\`\``;
         } else {
-          return '```Gotta need a name on the dude, yo.```';
+          return `\`\`\`${pretext}Gotta need a name on the dude, yo.\`\`\``;
         }
       }
 
@@ -120,13 +126,13 @@ const parse = async (msg, sender) => {
         if (words.length < 1) {
           const persistent = global.players?.persistent;
             return Number.isInteger(persistent?.totalKills) ?
-              `\`\`\`Total kills for all players is ${persistent.totalKills}.\`\`\`` :
-              `\`\`\`No total kills data right now.\`\`\``;
+              `\`\`\`${pretext}Total kills for all players is ${persistent.totalKills}.\`\`\`` :
+              `\`\`\`${pretext}No total kills data right now.\`\`\``;
         } else {
           const persistentPlayer = global.players?.persistent[words.join(' ')];
           return Number.isInteger(persistentPlayer?.totalKills) ?
-            `\`\`\`Total kills for ${words.join(' ')} is ${persistentPlayer.totalKills}.\`\`\`` :
-            `\`\`\` No total kills data for ${words.join(' ')}.\`\`\``;
+            `\`\`\`${pretext}Total kills for ${words.join(' ')} is ${persistentPlayer.totalKills}.\`\`\`` :
+            `\`\`\`${pretext}No total kills data for ${words.join(' ')}.\`\`\``;
         }
       }
 
@@ -134,13 +140,13 @@ const parse = async (msg, sender) => {
         if (words.length < 1) {
           const persistent = global.players?.persistent;
             return Number.isInteger(persistent?.totalDeaths) ?
-              `\`\`\`Total deaths for all players is ${persistent.totalDeaths}.\`\`\`` :
-              `\`\`\`No total deaths data right now.\`\`\``;
+              `\`\`\`${pretext}Total deaths for all players is ${persistent.totalDeaths}.\`\`\`` :
+              `\`\`\`${pretext}No total deaths data right now.\`\`\``;
         } else {
           const persistentPlayer = global.players?.persistent[words.join(' ')];
           return Number.isInteger(persistentPlayer?.totalDeaths) ?
-            `\`\`\`Total deaths for ${words.join(' ')} is ${persistentPlayer.totalDeaths}.\`\`\`` :
-            `\`\`\` No total deaths data for ${words.join(' ')}.\`\`\``;
+            `\`\`\`${pretext}Total deaths for ${words.join(' ')} is ${persistentPlayer.totalDeaths}.\`\`\`` :
+            `\`\`\`${pretext}No total deaths data for ${words.join(' ')}.\`\`\``;
         }
       }
 
@@ -152,24 +158,24 @@ const parse = async (msg, sender) => {
           const name = words.join(' ');
 
           if (name === 'safehouse') {
-            return `https://map.projectzomboid.com/#${global.config.safehousecoords}x${global.config.zoom}`;
+            return `${pretext}https://map.projectzomboid.com/#${global.config.safehousecoords}x${global.config.zoom}`;
           }
 
           const thing = global.players[name];
 
           if (thing) {
-            return `https://map.projectzomboid.com/#${thing.coords}`;
+            return `${pretext}https://map.projectzomboid.com/#${thing.coords}`;
           } else {
-            return `\`\`\`No data on ${name} right now. Try in a few ticks.\`\`\``;
+            return `\`\`\`${pretext}No data on ${name} right now. Try in a few ticks.\`\`\``;
           }
         } else {
-          return '```Gotta need a name on the dude, yo.```';
+          return `\`\`\`${pretext}Gotta need a name on the dude, yo.\`\`\``;
         }
       }
 
       case 'servermsg': case 'send': {
         if (words.length < 1) {
-          return '```Can\'t just say nothing, boss. Give me a message to send.```';
+          return `\`\`\`${pretext}Can\'t just say nothing, boss. Give me a message to send.\`\`\``;
         }
 
         const msg = await servermsg(sender, words.join(' '));
@@ -183,12 +189,14 @@ const parse = async (msg, sender) => {
 
       case 'help': {
         const { prefix } = global.config;
-        return `\`\`\`${prefix}info Ted - full info on Ted
+        return `\`\`\`${pretext}
+${prefix}info Ted - full info on Ted
 ${prefix}stats Ted - stats parts on Ted
 ${prefix}health Ted - Ted's health
 ${prefix}perks Ted - Ted's perks
 ${prefix}whereis Ted - location of Ted
 ${prefix}whereis safehouse - location of safe house
+${prefix}players - players online
 ${prefix}send - send a message to the ingame chat\`\`\``
       }
     }
