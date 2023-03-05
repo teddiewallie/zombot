@@ -1,7 +1,7 @@
 import { Tail } from 'tail';
 import { glob } from 'glob';
 
-import { connected, died, disconnected } from './dialogue.mjs';
+import { connected, died, disconnected, entering } from './dialogue.mjs';
 import { tick } from './player.mjs';
 
 const send = async (message) => {
@@ -17,7 +17,12 @@ const send = async (message) => {
   channel?.send(message);
 }
 
-const name = (line, offset) => line.split(' "')[1].split('" ')[0];
+const name = (line) => line.split(' "')[1].split('" ')[0];
+const getCoords = (line) => {
+  const coordsRaw = line.split('(')[1].replace(')').split(',');
+  const coords = `${coordsRaw[0]}x${coordsRaw[1]}x${global.config.zoom}`;
+  return coords;
+}
 
 const playerParse = (line) => {
   /*if (line.includes('connected')) {
@@ -39,7 +44,9 @@ const startPlayerLogTail = async () => {
   tail.on('line', (line) => {
     try {
       playerParse(line);
-    } catch (e) {}
+    } catch (e) {
+      console.error(e);
+    }
   });
 };
 
@@ -50,9 +57,20 @@ const diedCoords = (line) => {
   return coords;
 };
 
+const diedCoords = (line) => {
+  const coordsRaw = line.split('died at ')[1].split(' (non')[0].replace('(', '').replace(').', '').split(',');
+  const coords = `${coordsRaw[0]}x${coordsRaw[1]}x${global.config.zoom}`;
+  return coords;
+};
+
 const userParse = (line) => {
   try {
-    if (line.includes('died')) {
+    if (line.includes('fully connected')) {
+      const coords = getCoords(line);
+      send(entering(name(line), coords));
+    }
+
+    else if (line.includes('died')) {
       const name = diedName(line);
       const coords = diedCoords(line);
 

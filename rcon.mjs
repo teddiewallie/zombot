@@ -15,20 +15,41 @@ const connect = async () => {
   return await Rcon.connect({ host, port, password });
 }
 
+const players = async () => {
+  const rcon = await connect();
+  const reply = await rcon.send('players');
+  rcon.end();
+  return reply;
+};
+
+const countPlayers = async () => {
+  const rcon = await connect();
+  const reply = await rcon.send('players');
+  rcon.end();
+
+  return reply.split(/\r?\n|\r|\n/g).filter((line) => line.includes('-')).length;
+};
+
 const servermsg = async (sender, message) => {
   if (!message) {
     return;
   }
 
-  const rcon = await connect();
-  const statmessage = `"${sender ? `[(Discord) ${sender}]: ` : ''}${message}"`;
-  await rcon.send(`servermsg ${statmessage}`);
-  rcon.end();
+  try {
+    const rcon = await connect();
+    const statmessage = `"${sender ? `[(Discord) ${sender}]: ` : ''}${message}"`;
+    await rcon.send(`servermsg ${statmessage}`);
+    rcon.end();
 
-  return statmessage;
+    return statmessage;
+  } catch (e) {
+    console.error(e);
+  }
 };
 
 export {
-  servermsg
+  countPlayers,
+  servermsg,
+  players
 }
 

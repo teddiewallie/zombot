@@ -5,13 +5,21 @@ const pick = (variations) => {
   return variations[index];
 }
 
-const connected = (name) => {
+const entering = (name, coords) => {
   const variations = [
     variation('', name, 'is about to open a can of whoopass.'),
-    variation('To everyone\'s delight', name, 'has joined the server.'),
     variation('It looks like', name, 'is ready for some action.'),
-    variation('Is that', `${name}'s`, 'footsteps I hear entering the server?'),
-    variation('To the zombies\' demise', name, 'just arrived.')
+    variation('To the zombies\' demise', name, 'decided to play.'),
+    variation('Is that', `${name}'s`, 'footsteps I hear?')
+  ];
+
+  const url = coords ? ` https://map.projectzomboid.com/#${coords}` : '';
+  return `💁 ${pick(variations)}${url}`;
+};
+
+const connected = (name) => {
+  const variations = [
+    variation('To everyone\'s delight', name, 'has joined the server.'),
   ];
 
   return `🟢 ${pick(variations)}`;
@@ -46,4 +54,4 @@ const disconnected = (name) => {
   return `🔴 ${pick(variations)}`;
 };
 
-export { connected, died, disconnected };
+export { connected, died, disconnected, entering };
