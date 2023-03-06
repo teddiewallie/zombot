@@ -1,9 +1,13 @@
 import { table } from 'table';
-import { players, servermsg } from './rcon.mjs';
+import { players, servermsg, kick, kicktimer } from './rcon.mjs';
 
 const wat = () => {
   return 'not implemented';
 };
+
+const ticks = (amount) => Array.from(Array(amount).keys()).map(() => '●').join('');
+const circles = (amount) => Array.from(Array(amount).keys()).map(() => '○').join('');
+const spaces = (amount) => Array.from(Array(amount).keys()).map(() => ' ').join('');
 
 const stats = (name) => {
   const thing = global.players[name];
@@ -14,7 +18,8 @@ const stats = (name) => {
     let returner = '';
 
     Object.keys(thing.stats).forEach((key) => {
-      returner += `${key}: ${thing.stats[key]}\n`;
+      const letters = key.length;
+      returner += `${key}${spaces(15-letters)}${thing.stats[key]}\n`;
     });
 
     return returner;
@@ -30,7 +35,13 @@ const health = (name) => {
     let returner = '';
 
     Object.keys(thing.health).forEach((key) => {
-      returner += `${key}: ${thing.health[key]}\n`;
+      const letters = key.length;
+      if (key === 'health') {
+        const health = Math.floor(thing.health[key] / 10);
+        returner += `${key}${spaces(15-letters)}${health ? ticks(health) : ''}${(10 - health) ? circles(10 - health) : ''}\n`;
+      } else if (key === 'infected') {
+        returner += `${key}${spaces(15-letters)}${thing.health[key] ? 'Yeah, sorry.' : 'Nah, you\'re fine.'}\n`;
+      }
     });
 
     return returner;
@@ -47,7 +58,8 @@ const perks = (name) => {
 
     Object.keys(thing.perks).forEach((key) => {
       if (thing.perks[key] > 0) {
-        returner += `${key}: ${thing.perks[key]}\n`;
+        const letters = key.length;
+        returner += `${key}${spaces(15-letters)}${ticks(thing.perks[key])}${circles(10 - thing.perks[key])}\n`;
       }
     });
 
@@ -62,16 +74,11 @@ const info = (name) => {
     return `No data on ${name} right now. Try in a few ticks.`;
   } else {
     let returner = '```';
-
-    returner += '== STATS == \n\n';
     returner += stats(name);
-
-    returner += '\n\n == HEALTH == \n\n';
+    returner += '\n';
     returner += health(name);
-
-    returner += '\n\n == PERKS == \n\n';
+    returner += '\n';
     returner += perks(name);
-
     returner += '```';
 
     return returner;
@@ -140,7 +147,7 @@ const parse = async (msg, sender) => {
 
       case 'info': {
         if (words.length >= 1) {
-          return info(words.join(' '));
+          return `${pretext}\n${info(words.join(' '))}`;
         } else {
           return `${pretext}Gotta need a name on the dude, yo.`;
         }
@@ -268,6 +275,12 @@ const parse = async (msg, sender) => {
         return `${string}`
       }
 
+      case 'kick': return await kick(words.join(' '));
+      case 'kick1': return await kicktimer(words.join(' '), 1);
+      case 'kick3': return await kicktimer(words.join(' '), 3);
+      case 'kick5': return await kicktimer(words.join(' '), 5);
+      case 'kick10': return await kicktimer(words.join(' '), 10);
+
       case 'help': {
         const { prefix } = global.config;
         return `${pretext}\`\`\`
@@ -282,6 +295,9 @@ ${prefix}perks Ted - Ted's perks
 ${prefix}whereis Ted - location of Ted
 ${prefix}whereis safehouse - location of safe house
 ${prefix}players - players online
+${prefix}kick Ted - kick Ted
+${prefix}kick1 Ted - kick Ted in 1 minute
+${prefix}kick[3|5|10] Ted - kick Ted in [3|5|10] minutes
 ${prefix}send - send a message to the ingame chat\`\`\``
       }
     }

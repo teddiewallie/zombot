@@ -22,6 +22,23 @@ const players = async () => {
   return reply;
 };
 
+const kick = async (name) => {
+  const rcon = await connect();
+  const reply = await rcon.send(`kick ${name}`);
+  rcon.end();
+  return reply;
+};
+
+const kicktimer = async (name, time) => {
+  const playerstring = await players();
+  if (playerstring.includes(name)) {
+    setTimeout(() => kick(name), time * 60 * 1000);
+  }
+
+  const reply = `${name} will be kicked in ${time} minute${time > 1 ? 's' : ''}.`;
+  return reply;
+};
+
 const countPlayers = async () => {
   const rcon = await connect();
   const reply = await rcon.send('players');
@@ -50,6 +67,8 @@ const servermsg = async (sender, message) => {
 export {
   countPlayers,
   servermsg,
-  players
+  players,
+  kick,
+  kicktimer
 }
 

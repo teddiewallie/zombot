@@ -8,6 +8,7 @@ const tick = (line) => {
     const name = entities[3].replace(/^"(.*)"$/, '$1');
     const coordsRaw = entities[entities.length - 1].replace('(', '').replace(').', '').split(',');
     const coords = `${coordsRaw[0]}x${coordsRaw[1]}x${global.config.zoom}`;
+    const maplink = `https://map.projectzomboid.com/#${coords}`;
 
     const stats = statsRaw && JSON.parse(statsRaw);
     const perks = statsRaw && JSON.parse(perksRaw);
@@ -36,13 +37,28 @@ const tick = (line) => {
         });
       }
 
-      const oldKills = global.players[name].stats.kills;
-
       let messages = [];
+
+      if (health.health < 10) {
+        try {
+          const variations = [
+            `👩 Jesus Christ, someone call an ambulance for ${name}!`,
+            `👩 It looks like ${name} is about to be zombie food soon.`,
+            `👩 What the hell happened to ${name}? His guts are practically hanging outside his body!`,
+            `👩 Uh, I think ${name} needs some backup.`
+          ];
+          messages.push(variations[Math.random() * variations.length]);
+        } catch (e) {
+          console.error(e);
+        }
+      }
+
+
+      const oldKills = global.players[name].stats.kills;
 
       if (oldKills < newKills) {
         if (!global.players[name].dead) {
-          messages.push(`☠ ${name} has killed ${newKills} zombies since their last death.`);
+          messages.push(`☠ ${name} has killed ${newKills} zombies since their last death. ${maplink}`);
         }
 
         const deltaKills = newKills - oldKills;
@@ -59,8 +75,8 @@ const tick = (line) => {
 
 
       const bumpKeys = bumps.perks ? Object.keys(bumps.perks) : [];
-      if (bumpKeys.length > 0 && !global.players[name].dead && global.players[name].health.health) {
-        const bumpMessages = bumpKeys.map((bumpKey) => `🎆 ${name} reached ${bumpKey} level ${bumps.perks[bumpKey]}.`);
+      if (bumpKeys.length > 0 && !global.players[name].dead && global.players[name].ealth.health) {
+        const bumpMessages = bumpKeys.map((bumpKey) => `🎆 ${name} reached ${bumpKey} level ${bumps.perks[bumpKey]}. ${maplink}`);
         messages = [...messages, ...bumpMessages];
       }
 

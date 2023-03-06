@@ -13,7 +13,7 @@ const statusinit = () => {
   setInterval(async () => {
     try {
       const players = await countPlayers();
-      const message = `with ${players} dude${players === 1 ? '' : 's'} (${global.players.persistent.totalKills}k/${global.players.persistent.totalDeaths}d)`;
+      const message = `with ${players} 🧍 [${global.players.persistent.totalKills}|${global.players.persistent.totalDeaths}]`;
       console.log(message);
       await global.setActivity(message);
     } catch (e) {
