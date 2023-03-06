@@ -51,6 +51,11 @@ const startPlayerLogTail = async () => {
 };
 
 const diedName = (line) => line.split('user ')[1].split(' died at')[0].trim();
+const diedCoords = (line) => {
+  const coordsRaw = line.split('died at ')[1].split(' (non')[0].replace('(', '').replace(').', '').split(',');
+  const coords = `${coordsRaw[0]}x${coordsRaw[1]}x${global.config.zoom}`;
+  return coords;
+};
 
 const diedCoords = (line) => {
   const coordsRaw = line.split('died at ')[1].split(' (non')[0].replace('(', '').replace(').', '').split(',');
