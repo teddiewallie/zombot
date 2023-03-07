@@ -122,7 +122,6 @@ const tick = (line) => {
         player.dead = Boolean(health.health);
       }
 
-
       return messages;
     }
 
