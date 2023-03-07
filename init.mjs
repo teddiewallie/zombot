@@ -1,10 +1,24 @@
 import { globalinit } from './global.mjs';
 import { loginit } from './logevent.mjs';
-import { storageinit, statusinit } from './storage.mjs';
+import {
+  discordjsondumpinit,
+  storageinit,
+  statusinit
+} from './storage.mjs';
 import { Client, GatewayIntentBits, ActivityType } from 'discord.js';
 import { parse } from './commands.mjs';
 
+import {
+  commandFailed,
+  discordLoggedIn
+} from './dialogue.mjs';
+
 globalinit();
+
+const on = {
+  READY: 'ready',
+  MESSAGE_CREATE: 'messageCreate'
+};
 
 if (!config.debug) {
   const client = new Client({
@@ -15,11 +29,12 @@ if (!config.debug) {
     ]
   });
 
-  client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`);
+  client.on(on.READY, () => {
+    const { tag } = client.user;
+    console.log(discordLoggedIn(tag));
   });
 
-  client.on('messageCreate', async (message) => {
+  client.on(on.MESSAGE_CREATE, async (message) => {
     try {
       const isPrefixed = message.content.startsWith(config.prefix);
 
@@ -48,5 +63,6 @@ if (!config.debug) {
 
 loginit();
 storageinit();
+discordjsondumpinit();
 statusinit();
 

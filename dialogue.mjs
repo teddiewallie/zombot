@@ -1,8 +1,35 @@
+import { blockify } from './utils.mjs';
+
+const dumpMessage = (dump) => `Time for a dump ${blockify(dump)}`;
+const discordLoggedIn = (tag) => `Logged in as ${tag}!`;
+const commandFailed = 'Uh, something exloded back here. Try that later.';
+const kicktimerMessage = (name, time) => `${name} will be kicked in ${time} minute${time > 1 ? 's' : ''}.`;
+const killedZombiesAmount = (name, newKills, mapLink) => `☠ ${name} has killed ${newKills} zombies since their last death. ${maplink}`;
+const levelUp = (name, perk, level, maplink) => `🎆 ${name} reached ${perk} level ${level}. ${maplink}`;
+const noData = (name) => `🤷 No data on ${name} right now. Try in a few ticks.`;
+const needName = 'Gotta need a name on the dude, yo.';
+const emptyMessage = 'Can\'t just say nothing, boss. Give me a message to send.';
+
+const statusMessage = (
+  players, totalKills, totalDeaths
+) => `with ${players} 🧍 [${totalKills}|${totalDeaths}]`;
+
 const variation = (pre, name, post) => `${pre} ${name} ${post}`;
 
 const pick = (variations) => {
   const index = Math.floor(Math.random() * variations.length);
   return variations[index];
+}
+
+const lowHealth = (name) => {
+  const variations = [
+    `👩 Jesus Christ, someone call an ambulance for ${name}!`,
+    `👩 It looks like ${name} is about to be zombie food soon.`,
+    `👩 What the hell happened to ${name}? His guts are practically hanging outside his body!`,
+    `👩 Uh, I think ${name} needs some backup.`
+  ];
+
+  return `👩 ${pick(variations)}`;
 }
 
 const entering = (name, coords) => {
@@ -54,4 +81,19 @@ const disconnected = (name) => {
   return `🔴 ${pick(variations)}`;
 };
 
-export { connected, died, disconnected, entering };
+export {
+  statusMessage,
+  dumpMessage,
+  connected,
+  died,
+  disconnected,
+  entering,
+  discordLoggedIn,
+  lowHealth,
+  levelUp,
+  noData,
+  needName,
+  emptyMessage,
+  commandFailed
+};
+

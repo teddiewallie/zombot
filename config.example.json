@@ -1,15 +1,21 @@
 {
-  "__debug_comment": "If true, then only console.log and no discord connection.",
-  "debug": false,
-  "__token_comment": "Discord api token.",
-  "token": "TOKEN",
-  "__root_comment": "The root folder for project-zomboid. Logs is relative as root/Logs.",
-  "root": "./",
-  "__client_id_comment": "The application client id.",
+  "token": "DISCORD_TOKEN",
+  "root": "ZOMBOID_ROOT_PATH",
   "clientId": "CLIENT_ID",
-  "__log_channel_id_comment": "The channel in which the log text should be sent.",
   "logChannelId": "LOG_CHANNEL_ID",
-  "__prefix_comment": "Prefix for commands.",
-  "prefix": "!"
-}
+  "debugChannelId": "DEBUG_CHANNEL_ID",
+  "safehousecoords": "SAFEHOUSE_COORDS",
+  "rconhost": "ZOMBOID_RCON_HOST",
+  "rconpass": "ZOMBOID_RCON_PASS",
+  "rconport": "ZOMBOID_RCON_PORT",
 
+  "storagePath": "STORAGE_PATH",
+
+  "zoom": "16000",
+  "prefix": "!",
+  "debug": false,
+
+  "storageDumpIntervalSeconds": 5,
+  "discordJsonDumpIntervalMinutes": 30,
+  "discordStatusUpdateIntervalMinutes": 1
+}

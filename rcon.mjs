@@ -3,7 +3,13 @@ import { Rcon } from 'rcon-client';
 // import { globalinit } from './global.mjs';
 // globalinit();
 
-
+const cmd = {
+  PLAYERS: 'players',
+  KICK: (name) => `kick ${name}`,
+  SERVERMSG: (
+    sender, message
+  ) => `servermsg "${sender ? `[(Discord) ${sender}]: ` : ''}${message}"`
+};
 
 const connect = async () => {
   const {
@@ -17,14 +23,14 @@ const connect = async () => {
 
 const players = async () => {
   const rcon = await connect();
-  const reply = await rcon.send('players');
+  const reply = await rcon.send(cmd.PLAYERS);
   rcon.end();
   return reply;
 };
 
 const kick = async (name) => {
   const rcon = await connect();
-  const reply = await rcon.send(`kick ${name}`);
+  const reply = await rcon.send(cmd.KICK(name));
   rcon.end();
   return reply;
 };
@@ -35,13 +41,13 @@ const kicktimer = async (name, time) => {
     setTimeout(() => kick(name), time * 60 * 1000);
   }
 
-  const reply = `${name} will be kicked in ${time} minute${time > 1 ? 's' : ''}.`;
+  const reply = kicktimerMessage(name, time);
   return reply;
 };
 
 const countPlayers = async () => {
   const rcon = await connect();
-  const reply = await rcon.send('players');
+  const reply = await rcon.send(cmd.PLAYERS);
   rcon.end();
 
   return reply.split(/\r?\n|\r|\n/g).filter((line) => line.includes('-')).length;
@@ -54,8 +60,7 @@ const servermsg = async (sender, message) => {
 
   try {
     const rcon = await connect();
-    const statmessage = `"${sender ? `[(Discord) ${sender}]: ` : ''}${message}"`;
-    await rcon.send(`servermsg ${statmessage}`);
+    await rcon.send(cmd.SERVERMSG(sender, message));
     rcon.end();
 
     return statmessage;
@@ -70,5 +75,5 @@ export {
   players,
   kick,
   kicktimer
-}
+};
 

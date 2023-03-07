@@ -1,97 +1,134 @@
+const { lowHealth } = './dialogue.mjs';
+
+/*
+ * Get info from the log line word array.
+ */
+const getInfo = (entities) => {
+  const statsRaw = entities.find((entity) => entity.includes('stats'))?.split('stats=')[1];
+  const perksRaw = entities.find((entity) => entity.includes('perks'))?.split('perks=')[1];
+  const healthRaw = entities.find((entity) => entity.includes('health'))?.split('health=')[1];
+
+  const stats = statsRaw && JSON.parse(statsRaw);
+  const perks = perksRaw && JSON.parse(perksRaw);
+  const health = healthRaw && JSON.parse(healthRaw);
+
+  return { stats, perks, health };
+};
+
+/*
+ * Get map coordinates from the log line word array.
+ */
+const getCoords = (entities) => {
+  const coordsRaw = entities[entities.length - 1].replace('(', '').replace(').', '').split(',');
+  const coords = `${coordsRaw[0]}x${coordsRaw[1]}x${config.zoom}`;
+};
+
+/*
+ * Get the name from the log line word array.
+ */
+const getName = (entities) => entities[3].replace(/^"(.*)"$/, '$1');
+
+/*
+ * Generate a map link from the coordinates.
+ */
+const getMaplink = (coords) => `https://map.projectzomboid.com/#${coords}`;
+
+/*
+ * Iterate through the perks.
+ */
+const handlePerks = (perks, player, maplink) => {
+  const oldPerks = player.perks;
+  const bumps = {};
+
+  Object.keys(perks).forEach((perk) => {
+    const oldPerk = oldPerks[perk] || 0;
+    const newPerk = perks[perk] || 0;
+
+    if (oldPerk < newPerk) {
+      bumps[perk] = perks[perk];
+    }
+  });
+
+  let messages = [];
+
+  const bumpKeys = Object.keys(bumps) || [];
+  if (bumpKeys.length > 0 && !player.dead && player.health.health) {
+    messages = bumpKeys.map((bumpKey) => levelUp(name, bumpKey, bumps[bumpKey], maplink));
+  }
+  
+  return messages;
+}
+
+/*
+ * Get all the kill data.
+ */
+const getKills = (stats, persistent) => {
+  const kills = {};
+
+  kills.OLD = players[name].stats.kills,
+  kills.NEW = stats.kills,
+  kills.TOTAL = persistent.totalKills || 0
+  kills.DELTA = kills.NEW - kills.OLD;
+
+  return kills;
+};
+
+/*
+ * Safely get the persistent parts for a player.
+ */
+const getPersistPlayer = (name, persistent) => {
+  if (!persistent[name]) {
+    persistent[name] = {};
+  }
+
+  return persistent[name];
+};
+
+/*
+ * Log tick function.
+ */
 const tick = (line) => {
   try {
+    const { config, players } = global;
+    const { persistent } = players;
+
     const entities = line.split(' ');
-    const statsRaw = entities.find((entity) => entity.includes('stats'))?.split('stats=')[1];
-    const perksRaw = entities.find((entity) => entity.includes('perks'))?.split('perks=')[1];
-    const healthRaw = entities.find((entity) => entity.includes('health'))?.split('health=')[1];
 
-    const name = entities[3].replace(/^"(.*)"$/, '$1');
-    const coordsRaw = entities[entities.length - 1].replace('(', '').replace(').', '').split(',');
-    const coords = `${coordsRaw[0]}x${coordsRaw[1]}x${global.config.zoom}`;
-    const maplink = `https://map.projectzomboid.com/#${coords}`;
+    const { stats, perks, health } = getInfo(entities);
 
-    const stats = statsRaw && JSON.parse(statsRaw);
-    const perks = statsRaw && JSON.parse(perksRaw);
-    const health = healthRaw && JSON.parse(healthRaw);
+    const name = getName(entities);
+    const coords = getCoords(entities);
+    const maplink = getMaplink(coords);
+    const player = players[name];
+    const persistPlayer = getPersistPlayer(name, persistent);
 
-    const newKills = stats.kills;
-    const totalKills = global.players.persistent.totalKills || 0;
+    const kills = getKills(stats, persistent);
+    const newTotalKills = kills.TOTAL + kills.DELTA;
 
-    if (global.players[name]) {
-      const bumps = {};
+    if (player) {
+      const messages = [];
 
-      if (!global.players[name].dead && health.health) {
-        const oldPerks = global.players[name].perks;
-
-        Object.keys(perks).forEach((perk) => {
-          if (!bumps.perks) {
-            bumps.perks = {};
-          }
-
-          const oldPerk = oldPerks[perk] || 0;
-          const newPerk = perks[perk] || 0;
-
-          if (oldPerk < newPerk) {
-            bumps.perks[perk] = perks[perk];
-          }
-        });
+      if (kills.OLD < kills.NEW) {
+        !player.dead && messages.push(killedZombiesAmount(name, kills.NEW, mapLink));
+        persistent.totalKills = newTotalKills;
+        persistPlayer.totalKills = newTotalKills;
       }
 
-      let messages = [];
-
-      if (health.health < 10) {
-        try {
-          const variations = [
-            `👩 Jesus Christ, someone call an ambulance for ${name}!`,
-            `👩 It looks like ${name} is about to be zombie food soon.`,
-            `👩 What the hell happened to ${name}? His guts are practically hanging outside his body!`,
-            `👩 Uh, I think ${name} needs some backup.`
-          ];
-          messages.push(variations[Math.random() * variations.length]);
-        } catch (e) {
-          console.error(e);
-        }
-      }
-
-
-      const oldKills = global.players[name].stats.kills;
-
-      if (oldKills < newKills) {
-        if (!global.players[name].dead) {
-          messages.push(`☠ ${name} has killed ${newKills} zombies since their last death. ${maplink}`);
-        }
-
-        const deltaKills = newKills - oldKills;
-        global.players.persistent.totalKills = totalKills + deltaKills;
-
-        if (!global.players.persistent[name]) {
-          global.players.persistent[name] = {};
-        }
-
-        const playerTotalKills = global.players.persistent[name].totalKills || 0;
-        global.players.persistent[name].totalKills = playerTotalKills + deltaKills;
-      }
-
-
-
-      const bumpKeys = bumps.perks ? Object.keys(bumps.perks) : [];
-      if (bumpKeys.length > 0 && !global.players[name].dead && global.players[name].ealth.health) {
-        const bumpMessages = bumpKeys.map((bumpKey) => `🎆 ${name} reached ${bumpKey} level ${bumps.perks[bumpKey]}. ${maplink}`);
-        messages = [...messages, ...bumpMessages];
-      }
-
-      if (health.health !== 0 && global.players[name].dead) {
-        global.players[name].dead = false;
+      if (!player.dead) {
+        health.health && messages.push([...handlePerks(perks)]);
+        health.health < 10 && messages.push(lowHealth(name));
+        player = health.health ? player : { stats, perks, health, coords };
       } else {
-        global.players[name] = { stats, perks, health, coords };
+        player.dead = Boolean(health.health);
       }
+
 
       return messages;
     }
 
-    global.players[name] = { stats, perks, health, coords };
-    global.players.persistent[name] = { totalKills: newKills };
-    global.players.persistent.totalKills = totalKills + newKills;
+    player = { stats, perks, health, coords };
+    persistent[name] = { totalKills: newKills };
+    persistent.totalKills = totalKills + newKills;
 
     return [];
   } catch (e) {
@@ -101,3 +138,4 @@ const tick = (line) => {
 };
 
 export { tick };
+

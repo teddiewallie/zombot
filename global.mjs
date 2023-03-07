@@ -7,4 +7,5 @@ const globalinit = () => {
   global.players.persistent = storage?.players?.persistent || {};
 };
 
-export { globalinit }
+export { globalinit };
+

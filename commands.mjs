@@ -1,5 +1,11 @@
 import { table } from 'table';
 import { players, servermsg, kick, kicktimer } from './rcon.mjs';
+import { blockify } from './utils.mjs';
+import {
+  noData,
+  needName,
+  emptyMessage
+} from './dialogue.mjs';
 
 const wat = () => {
   return 'not implemented';
@@ -9,11 +15,14 @@ const ticks = (amount) => Array.from(Array(amount).keys()).map(() => '●').join
 const circles = (amount) => Array.from(Array(amount).keys()).map(() => '○').join('');
 const spaces = (amount) => Array.from(Array(amount).keys()).map(() => ' ').join('');
 
+/*
+ * stats command
+ */
 const stats = (name) => {
   const thing = global.players[name];
 
   if (!thing?.stats) {
-    return `No data on ${name} right now. Try in a few ticks.`;
+    return noData(name);
   } else {
     let returner = '';
 
@@ -22,25 +31,33 @@ const stats = (name) => {
       returner += `${key}${spaces(15-letters)}${thing.stats[key]}\n`;
     });
 
-    return returner;
+    return blockify(returner);
   }
 };
 
+/*
+ * health command
+ */
 const health = (name) => {
   const thing = global.players[name];
 
   if (!thing?.health) {
-    return `No data on ${name} right now. Try in a few ticks.`;
+    return noData(name)
   } else {
-    let returner = '';
-
     Object.keys(thing.health).forEach((key) => {
       const letters = key.length;
+      let returner = `${key}${spaces(15-letters)}`;
+
       if (key === 'health') {
         const health = Math.floor(thing.health[key] / 10);
-        returner += `${key}${spaces(15-letters)}${health ? ticks(health) : ''}${(10 - health) ? circles(10 - health) : ''}\n`;
+        const padding = spaces(15 - letters);
+        const ticksOrNothing = health ? ticks(health) : '';
+        const circlesOrNothing = (10 - health) ? circles(10 - health) : '';
+        returner += blockify(`${health ? ticks(health) : ''}${(10 - health) ? circles(10 - health) : ''}\n`);
       } else if (key === 'infected') {
-        returner += `${key}${spaces(15-letters)}${thing.health[key] ? 'Yeah, sorry.' : 'Nah, you\'re fine.'}\n`;
+        returner += blockify(`${thing.health[key] ? 'Yeah, sorry.' : 'Nah, you\'re fine.'}\n`);
+      } else {
+        returner = '';
       }
     });
 
@@ -48,11 +65,14 @@ const health = (name) => {
   }
 };
 
+/*
+ * perks command
+ */
 const perks = (name) => {
   const thing = global.players[name];
 
   if (!thing?.perks) {
-    return `No data on ${name} right now. Try in a few ticks.`;
+    return noData(name)
   } else {
     let returner = '';
 
@@ -63,15 +83,18 @@ const perks = (name) => {
       }
     });
 
-    return returner;
+    return blockify(returner);
   }
 };
 
+/*
+ * info command
+ */
 const info = (name) => {
   const thing = global.players[name];
 
   if (!thing) {
-    return `No data on ${name} right now. Try in a few ticks.`;
+    return noData(name)
   } else {
     let returner = '```';
     returner += stats(name);
@@ -85,6 +108,9 @@ const info = (name) => {
   }
 };
 
+/*
+ * hp command
+ */
 const hp = (name) => {
   const player = global.players[name];
   if (player) {
@@ -102,37 +128,49 @@ const hp = (name) => {
       return `${name} has a serious case of deadness.`;
     }
   } else {
-    return `No data on ${name} right now. Try in a few ticks.`;
+    return noData(name)
   }
 };
 
+/*
+ * infected command
+ */
 const infected = (name) => {
   const player = global.players[name];
   if (player) {
     return `${name} ${player.health.infected ? 'is' : 'is not'} infected.`;
   } else {
-    return `No data on ${name} right now. Try in a few ticks.`;
+    return noData(name)
   }
 };
 
+/*
+ * profession command
+ */
 const profession = (name) => {
   const player = global.players[name];
   if (player) {
     return `${name} is a ${player.stats.profession}.`;
   } else {
-    return `No data on ${name} right now. Try in a few ticks.`;
+    return noData(name)
   }
 };
 
+/*
+ * hours command
+ */
 const hours = (name) => {
   const player = global.players[name];
   if (player) {
     return `${name} has been alive for ${player.stats.hours} hours.`;
   } else {
-    return `No data on ${name} right now. Try in a few ticks.`;
+    return noData(name)
   }
 };
 
+/*
+ * parse the message
+ */
 const parse = async (msg, sender) => {
   const words = msg.split(' ');
   const command = words.shift();
@@ -145,70 +183,21 @@ const parse = async (msg, sender) => {
         return `${pretext}${await players()}`;
       }
 
-      case 'info': {
-        if (words.length >= 1) {
-          return `${pretext}\n${info(words.join(' '))}`;
-        } else {
-          return `${pretext}Gotta need a name on the dude, yo.`;
-        }
-      }
+      case 'info':       { return words.length >= 1 ? `${pretext}${info(words.join(' '))}`               : `${pretext}${needName}`; }
+      case 'stats':      { return words.length >= 1 ? `${pretext}${stats(words.join(' '))}`              : `${pretext}${needName}`; }
+      case 'health':     { return words.length >= 1 ? `${pretext}${health(words.join(' '))}`             : `${pretext}${needName}`; }
+      case 'perks':      { return words.length >= 1 ? `${pretext}${perks(words.join(' '))}`              : `${pretext}${needName}`; }
+      case 'hp':         { return words.length >= 1 ? `${pretext}${hp(words.join(' '))}`                 : `${pretext}${needName}`; }
+      case 'infected':   { return words.length >= 1 ? `${pretext}${infected(words.join(' '))}`           : `${pretext}${needName}`; }
+      case 'profession': { return words.length >= 1 ? `${pretext}${profession(words.join(' '))}`         : `${pretext}${needName}`; }
+      case 'hours':      { return words.length >= 1 ? `${pretext}${hours(words.join(' '))}`              : `${pretext}${needName}`; }
 
-      case 'stats': {
-        if (words.length >= 1) {
-          return `${pretext}${stats(words.join(' '))}`;
-        } else {
-          return `${pretext}Gotta need a name on the dude, yo.`;
-        }
-      }
-
-      case 'health': {
-        if (words.length >= 1) {
-          return `${pretext}${health(words.join(' '))}`;
-        } else {
-          return `${pretext}Gotta need a name on the dude, yo.`;
-        }
-      }
-
-      case 'perks': {
-        if (words.length >= 1) {
-          return `${pretext}${perks(words.join(' '))}`;
-        } else {
-          return `${pretext}Gotta need a name on the dude, yo.`;
-        }
-      }
-
-      case 'hp': {
-        if (words.length >= 1) {
-          return `${pretext}${hp(words.join(' '))}`;
-        } else {
-          return `${pretext}Gotta need a name on the dude, yo.`;
-        }
-      }
-
-      case 'infected': {
-        if (words.length >= 1) {
-          return `${pretext}${infected(words.join(' '))}`;
-        } else {
-          return `${pretext}Gotta need a name on the dude, yo.`;
-        }
-      }
-
-        
-      case 'profession': {
-        if (words.length >= 1) {
-          return `${pretext}${profession(words.join(' '))}`;
-        } else {
-          return `${pretext}Gotta need a name on the dude, yo.`;
-        }
-      }
-
-      case 'hours': {
-        if (words.length >= 1) {
-          return `${pretext}${hours(words.join(' '))}`;
-        } else {
-          return `${pretext}Gotta need a name on the dude, yo.`;
-        }
-      }
+      case 'json':       { return JSON.stringify({ players: global.players }); }
+      case 'kick':       { return await kick(words.join(' '));                 }
+      case 'kick1':      { return await kicktimer(words.join(' '), 1);         }
+      case 'kick3':      { return await kicktimer(words.join(' '), 3);         }
+      case 'kick5':      { return await kicktimer(words.join(' '), 5);         }
+      case 'kick10':     { return await kicktimer(words.join(' '), 10);        }
 
       case 'kills': {
         if (words.length < 1) {
@@ -238,13 +227,9 @@ const parse = async (msg, sender) => {
         }
       }
 
-      
-
       case 'whereis': {
         if (words.length >= 1) {
-
           const name = words.join(' ');
-
           if (name === 'safehouse') {
             return `${pretext}https://map.projectzomboid.com/#${global.config.safehousecoords}x${global.config.zoom}`;
           }
@@ -254,32 +239,21 @@ const parse = async (msg, sender) => {
           if (thing) {
             return `${pretext}https://map.projectzomboid.com/#${thing.coords}`;
           } else {
-            return `${pretext}No data on ${name} right now. Try in a few ticks.`;
+            return `${pretext}${noData(name)}`;
           }
         } else {
-          return `${pretext}Gotta need a name on the dude, yo.`;
+          return `${pretext}${needName}`;
         }
       }
 
       case 'servermsg': case 'send': {
         if (words.length < 1) {
-          return `${pretext}Can\'t just say nothing, boss. Give me a message to send.`;
+          return `${pretext}${emptyMessage}`;
         }
 
         const msg = await servermsg(sender, words.join(' '));
         return `${msg}`;
       }
-
-      case 'json': {
-        const string = JSON.stringify({ players: global.players });
-        return `${string}`
-      }
-
-      case 'kick': return await kick(words.join(' '));
-      case 'kick1': return await kicktimer(words.join(' '), 1);
-      case 'kick3': return await kicktimer(words.join(' '), 3);
-      case 'kick5': return await kicktimer(words.join(' '), 5);
-      case 'kick10': return await kicktimer(words.join(' '), 10);
 
       case 'help': {
         const { prefix } = global.config;
