@@ -1,4 +1,0 @@
-[02-03-23 15:41:14.906][INFO] user "Ted" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
-[02-03-23 15:41:55.551][INFO] user "Ted" clear safety enabled=true last=true cooldown=0.0 toggle=0.0.
-[02-03-23 15:42:42.815][INFO] user "Ted" restore safety enabled=true last=true cooldown=0.0 toggle=0.0.
-[02-03-23 15:58:29.126][INFO] user "Ted" store safety enabled=true last=true cooldown=0.0 toggle=0.0.

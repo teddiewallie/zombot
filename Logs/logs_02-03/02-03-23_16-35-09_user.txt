@@ -1,8 +1,0 @@
-[02-03-23 16:35:09.170] added connection index=0 10.2.0.3.
-[02-03-23 16:35:10.242] 76561198321407958 "Ted" attempting to join.
-[02-03-23 16:35:10.243] 76561198321407958 "Ted" allowed to join.
-[02-03-23 16:35:45.611] 76561198321407958 "Ted" attempting to join used queue.
-[02-03-23 16:35:57.470] player Ted loading time was: 11504 ms.
-[02-03-23 16:36:03.004] 76561198321407958 "Ted" fully connected (10917,10134,0).
-[02-03-23 16:37:16.482] 76561198321407958 "Ted" removed connection index=0.
-[02-03-23 16:37:16.495] 76561198321407958 "Ted" disconnected player (10917,10134,0).

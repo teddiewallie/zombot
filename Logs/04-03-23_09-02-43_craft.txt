@@ -1,6 +1,0 @@
-[04-03-23 09:02:43.431] 76561197992531878 "DerpToby" crafted 1 Base.RippedSheets with recipe "Rip Sheets" (10916,10137,0).
-[04-03-23 09:14:33.527] 76561197992531878 "DerpToby" crafted 1 Base.RippedSheets with recipe "Rip Clothing" (10838,10149,1).
-[04-03-23 09:15:39.785] 76561197992531878 "DerpToby" crafted 1 Base.RippedSheets with recipe "Rip Clothing" (10841,10145,1).
-[04-03-23 09:15:42.996] 76561197992531878 "DerpToby" crafted 1 Base.RippedSheets with recipe "Rip Clothing" (10841,10145,1).
-[04-03-23 12:35:53.924] 76561198857409048 "hornta" crafted 1 Base.RippedSheets with recipe "Rip Sheets" (10752,10099,0).
-[04-03-23 12:37:04.149] 76561198857409048 "hornta" crafted 1 Base.CannedTomatoOpen with recipe "Open Canned Tomato" (10749,10102,0).

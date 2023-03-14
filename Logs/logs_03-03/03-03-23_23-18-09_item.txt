@@ -1,7 +1,0 @@
-[03-03-23 23:18:09.976] 76561198042014603 "sn1ckers" container -1 10897,10133,0 [Base.Socks_Ankle].
-[03-03-23 23:18:15.966] 76561198042014603 "sn1ckers" container -1 10897,10133,0 [Base.Tshirt_WhiteTINT].
-[03-03-23 23:18:21.969] 76561198042014603 "sn1ckers" container -1 10897,10133,0 [Base.Shorts_ShortFormal].
-[03-03-23 23:19:33.977] 76561198042014603 "sn1ckers" container +0 10920,10130,0 [Base.MushroomGeneric5].
-[03-03-23 23:19:36.976] 76561198042014603 "sn1ckers" container +0 10920,10130,0 [Base.MushroomGeneric5].
-[03-03-23 23:19:45.973] 76561198042014603 "sn1ckers" container +0 10916,10138,0 [Base.Garbagebag].
-[03-03-23 23:19:58.037] 76561198042014603 "sn1ckers" container +0 10916,10138,0 [Base.Wrench].

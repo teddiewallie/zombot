@@ -1,9 +1,0 @@
-[02-03-23 16:45:05.764] added connection index=0 10.2.0.3.
-[02-03-23 16:45:06.705] 76561198321407958 "Ted" attempting to join.
-[02-03-23 16:45:06.706] 76561198321407958 "Ted" allowed to join.
-[02-03-23 16:45:34.250] 76561198321407958 "Ted" attempting to join used queue.
-[02-03-23 16:45:40.038] player Ted loading time was: 5540 ms.
-[02-03-23 16:46:24.771] 76561198321407958 "Ted" fully connected (10917,10134,0).
-[02-03-23 16:51:44.697] user Ted died at (10748,10054,0) (non pvp).
-[02-03-23 16:52:12.699] 76561198321407958 "Ted" removed connection index=0.
-[02-03-23 16:52:12.712] 76561198321407958 "Ted" disconnected player (10748,10054,0).

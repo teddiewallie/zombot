@@ -1,1 +1,0 @@
-[03-03-23 23:15:45.516][INFO] user "DerpToby" store safety enabled=true last=true cooldown=0.0 toggle=0.0.
