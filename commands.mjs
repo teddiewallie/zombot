@@ -1,284 +1,231 @@
-import { table } from 'table';
-import { players, servermsg, kick, kicktimer } from './rcon.mjs';
-import { blockify } from './utils.mjs';
-import {
-  noData,
-  needName,
-  emptyMessage
-} from './dialogue.mjs';
+import { get, getAll, getSessionId } from './database.mjs';
+import { Logger } from './logger.mjs';
+import { players } from './rcon.mjs';
 
-const wat = () => {
-  return 'not implemented';
-};
+import { 
+  blockify,
+  codify,
+  spacer,
+  pascalSpace,
+  capitalFirst,
+  handlePairs,
+  handleStringArray
+} from './utils.mjs';
 
-const ticks = (amount) => Array.from(Array(amount).keys()).map(() => '●').join('');
-const circles = (amount) => Array.from(Array(amount).keys()).map(() => '○').join('');
-const spaces = (amount) => Array.from(Array(amount).keys()).map(() => ' ').join('');
-
-/*
- * stats command
- */
-const stats = (name) => {
-  const thing = global.players[name];
-
-  if (!thing?.stats) {
-    return noData(name);
-  } else {
-    let returner = '';
-
-    Object.keys(thing.stats).forEach((key) => {
-      const letters = key.length;
-      returner += `${key}${spaces(15-letters)}${thing.stats[key]}\n`;
-    });
-
-    return blockify(returner);
+const kills = async (name, ONLY_NUMBERS) => {
+  if (!name) {
+    return 'Gonna need a name on the dude, yo.';
   }
-};
 
-/*
- * health command
- */
-const health = (name) => {
-  const thing = global.players[name];
+  const sessionId = await getSessionId(name);
 
-  if (!thing?.health) {
-    return noData(name)
-  } else {
-    Object.keys(thing.health).forEach((key) => {
-      const letters = key.length;
-      let returner = `${key}${spaces(15-letters)}`;
-
-      if (key === 'health') {
-        const health = Math.floor(thing.health[key] / 10);
-        const padding = spaces(15 - letters);
-        const ticksOrNothing = health ? ticks(health) : '';
-        const circlesOrNothing = (10 - health) ? circles(10 - health) : '';
-        returner += blockify(`${health ? ticks(health) : ''}${(10 - health) ? circles(10 - health) : ''}\n`);
-      } else if (key === 'infected') {
-        returner += blockify(`${thing.health[key] ? 'Yeah, sorry.' : 'Nah, you\'re fine.'}\n`);
-      } else {
-        returner = '';
-      }
-    });
-
-    return returner;
-  }
-};
-
-/*
- * perks command
- */
-const perks = (name) => {
-  const thing = global.players[name];
-
-  if (!thing?.perks) {
-    return noData(name)
-  } else {
-    let returner = '';
-
-    Object.keys(thing.perks).forEach((key) => {
-      if (thing.perks[key] > 0) {
-        const letters = key.length;
-        returner += `${key}${spaces(15-letters)}${ticks(thing.perks[key])}${circles(10 - thing.perks[key])}\n`;
-      }
-    });
-
-    return blockify(returner);
-  }
-};
-
-/*
- * info command
- */
-const info = (name) => {
-  const thing = global.players[name];
-
-  if (!thing) {
-    return noData(name)
-  } else {
-    let returner = '```';
-    returner += stats(name);
-    returner += '\n';
-    returner += health(name);
-    returner += '\n';
-    returner += perks(name);
-    returner += '```';
-
-    return returner;
-  }
-};
-
-/*
- * hp command
- */
-const hp = (name) => {
-  const player = global.players[name];
-  if (player) {
-    if (player.health.health >= 90) {
-      return `${name} looks healthy to me.`;
-    } else if (player.health.health < 90 && player.health.health >= 50) {
-      return `${name} should probably take care of those wounds.`;
-    } else if (player.health.health < 50 && player.health.health >= 20) {
-      return `${name} is pretty beat up.`;
-    } else if (player.health.health < 20 && player.health.health >= 10) {
-      return `Uh, can someone help ${name}?`;
-    } else if (player.health.health < 10 && player.health.health >= 1) {
-      return `How ${name} is still alive is a mystery to me.`;
-    } else {
-      return `${name} has a serious case of deadness.`;
+  return get('SELECT kills FROM session WHERE id=?', [sessionId], (row, resolve) => {
+    if (!row) {
+      resolve(`Couldn't get ${name}\'s kills.`);
+      return;
     }
-  } else {
-    return noData(name)
-  }
+
+    !ONLY_NUMBERS && resolve(`${name} has killed ${row.kills} zombies since their last death.`);
+    ONLY_NUMBERS && resolve(row.kills);
+  });
 };
 
-/*
- * infected command
- */
-const infected = (name) => {
-  const player = global.players[name];
-  if (player) {
-    return `${name} ${player.health.infected ? 'is' : 'is not'} infected.`;
-  } else {
-    return noData(name)
+const hp = async (name) => {
+  if (!name) {
+    return 'Gonna need a name on the dude, yo.';
   }
+
+  const sessionId = await getSessionId(name);
+
+  return get('SELECT health FROM session WHERE id=?', [sessionId], (row, resolve) => {
+    resolve(`${name} is at ${row.health} hp.`);
+  });
 };
 
-/*
- * profession command
- */
-const profession = (name) => {
-  const player = global.players[name];
-  if (player) {
-    return `${name} is a ${player.stats.profession}.`;
-  } else {
-    return noData(name)
+const infected = async (name) => {
+  if (!name) {
+    return 'Gonna need a name on the dude, yo.';
   }
+
+  const sessionId = await getSessionId(name);
+
+  return get('SELECT infected FROM session WHERE id=?', [sessionId], (row, resolve) => {
+    resolve(`${name} is ${row && row.infected === 'true' ? '' : 'not '}infected.`);
+  });
 };
 
-/*
- * hours command
- */
-const hours = (name) => {
-  const player = global.players[name];
-  if (player) {
-    return `${name} has been alive for ${player.stats.hours} hours.`;
-  } else {
-    return noData(name)
+const health = async (name) => {
+  if (!name) {
+    return 'Gonna need a name on the dude, yo.';
   }
-};
 
-/*
- * parse the message
- */
-const parse = async (msg, sender) => {
-  const words = msg.split(' ');
-  const command = words.shift();
+  const sessionId = await getSessionId(name);
 
-  const pretext = `🖨️\`(${sender})[!${command}${words.length ? ' ' + words.join(' ') : ''}]\` `;
-
-  try {
-    switch (command) {
-      case 'players': {
-        return `${pretext}${await players()}`;
-      }
-
-      case 'info':       { return words.length >= 1 ? `${pretext}${info(words.join(' '))}`               : `${pretext}${needName}`; }
-      case 'stats':      { return words.length >= 1 ? `${pretext}${stats(words.join(' '))}`              : `${pretext}${needName}`; }
-      case 'health':     { return words.length >= 1 ? `${pretext}${health(words.join(' '))}`             : `${pretext}${needName}`; }
-      case 'perks':      { return words.length >= 1 ? `${pretext}${perks(words.join(' '))}`              : `${pretext}${needName}`; }
-      case 'hp':         { return words.length >= 1 ? `${pretext}${hp(words.join(' '))}`                 : `${pretext}${needName}`; }
-      case 'infected':   { return words.length >= 1 ? `${pretext}${infected(words.join(' '))}`           : `${pretext}${needName}`; }
-      case 'profession': { return words.length >= 1 ? `${pretext}${profession(words.join(' '))}`         : `${pretext}${needName}`; }
-      case 'hours':      { return words.length >= 1 ? `${pretext}${hours(words.join(' '))}`              : `${pretext}${needName}`; }
-
-      case 'json':       { return JSON.stringify({ players: global.players }); }
-      case 'kick':       { return await kick(words.join(' '));                 }
-      case 'kick1':      { return await kicktimer(words.join(' '), 1);         }
-      case 'kick3':      { return await kicktimer(words.join(' '), 3);         }
-      case 'kick5':      { return await kicktimer(words.join(' '), 5);         }
-      case 'kick10':     { return await kicktimer(words.join(' '), 10);        }
-
-      case 'kills': {
-        if (words.length < 1) {
-          const persistent = global.players?.persistent;
-            return Number.isInteger(persistent?.totalKills) ?
-              `${pretext}Total kills for all players is ${persistent.totalKills}.` :
-              `${pretext}No total kills data right now.`;
-        } else {
-          const persistentPlayer = global.players?.persistent[words.join(' ')];
-          return Number.isInteger(persistentPlayer?.totalKills) ?
-            `${pretext}Total kills for ${words.join(' ')} is ${persistentPlayer.totalKills}.` :
-            `${pretext}No total kills data for ${words.join(' ')}.`;
-        }
-      }
-
-      case 'deaths': {
-        if (words.length < 1) {
-          const persistent = global.players?.persistent;
-            return Number.isInteger(persistent?.totalDeaths) ?
-              `${pretext}Total deaths for all players is ${persistent.totalDeaths}.` :
-              `${pretext}No total deaths data right now.`;
-        } else {
-          const persistentPlayer = global.players?.persistent[words.join(' ')];
-          return Number.isInteger(persistentPlayer?.totalDeaths) ?
-            `${pretext}Total deaths for ${words.join(' ')} is ${persistentPlayer.totalDeaths}.` :
-            `${pretext}No total deaths data for ${words.join(' ')}.`;
-        }
-      }
-
-      case 'whereis': {
-        if (words.length >= 1) {
-          const name = words.join(' ');
-          if (name === 'safehouse') {
-            return `${pretext}https://map.projectzomboid.com/#${global.config.safehousecoords}x${global.config.zoom}`;
-          }
-
-          const thing = global.players[name];
-
-          if (thing) {
-            return `${pretext}https://map.projectzomboid.com/#${thing.coords}`;
-          } else {
-            return `${pretext}${noData(name)}`;
-          }
-        } else {
-          return `${pretext}${needName}`;
-        }
-      }
-
-      case 'servermsg': case 'send': {
-        if (words.length < 1) {
-          return `${pretext}${emptyMessage}`;
-        }
-
-        const msg = await servermsg(sender, words.join(' '));
-        return `${msg}`;
-      }
-
-      case 'help': {
-        const { prefix } = global.config;
-        return `${pretext}\`\`\`
-${prefix}hp Ted - check Ted's condition.
-${prefix}infected Ted - check if Ted is infected.
-${prefix}profession Ted - check what Ted works with.
-${prefix}hours Ted - check how long Ted has been alive.
-${prefix}info Ted - full info on Ted
-${prefix}stats Ted - stats parts on Ted
-${prefix}health Ted - Ted's health
-${prefix}perks Ted - Ted's perks
-${prefix}whereis Ted - location of Ted
-${prefix}whereis safehouse - location of safe house
-${prefix}players - players online
-${prefix}kick Ted - kick Ted
-${prefix}kick1 Ted - kick Ted in 1 minute
-${prefix}kick[3|5|10] Ted - kick Ted in [3|5|10] minutes
-${prefix}send - send a message to the ingame chat\`\`\``
-      }
+  return get('SELECT health,infected FROM session WHERE id=?', [sessionId], (row, resolve) => {
+    if (!row) {
+      resolve('Couldn\'t get the health data right now.');
+      return;
     }
-  } catch (e) {
-    console.log(e);
-  }
+
+    console.log(row.infected);
+
+    const infected = row.infected === 'true' ? 'Yes' : 'No';
+
+    row.infected = infected;
+    resolve(handlePairs(row));
+  });
 };
 
-export { parse };
+const perks = async (name) => {
+  const { FILLED_METER, EMPTY_METER, MAX_LEVEL } = global.config;
+  if (!name) {
+    return 'Gonna need a name on the dude, yo.';
+  }
+
+  const sessionId = await getSessionId(name);
+
+  return getAll('SELECT name,value FROM perk WHERE session_id=?', [sessionId], (rows, resolve) => {
+    if (!rows) {
+      resolve('Couldn\'t get the perk data right now.');
+      return;
+    }
+
+    const perks = {};
+
+    rows.filter((row) => row.value).forEach((row) => {
+      row.name = pascalSpace(row.name);
+      perks[row.name] = `${spacer(row.value, FILLED_METER)}${spacer(MAX_LEVEL - row.value, EMPTY_METER)}`;
+    });
+
+    resolve(handlePairs(perks));
+  });
+};
+
+const traits = async (name) => {
+  if (!name) {
+    return 'Gonna need a name on the dude, yo.';
+  }
+
+  const sessionId = await getSessionId(name);
+
+  return getAll('SELECT name FROM trait WHERE session_id=?', [sessionId], (rows, resolve) => {
+    rows && resolve(handleStringArray(rows.map((row) => pascalSpace(row.name))));
+    !rows && resolve('Couldn\'t get the trait data right now.');
+  });
+};
+
+const users = async () => {
+  return getAll('SELECT DISTINCT name FROM session', [], (rows, resolve) => {
+    resolve(handleStringArray(rows.map((row) => row.name)));
+  });
+};
+
+const whereis = async (name) => {
+  if (!name) {
+    return 'Gonna need a name on the dude, yo.';
+  }
+
+  const returner = (coords) => `${name} is here: https://map.projectzomboid.com/#${coords}`
+
+  if (name === 'safehouse') {
+    return returner('12025x2591x16000');
+  }
+
+  const sessionId = await getSessionId(name);
+
+  return get('SELECT coords FROM session WHERE id=?', [sessionId], (row, resolve) => {
+    row && resolve(returner(row.coords.replaceAll(',', 'x')));
+    !row && resolve('Couldn\'t get the coords right now.');
+  });
+};
+
+const totalKills = async (name, ONLY_NUMBERS) => {
+  if (!name) {
+    return get('SELECT SUM(kills) FROM session', [], (row, resolve) => {
+      row && !ONLY_NUMBERS && resolve(`Overall kills is at ${row['SUM(kills)']}.`);
+      row && ONLY_NUMBERS && resolve(row['SUM(kills)']);
+    });
+  }
+
+  return get('SELECT SUM(kills) FROM session WHERE name=?', [name], (row, resolve) => {
+    row && !ONLY_NUMBERS && resolve(`${name} has killed a total of ${row['SUM(kills)']} zombies.`);
+    row && ONLY_NUMBERS && resolve(row['SUM(kills)']);
+  });
+};
+
+const meta = async (name) => {
+  if (!name) {
+    return;
+  }
+
+  const sessionId = await getSessionId(name);
+
+  return get('SELECT timestamp FROM session WHERE id=?', [sessionId], (row, resolve) => {
+    row && resolve(handleStringArray([name, row.timestamp]));
+    !row && resolve('');
+  });
+};
+
+const renderKills = async (name) => {
+  const pairs = {};
+  const ONLY_NUMBERS = true;
+  pairs['Session Kills'] = await kills(name, ONLY_NUMBERS);
+  pairs['Total Kills'] = await totalKills(name, ONLY_NUMBERS);
+  console.log(pairs);
+
+  return handlePairs(pairs);
+
+}
+
+const online = async() => handleStringArray(await players());
+
+const info = async (name) => {
+  let returner = '';
+  returner += await meta(name);
+  returner += await health(name);
+  returner += await renderKills(name);
+  returner += await perks(name);
+  returner += await traits(name);
+  return returner;
+};
+
+const help = () => {
+  const { MARGIN, PREFIX } = global.config;
+  const count = (string) => string.length;
+
+  const pairs = {};
+  pairs[`${PREFIX}kills Ted`] = 'Get how many zombies Ted has killed since their last death.';
+  pairs[`${PREFIX}health Ted`] = 'Get health info about Ted.';
+  pairs[`${PREFIX}hp Ted`] = 'Get current hp on Ted.';
+  pairs[`${PREFIX}infected Ted`] = 'Check if Ted is infected.';
+  pairs[`${PREFIX}perks Ted`] = 'Get Ted\'s perks.';
+  pairs[`${PREFIX}traits Ted`] = 'Get Ted\'s traits.';
+  pairs[`${PREFIX}info Ted`] = 'Get all info about Ted.';
+  pairs[`${PREFIX}totalKills Ted`] = 'Ted\'s total amount of kills over all sessions.';
+  pairs[`${PREFIX}users`] = 'Show all users that have played on the server.';
+  pairs[`${PREFIX}online`] = 'Show all online players.';
+  pairs[`${PREFIX}whereis Ted`] = 'Show last recorded location of Ted.';
+  pairs[`${PREFIX}whereis safehouse`] = 'Show where the safehouse is.';
+
+  return blockify(Object.keys(pairs).map((key) => {
+    return `${key}${spacer(MARGIN - key.length, ' ')}${pairs[key]}`;
+  }).join('\n'));
+};
+
+const commands = {
+  health,
+  hp,
+  perks,
+  traits,
+  users,
+  info,
+  whereis,
+  help,
+  online,
+  totalKills,
+  infected,
+  kills
+};
+
+export { commands };
 

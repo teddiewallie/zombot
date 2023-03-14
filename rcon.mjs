@@ -1,79 +1,36 @@
 import { Rcon } from 'rcon-client';
-
-// import { globalinit } from './global.mjs';
-// globalinit();
-
-const cmd = {
-  PLAYERS: 'players',
-  KICK: (name) => `kick ${name}`,
-  SERVERMSG: (
-    sender, message
-  ) => `servermsg "${sender ? `[(Discord) ${sender}]: ` : ''}${message}"`
-};
+import { Logger } from './logger.mjs';
 
 const connect = async () => {
+  const logger = new Logger('rcon:connect');
+
   const {
-    rconhost: host,
-    rconpass: password,
-    rconport: port
+    RCON_HOST,
+    RCON_PORT,
+    RCON_PASS
   } = global.config;
 
-  return await Rcon.connect({ host, port, password });
+  try {
+    return await Rcon.connect({ host: RCON_HOST, port: RCON_PORT, password: RCON_PASS });
+  } catch (e) {
+    logger.error(e);
+  }
 }
 
 const players = async () => {
+  const logger = new Logger('rcon:players');
+  
   const rcon = await connect();
-  const reply = await rcon.send(cmd.PLAYERS);
-  rcon.end();
-  return reply;
-};
-
-const kick = async (name) => {
-  const rcon = await connect();
-  const reply = await rcon.send(cmd.KICK(name));
-  rcon.end();
-  return reply;
-};
-
-const kicktimer = async (name, time) => {
-  const playerstring = await players();
-  if (playerstring.includes(name)) {
-    setTimeout(() => kick(name), time * 60 * 1000);
-  }
-
-  const reply = kicktimerMessage(name, time);
-  return reply;
-};
-
-const countPlayers = async () => {
-  const rcon = await connect();
-  const reply = await rcon.send(cmd.PLAYERS);
+  let reply = await rcon.send('players');
   rcon.end();
 
-  return reply.split(/\r?\n|\r|\n/g).filter((line) => line.includes('-')).length;
-};
+  reply = reply.split('\n');
+  reply = reply.filter((one) => one.includes('-'));
+  reply = reply.map((one) => one.replace('-', ''));
 
-const servermsg = async (sender, message) => {
-  if (!message) {
-    return;
-  }
-
-  try {
-    const rcon = await connect();
-    await rcon.send(cmd.SERVERMSG(sender, message));
-    rcon.end();
-
-    return statmessage;
-  } catch (e) {
-    console.error(e);
-  }
-};
+  return reply;
+}
 
 export {
-  countPlayers,
-  servermsg,
-  players,
-  kick,
-  kicktimer
+  players
 };
-
