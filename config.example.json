@@ -1,0 +1,43 @@
+{
+  "DB_ROOT": ".",
+  "LOG_ROOT": "ABSOLUTE_PATH/project-zomboid/data/Logs",
+  "LOG_MARGIN": 35,
+  "FILEWAIT_MS": 60000,
+  "ZOOM": 16000,
+  "RCON_PLAYERS_MS": 5000,
+
+  "TOKEN": "DISCORD_TOKEN",
+  "DEBUG_CHANNEL_ID": 11111111111111,
+  "LOG_CHANNEL_ID": 11111111111111,
+  "PREFIX": "!",
+  "MARGIN": 25,
+  "SMALL_MARGIN": 20,
+
+  "logs": {
+    "USER": true,
+    "CMD": false,
+    "PERK": true,
+    "PLAYER": true,
+    "PVP": true,
+    "ACTION": true,
+    "VEHICLE": false,
+    "ITEM": true,
+    "CRAFT": false,
+    "MAP": false 
+  },
+
+  "logger": {
+    "database": false,
+    "rcon": false
+  },
+
+  "RCON_HOST": "192.168.0.2",
+  "RCON_PORT": 27015,
+  "RCON_PASS": "RCON_PASS",
+
+  "FILLED_METER": "●",
+  "EMPTY_METER": "○",
+  "MAX_LEVEL": 10
+}
+
+
