@@ -26,7 +26,7 @@ const jsonify = (thing, name) => {
 const pascalSpace = (string) => string.replace(/([A-Z])/g, ' $1').trim();
 const capitalFirst = (string) => string.charAt(0).toUpperCase() + string.slice(1);
 
-const handlePairs = (pairs) => {
+const handlePairs = (pairs, MOBILE) => {
   const { MARGIN, SMALL_MARGIN } = global.config;
   let returner = '';
 
@@ -35,20 +35,22 @@ const handlePairs = (pairs) => {
     if (index % 2 === 0) {
       returner += `${capitalFirst(key)}${spacer(MARGIN - key.length, ' ')}${pairs[key]}${spacer(SMALL_MARGIN - valueLength, ' ')}`;
     } else {
-      returner += `${capitalFirst(key)}${spacer(MARGIN - key.length, ' ')}${pairs[key]}\n`;
+      returner += MOBILE ?
+        `\n${capitalFirst(key)}${spacer(MARGIN - key.length, ' ')}${pairs[key]}${spacer(SMALL_MARGIN - valueLength, ' ')}\n` :
+        `${capitalFirst(key)}${spacer(MARGIN - key.length, ' ')}${pairs[key]}\n`;
     }
   });
 
   return blockify(returner);
 };
 
-const handleStringArray = (array) => {
+const handleStringArray = (array, MOBILE) => {
   const { MARGIN, SMALL_MARGIN } = global.config;
   let returner = '';
 
   array.forEach((string, index) => {
     if (index % 2 === 0) {
-      returner += `${string}${spacer(SMALL_MARGIN + MARGIN - string.length, ' ')}`;
+      returner += MOBILE ? `${string}\n` : `${string}${spacer(SMALL_MARGIN + MARGIN - string.length, ' ')}`;
     } else {
       returner += `${string}\n`;
     }

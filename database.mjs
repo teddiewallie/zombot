@@ -6,14 +6,20 @@ const getDb = () => global.database;
 
 const run = (query) => {
   const logger = new Logger('database:run');
-  logger.info(query);
+
+  if (global.config.logger.database) {
+    logger.info(query);
+  }
 
   return global.database.run(query);
 }
 
 const get = (query, data, callback) => new Promise((resolve, reject) => {
   const logger = new Logger('database:get');
-  logger.info(query);
+
+  if (global.config.logger.database) {
+    logger.info(query);
+  }
 
   global.database.get(query, data, (err, row) => {
     if (err) {
@@ -27,7 +33,10 @@ const get = (query, data, callback) => new Promise((resolve, reject) => {
 
 const getAll = (query, data, callback) => new Promise((resolve, reject) => {
   const logger = new Logger('database:getAll');
-  logger.info(query);
+
+  if (global.config.logger.database) {
+    logger.info(query);
+  }
 
   global.database.all(query, data, (err, rows) => {
     if (err) {
@@ -71,16 +80,21 @@ const handlePlayer = async (entities) => {
 
   let sessionId = await getSessionId(name);
 
-  let replaceSession = '';
+  let updateSession = '';
 
   if (sessionId) {
-    replaceSession += 'REPLACE INTO session(id, name, kills, health, infected, coords, hours) VALUES ';
-    replaceSession += `(${sessionId}, "${name}", ${stats.kills}, ${health.health}, "${health.infected}", "${coords}", ${stats.hours})`;
-    run(replaceSession);
+    updateSession += 'UPDATE session SET ';
+    updateSession += `kills=${stats.kills}, `;
+    updateSession += `health=${health.health}, `;
+    updateSession += `infected="${health.infected}", `;
+    updateSession += `coords="${coords}", `;
+    updateSession += `hours=${stats.hours} `;
+    updateSession += `WHERE id=${sessionId}`;
+    run(updateSession);
   } else {
-    replaceSession += 'INSERT INTO session(name, kills, health, infected, coords, hours) VALUES ';
-    replaceSession += `("${name}", ${stats.kills}, ${health.health}, "${health.infected}", "${coords}", ${stats.hours})`;
-    run(replaceSession);
+    updateSession += 'INSERT INTO session(name, kills, health, infected, coords, hours) VALUES ';
+    updateSession += `("${name}", ${stats.kills}, ${health.health}, "${health.infected}", "${coords}", ${stats.hours})`;
+    run(updateSession);
 
     sessionId = await getSessionId(name);
   }
@@ -113,6 +127,12 @@ const handlePerkLog = async(entities) => {
   if (payloadType.includes('Created')) {
     createSession(name);
   } else if (payloadType.includes('Died')) {
+    const channel = await global.getChannel(global.config.LOG_CHANNEL_ID);
+
+    console.log(channel);
+
+    channel.send && channel.send(`${name} died.`);
+
     logger.info('DEAD');
   }
 
@@ -125,13 +145,24 @@ const handleRconPlayers = (players) => {
   get('SELECT SUM(kills) FROM session', [], (killsRow) => {
     get('SELECT COUNT(name) FROM session', [], (countRow) => {
       get('SELECT COUNT(DISTINCT name) FROM session', [], (countDistinctRow) => {
-        const OLD = 1;
-        global.setActivity(`with ${players.length} 👤 (${killsRow['SUM(kills)']}/${countRow['COUNT(name)'] - countDistinctRow['COUNT(DISTINCT name)'] + OLD})`);
+        players.forEach(async (name) => {
+          const sessionId = await getSessionId(name);
+          if (sessionId) {
+            get('SELECT timeonline FROM session WHERE id=?', [sessionId], (row) => {
+              if (row) {
+                run(`UPDATE session SET timeonline=${row.timeonline + global.config.RCON_PLAYERS_MS / 1000} WHERE id=${sessionId}`);
+              }
+            });
+          }
+        });
+        global.setActivity(`with ${players.length} 👤 (${killsRow['SUM(kills)']}/${countRow['COUNT(name)'] - countDistinctRow['COUNT(DISTINCT name)']})`);
       });
     });
   });
-
-  logger.info(players);
+  
+  if (global.config.logger.rcon) {
+    logger.info(players);
+  }
 };
 
 const initDatabase = async () => {
@@ -152,6 +183,7 @@ const initDatabase = async () => {
   session += 'infected INTEGER DEFAULT 0, ';
   session += 'coords TEXT DEFAULT "0,0,0", ';
   session += 'hours INTEGER DEFAULT 0, ';
+  session += 'timeonline INTEGER DEFAULT 0, ';
   session += 'timestamp DATETIME DEFAULT CURRENT_TIMESTAMP)'
   run(session);
 

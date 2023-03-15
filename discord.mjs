@@ -40,16 +40,18 @@ const initDiscord = async () => {
 
       const pretext = codify(`[${sender}](${PREFIX}${command}${msgParts.length ? ` ${msgParts.join(' ')}` : ''})`);
       let reply = `${pretext} I didn't quite catch that. Sorry.`;
+      let commandResponse = '';
 
       if (Object.keys(commands).includes(command)) {
-        reply = `${pretext} ${await commands[command](msgParts.join(' '))}`;
+        commandResponse = `${await commands[command](msgParts.join(' '))}`;
+        reply = `${pretext} ${commandResponse}`;
       }
 
       logger.info(`[${sender}]${spacer(15 - sender.length)}${msg}`);
 
       message.channel.send(reply);
       message.delete();
-      logger.info(`[zombot]${spacer(9)}${reply.replaceAll('`', '').replaceAll('"', '')}`);
+      logger.info(`[zombot]${spacer(9)}${pretext.replaceAll('`', '').replaceAll('"', '')}\n${commandResponse.replaceAll('`', '').replaceAll('"', '')}`);
     } catch (e) {
       console.error(e);
     }

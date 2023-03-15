@@ -12,6 +12,24 @@ import {
   handleStringArray
 } from './utils.mjs';
 
+const kpm = async (name) => {
+  if (!name) {
+    return 'Gotta need a name yo.';
+  }
+
+  const sessionId = await getSessionId(name);
+
+  return get('SELECT timeonline,kills FROM session WHERE id=?', [sessionId], (row, resolve) => {
+    if (!row) {
+      resolve(`No kills per minute data on ${name}`);
+    }
+
+    const kpmVal = row.kills / (row.timeonline / 60);
+
+    resolve(`${kpmVal.toFixed(2)} kills per minute`);
+  });
+};
+
 const kills = async (name, ONLY_NUMBERS) => {
   if (!name) {
     return 'Gonna need a name on the dude, yo.';
@@ -54,7 +72,7 @@ const infected = async (name) => {
   });
 };
 
-const health = async (name) => {
+const health = async (name, MOBILE) => {
   if (!name) {
     return 'Gonna need a name on the dude, yo.';
   }
@@ -72,11 +90,16 @@ const health = async (name) => {
     const infected = row.infected === 'true' ? 'Yes' : 'No';
 
     row.infected = infected;
-    resolve(handlePairs(row));
+    resolve(handlePairs(row, MOBILE));
   });
 };
 
-const perks = async (name) => {
+const mhealth = async (name) => {
+  const MOBILE = true;
+  return await health(name, MOBILE);
+};
+
+const perks = async (name, MOBILE) => {
   const { FILLED_METER, EMPTY_METER, MAX_LEVEL } = global.config;
   if (!name) {
     return 'Gonna need a name on the dude, yo.';
@@ -97,11 +120,16 @@ const perks = async (name) => {
       perks[row.name] = `${spacer(row.value, FILLED_METER)}${spacer(MAX_LEVEL - row.value, EMPTY_METER)}`;
     });
 
-    resolve(handlePairs(perks));
+    resolve(handlePairs(perks, MOBILE));
   });
 };
 
-const traits = async (name) => {
+const mperks = async (name) => {
+  const MOBILE = true;
+  return await perks(name, MOBILE);
+};
+
+const traits = async (name, MOBILE) => {
   if (!name) {
     return 'Gonna need a name on the dude, yo.';
   }
@@ -109,15 +137,20 @@ const traits = async (name) => {
   const sessionId = await getSessionId(name);
 
   return getAll('SELECT name FROM trait WHERE session_id=?', [sessionId], (rows, resolve) => {
-    rows && resolve(handleStringArray(rows.map((row) => pascalSpace(row.name))));
+    rows && resolve(handleStringArray(rows.map((row) => pascalSpace(row.name)), MOBILE));
     !rows && resolve('Couldn\'t get the trait data right now.');
   });
 };
 
-const users = async () => {
+const users = async (MOBILE) => {
   return getAll('SELECT DISTINCT name FROM session', [], (rows, resolve) => {
-    resolve(handleStringArray(rows.map((row) => row.name)));
+    resolve(handleStringArray(rows.map((row) => row.name), MOBILE));
   });
+};
+
+const mtraits = async (name) => {
+  const MOBILE = true;
+  return await traits(name, MOBILE);
 };
 
 const whereis = async (name) => {
@@ -153,28 +186,25 @@ const totalKills = async (name, ONLY_NUMBERS) => {
   });
 };
 
-const meta = async (name) => {
+const meta = async (name, MOBILE) => {
   if (!name) {
     return;
   }
 
   const sessionId = await getSessionId(name);
 
-  return get('SELECT timestamp FROM session WHERE id=?', [sessionId], (row, resolve) => {
-    row && resolve(handleStringArray([name, row.timestamp]));
+  return get('SELECT timeonline,timestamp FROM session WHERE id=?', [sessionId], async (row, resolve) => {
+    row && resolve(handleStringArray([name, `Session Started ${row.timestamp}`, `${await kpm(name)}`, `Session Online Time: ${Math.ceil(row.timeonline / 60)} minutes`], MOBILE));
     !row && resolve('');
   });
 };
 
-const renderKills = async (name) => {
+const renderKills = async (name, MOBILE) => {
   const pairs = {};
   const ONLY_NUMBERS = true;
   pairs['Session Kills'] = await kills(name, ONLY_NUMBERS);
   pairs['Total Kills'] = await totalKills(name, ONLY_NUMBERS);
-  console.log(pairs);
-
-  return handlePairs(pairs);
-
+  return handlePairs(pairs, MOBILE);
 }
 
 const online = async() => handleStringArray(await players());
@@ -186,6 +216,17 @@ const info = async (name) => {
   returner += await renderKills(name);
   returner += await perks(name);
   returner += await traits(name);
+  return returner;
+};
+
+const minfo = async (name) => {
+  let returner = '';
+  const MOBILE = true;
+  returner += await meta(name, MOBILE);
+  returner += await mhealth(name);
+  returner += await renderKills(name, MOBILE);
+  returner += await mperks(name);
+  returner += await mtraits(name);
   return returner;
 };
 
@@ -214,17 +255,22 @@ const help = () => {
 
 const commands = {
   health,
+  mhealth,
   hp,
+  mperks,
   perks,
+  mtraits,
   traits,
   users,
   info,
+  minfo,
   whereis,
   help,
   online,
   totalKills,
   infected,
-  kills
+  kills,
+  kpm
 };
 
 export { commands };
