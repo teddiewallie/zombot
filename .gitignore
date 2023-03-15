@@ -1,3 +1,4 @@
 node_modules
 config.json
 storage.sqlite3
+docker-compose.env

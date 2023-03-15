@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  zombot:
+    env_file:
+      - docker-compose.env
+    build:
+      dockerfile: ./Dockerfile
+  volumes:
+    - ${PROJECT_ZOMBOID_LOGS}:/zombot/Logs
+
