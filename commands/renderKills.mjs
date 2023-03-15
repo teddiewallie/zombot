@@ -11,7 +11,7 @@ const renderKills = new Command('renderKills', 'renderKills Ted - get session an
   } else if (!isKnown) {
     return 'Don\'t know that name.';
   }
-  const { PREFIX } = global.config;
+
   const pairs = {};
   const ONLY_NUMBERS = true;
   pairs['Session Kills'] = await kills.run(name, ONLY_NUMBERS);
