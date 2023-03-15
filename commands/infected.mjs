@@ -11,7 +11,6 @@ const infected = new Command('infected', 'infected Ted - Check if Ted is infecte
     return 'Don\'t know that name.';
   }
 
-  const { PREFIX } = global.config;
   const sessionId = await getSessionId(name);
 
   return get('SELECT infected FROM session WHERE id=?', [sessionId], (row, resolve) => {

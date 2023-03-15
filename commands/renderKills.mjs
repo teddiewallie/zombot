@@ -6,7 +6,9 @@ import { handlePairs, nameIsKnown } from '../utils.mjs';
 const renderKills = new Command('renderKills', 'renderKills Ted - get session and total kills.', async (name, MOBILE) => {
   const isKnown = await nameIsKnown(name);
 
-  if (!isKnown) {
+  if (!name) {
+    return 'Gonna need a name yo.';
+  } else if (!isKnown) {
     return 'Don\'t know that name.';
   }
   const { PREFIX } = global.config;

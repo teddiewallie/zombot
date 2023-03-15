@@ -2,12 +2,12 @@ import { Command } from '../Command.mjs';
 import { get, getSessionId } from '../database.mjs';
 import { nameIsKnown } from '../utils.mjs';
 
-const whereis = new Command('whereis', 'whereis Ted - Find Ted\'s current location.', async (name) => {
+const whereis = new Command('whereis', 'whereis Ted - Find Ted\'s current location. Use \'safehouse\' to find safehouse.', async (name) => {
   const isKnown = await nameIsKnown(name);
 
   if (!name) {
     return 'Gonna need a name on the dude, yo.';
-  } else if (!isKnown) {
+  } else if (!isKnown && name !== 'safehouse') {
     return 'Don\'t know that name.';
   }
 
