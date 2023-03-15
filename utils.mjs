@@ -1,9 +1,16 @@
 import { Logger } from './logger.mjs';
+import { users } from './commands/users.mjs';
+
+const nameIsKnown = async (name) => {
+  const knownNames = await(users.run());
+  return knownNames.includes(name);
+};
 
 const spacer = (amount, string) => Array.from(Array(amount).keys()).map(() => string).join('');
 const blockify = (message) => `\`\`\`${message}\`\`\``;
 const codify = (message) => `\`${message}\``;
 const cleanString = (string) => string.replaceAll('[', '').replaceAll(']', '').replaceAll('"', '');
+
 
 const logkeys = {
   ITEM: { DATE: 0, TIME: 1, ID: 2, NAME: 3, PLACE: 4, AMOUNT: 5, COORDS: 6, ITEMNAME: 7 },
@@ -61,6 +68,7 @@ const handleStringArray = (array, MOBILE) => {
 
 export {
   cleanString,
+  nameIsKnown,
   spacer,
   logkeys,
   jsonify,

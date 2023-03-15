@@ -1,8 +1,8 @@
 import { Client, GatewayIntentBits, ActivityType } from 'discord.js';
 import { codify, spacer } from './utils.mjs';
 import { players } from './rcon.mjs';
-import { commands } from './commands.mjs';
 import { Logger } from './logger.mjs';
+import { find } from './registry.mjs';
 
 const initDiscord = async () => {
   const {
@@ -36,16 +36,15 @@ const initDiscord = async () => {
       const sender = message.author.username;
 
       const msgParts = msg.split(' ');
-      const command = msgParts.shift();
+      const commandName = msgParts.shift();
+      const command = find(commandName);
 
-      const pretext = codify(`[${sender}](${PREFIX}${command}${msgParts.length ? ` ${msgParts.join(' ')}` : ''})`);
+      const pretext = codify(`[${sender}](${PREFIX}${command.getName()}${msgParts.length ? ` ${msgParts.join(' ')}` : ''})`);
       let reply = `${pretext} I didn't quite catch that. Sorry.`;
       let commandResponse = '';
 
-      if (Object.keys(commands).includes(command)) {
-        commandResponse = `${await commands[command](msgParts.join(' '))}`;
-        reply = `${pretext} ${commandResponse}`;
-      }
+      commandResponse = `${await command.run(msgParts.join(' '))}`;
+      reply = `${pretext} ${commandResponse}`;
 
       logger.info(`[${sender}]${spacer(15 - sender.length)}${msg}`);
 
