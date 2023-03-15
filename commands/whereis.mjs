@@ -14,7 +14,8 @@ const whereis = new Command('whereis', 'whereis Ted - Find Ted\'s current locati
   const returner = (coords) => `${name} is here: https://map.projectzomboid.com/#${coords}`
 
   if (name === 'safehouse') {
-    return returner('12025x2591x16000');
+    const { SAFEHOUSE_COORDS, ZOOM } = global.config;
+    return returner(`${SAFEHOUSE_COORDS}x${ZOOM}`);
   }
 
   const sessionId = await getSessionId(name);
