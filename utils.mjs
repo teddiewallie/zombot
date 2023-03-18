@@ -1,3 +1,5 @@
+import config from './config.json' assert { type: 'json' };
+
 import { Logger } from './logger.mjs';
 import { users } from './commands/users.mjs';
 
@@ -34,7 +36,7 @@ const pascalSpace = (string) => string.replace(/([A-Z])/g, ' $1').trim();
 const capitalFirst = (string) => string.charAt(0).toUpperCase() + string.slice(1);
 
 const handlePairs = (pairs, MOBILE) => {
-  const { MARGIN, SMALL_MARGIN } = global.config;
+  const { MARGIN, SMALL_MARGIN } = config;
   let returner = '';
 
   Object.keys(pairs).forEach((key, index) => {
@@ -52,7 +54,7 @@ const handlePairs = (pairs, MOBILE) => {
 };
 
 const handleStringArray = (array, MOBILE) => {
-  const { MARGIN, SMALL_MARGIN } = global.config;
+  const { MARGIN, SMALL_MARGIN } = config;
   let returner = '';
 
   array.forEach((string, index) => {

@@ -1,3 +1,5 @@
+import config from './config.json' assert { type: 'json' };
+
 import { spacer, blockify } from './utils.mjs';
 
 class Logger {
@@ -6,13 +8,14 @@ class Logger {
   }
 
   info(message) {
-    const { LOG_MARGIN } = global.config;
+    const { LOG_MARGIN } = config;
     console.log(`(i)[${this.name}]${spacer(LOG_MARGIN - this.name.length, ' ')}${message}`);
   }
 
   error(message) {
-    const { LOG_MARGIN } = global.config;
+    const { LOG_MARGIN } = config;
     console.error(`(e)[${this.name}]${spacer(LOG_MARGIN - this.name.length, ' ')}${message}`);
+    console.error(message);
   }
 }
 

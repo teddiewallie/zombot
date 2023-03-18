@@ -1,6 +1,10 @@
+import config from '../config.json' assert { type: 'json' };
+
 import { Command } from '../Command.mjs';
 import { get, getSessionId } from '../database.mjs';
 import { nameIsKnown } from '../utils.mjs';
+
+const { PREFIX } = config;
 
 const hp = new Command('hp', 'hp Ted - Check Ted\'s current HP.', async (name) => {
   const isKnown = await nameIsKnown(name);
@@ -11,7 +15,6 @@ const hp = new Command('hp', 'hp Ted - Check Ted\'s current HP.', async (name) =
     return 'Don\'t know that name.';
   }
 
-  const { PREFIX } = global.config;
   const sessionId = await getSessionId(name);
 
   return get('SELECT health FROM session WHERE id=?', [sessionId], (row, resolve) => {

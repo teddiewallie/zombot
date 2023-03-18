@@ -1,3 +1,5 @@
+import config from './config.json' assert { type: 'json' };
+
 import { Tail } from 'tail';
 import { glob } from 'glob';
 import { players } from './rcon.mjs';
@@ -66,7 +68,7 @@ const parsePlayer = (line) => {
   const logger = new Logger('logwatch:parsePlayer');
 
   const keys = logkeys.PLAYER;
-  const { ZOOM } = global.config;
+  const { ZOOM } = config;
 
   const entities = [];
 
@@ -105,7 +107,7 @@ const parseItem = (line) => {
 
   const entities = line.split(' ').map((entity) => cleanString(entity));
   const keys = logkeys.ITEM;
-  const { ZOOM } = global.config;
+  const { ZOOM } = config;
 
   entities[keys.ITEMNAME] = entities[keys.ITEMNAME]?.replaceAll('.', '');
   entities[keys.TIME] = entities[keys.TIME].split('.')[0];
@@ -132,7 +134,7 @@ const parseMap = (line) => {
 const tail = async (name, callback) => {
   const logger = new Logger('logwatch:tail');
   const filename = `*${name}.txt`;
-  const { LOG_ROOT, FILEWAIT_MS } = global.config;
+  const { LOG_ROOT, FILEWAIT_MS } = config;
 
   try {
     const truePath = await glob(`${LOG_ROOT}/${filename}`);
@@ -151,7 +153,7 @@ const tail = async (name, callback) => {
 };
 
 const rconPlayers = () => {
-  const { RCON_PLAYERS_MS } = global.config;
+  const { RCON_PLAYERS_MS } = config;
 
   setInterval(async () => {
     handleRconPlayers(await players());
@@ -162,7 +164,7 @@ const rconPlayers = () => {
  * Tail the logs
  */
 const initLogwatch = async () => {
-  const { logs } = global.config;
+  const { logs } = config;
 
   logs.USER     && tail('user',             (line) => parseUser(line)); 
   logs.CMD      && tail('cmd',              (line) => parseCmd(line));

@@ -1,3 +1,5 @@
+import config from './config.json' assert { type: 'json' };
+
 class Command {
   constructor(name, description, action) {
     this.name = name;
@@ -14,7 +16,7 @@ class Command {
   }
 
   getDescription(spacer) {
-    const { PREFIX, SMALL_MARGIN } = global.config;
+    const { PREFIX, SMALL_MARGIN } = config;
     const parts = this.description.split(' - ');
 
     if (parts.length !== 2 || !spacer) {

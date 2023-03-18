@@ -1,3 +1,5 @@
+import config from './config.json' assert { type: 'json' };
+
 import { Client, GatewayIntentBits, ActivityType } from 'discord.js';
 import { codify, spacer } from './utils.mjs';
 import { players } from './rcon.mjs';
@@ -8,7 +10,7 @@ const initDiscord = async () => {
   const {
     TOKEN,
     PREFIX
-  } = global.config;
+  } = config;
 
   const client = new Client({
     intents: [

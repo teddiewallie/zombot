@@ -1,3 +1,5 @@
+import config from '../config.json' assert { type: 'json' };
+
 import { Command } from '../Command.mjs';
 import { get, getSessionId } from '../database.mjs';
 import { nameIsKnown } from '../utils.mjs';
@@ -14,7 +16,7 @@ const whereis = new Command('whereis', 'whereis Ted - Find Ted\'s current locati
   const returner = (coords) => `${name} is here: https://map.projectzomboid.com/#${coords}`
 
   if (name === 'safehouse') {
-    const { SAFEHOUSE_COORDS, ZOOM } = global.config;
+    const { SAFEHOUSE_COORDS, ZOOM } = config;
     return returner(`${SAFEHOUSE_COORDS}x${ZOOM}`);
   }
 

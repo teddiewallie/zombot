@@ -1,3 +1,5 @@
+import config from './config.json' assert { type: 'json' };
+
 import { logkeys } from './utils.mjs';
 import { Logger } from './logger.mjs';
 import sqlite3 from 'sqlite3';
@@ -7,7 +9,7 @@ const getDb = () => global.database;
 const run = (query) => {
   const logger = new Logger('database:run');
 
-  if (global.config.logger.database) {
+  if (config.logger.database) {
     logger.info(query);
   }
 
@@ -17,7 +19,7 @@ const run = (query) => {
 const get = (query, data, callback) => new Promise((resolve, reject) => {
   const logger = new Logger('database:get');
 
-  if (global.config.logger.database) {
+  if (config.logger.database) {
     logger.info(query);
   }
 
@@ -34,7 +36,7 @@ const get = (query, data, callback) => new Promise((resolve, reject) => {
 const getAll = (query, data, callback) => new Promise((resolve, reject) => {
   const logger = new Logger('database:getAll');
 
-  if (global.config.logger.database) {
+  if (config.logger.database) {
     logger.info(query);
   }
 
@@ -127,12 +129,6 @@ const handlePerkLog = async(entities) => {
   if (payloadType.includes('Created')) {
     createSession(name);
   } else if (payloadType.includes('Died')) {
-    const channel = await global.getChannel(global.config.LOG_CHANNEL_ID);
-
-    console.log(channel);
-
-    channel.send && channel.send(`${name} died.`);
-
     logger.info('DEAD');
   }
 
@@ -150,7 +146,7 @@ const handleRconPlayers = (players) => {
           if (sessionId) {
             get('SELECT timeonline FROM session WHERE id=?', [sessionId], (row) => {
               if (row) {
-                run(`UPDATE session SET timeonline=${row.timeonline + global.config.RCON_PLAYERS_MS / 1000} WHERE id=${sessionId}`);
+                run(`UPDATE session SET timeonline=${row.timeonline + config.RCON_PLAYERS_MS / 1000} WHERE id=${sessionId}`);
               }
             });
           }
@@ -160,14 +156,14 @@ const handleRconPlayers = (players) => {
     });
   });
   
-  if (global.config.logger.rcon) {
+  if (config.logger.rcon) {
     logger.info(players);
   }
 };
 
 const initDatabase = async () => {
   const logger = new Logger('database:initDatabase');
-  const { DB_ROOT } = global.config;
+  const { DB_ROOT } = config;
 
   global.database = new sqlite3.Database(`${DB_ROOT}/storage.sqlite3`);
   global.database.on('error', (e) => console.error(e));
