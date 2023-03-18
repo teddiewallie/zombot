@@ -1,7 +1,7 @@
-import config from './config.json' assert { type: 'json' };
+import config from '../config.json' assert { type: 'json' };
 
-import { logkeys } from './utils.mjs';
-import { Logger } from './logger.mjs';
+import { logkeys } from '../helpers/utils.mjs';
+import { Logger } from '../helpers/logger.mjs';
 import sqlite3 from 'sqlite3';
 
 const getDb = () => global.database;

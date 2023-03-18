@@ -1,7 +1,7 @@
-import config from './config.json' assert { type: 'json' };
+import config from '../config.json' assert { type: 'json' };
 
 import { Logger } from './logger.mjs';
-import { users } from './commands/users.mjs';
+import { users } from '../commands/users.mjs';
 
 const nameIsKnown = async (name) => {
   const knownNames = await(users.run());

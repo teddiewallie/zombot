@@ -1,4 +1,4 @@
-import { Command } from '../Command.mjs';
+import { Command } from '../helpers/Command.mjs';
 
 import { meta } from './meta.mjs';
 import { health } from './health.mjs';
@@ -6,7 +6,7 @@ import { renderKills } from './renderKills.mjs';
 import { perks } from './perks.mjs';
 import { traits } from './traits.mjs';
 
-import { nameIsKnown } from '../utils.mjs';
+import { nameIsKnown } from '../helpers/utils.mjs';
 
 const info = new Command('info', 'info Ted - See compiled info about Ted.', async (name) => {
   const isKnown = await nameIsKnown(name);

@@ -1,5 +1,5 @@
-import { Command } from '../Command.mjs';
-import { blockify, spacer } from '../utils.mjs';
+import { Command } from '../helpers/Command.mjs';
+import { blockify, spacer } from '../helpers/utils.mjs';
 
 const help = new Command(
   'help',

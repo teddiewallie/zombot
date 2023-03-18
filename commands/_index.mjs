@@ -1,4 +1,4 @@
-import { push } from '../registry.mjs';
+import { push } from '../helpers/registry.mjs';
 
 import { health } from './health.mjs';
 import { hp } from './hp.mjs';

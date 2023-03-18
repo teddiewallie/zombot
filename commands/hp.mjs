@@ -1,8 +1,9 @@
 import config from '../config.json' assert { type: 'json' };
 
-import { Command } from '../Command.mjs';
-import { get, getSessionId } from '../database.mjs';
-import { nameIsKnown } from '../utils.mjs';
+import { Command } from '../helpers/Command.mjs';
+import { nameIsKnown } from '../helpers/utils.mjs';
+
+import { get, getSessionId } from '../services/database.mjs';
 
 const { PREFIX } = config;
 

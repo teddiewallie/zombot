@@ -1,8 +1,8 @@
 import config from '../config.json' assert { type: 'json' };
 
-import { Command } from '../Command.mjs';
-import { getAll, getSessionId } from '../database.mjs';
-import { spacer, handlePairs, pascalSpace, nameIsKnown } from '../utils.mjs';
+import { Command } from '../helpers/Command.mjs';
+import { getAll, getSessionId } from '../services/database.mjs';
+import { spacer, handlePairs, pascalSpace, nameIsKnown } from '../helpers/utils.mjs';
 
 const perks = new Command('perks', 'perks Ted - Check Ted\'s perks.', async (name, MOBILE) => {
   const { FILLED_METER, EMPTY_METER, MAX_LEVEL } = config;

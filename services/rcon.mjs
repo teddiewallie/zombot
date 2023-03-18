@@ -1,7 +1,7 @@
-import config from './config.json' assert { type: 'json' };
+import config from '../config.json' assert { type: 'json' };
 
 import { Rcon } from 'rcon-client';
-import { Logger } from './logger.mjs';
+import { Logger } from '../helpers/logger.mjs';
 
 const connect = async () => {
   const logger = new Logger('rcon:connect');

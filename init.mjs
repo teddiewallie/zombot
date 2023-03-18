@@ -1,12 +1,12 @@
 import config from './config.json' assert { type: 'json' };
 
-import { initCommands } from './commands/_index.mjs';
-import { initLogwatch } from './logwatch.mjs';
-import { initDatabase } from './database.mjs';
-import { initDiscord } from './discord.mjs';
+import { initLogwatch } from './services/logwatch.mjs';
+import { initDatabase } from './services/database.mjs';
+import { initDiscord } from './services/discord.mjs';
+import { players } from './services/rcon.mjs';
 
-import { players } from './rcon.mjs';
-import { Logger } from './logger.mjs';
+import { initCommands } from './commands/_index.mjs';
+import { Logger } from './helpers/logger.mjs';
 
 const init = async () => {
   global.init = {};

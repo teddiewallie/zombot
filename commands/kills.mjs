@@ -1,6 +1,6 @@
-import { Command } from '../Command.mjs';
-import { get, getSessionId } from '../database.mjs';
-import { nameIsKnown } from '../utils.mjs';
+import { Command } from '../helpers/Command.mjs';
+import { get, getSessionId } from '../services/database.mjs';
+import { nameIsKnown } from '../helpers/utils.mjs';
 
 const kills = new Command('kills', 'kills Ted - Find out how many zomboids Ted has killed.', async (name, ONLY_NUMBERS) => {
   const isKnown = await nameIsKnown(name);

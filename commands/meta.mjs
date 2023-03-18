@@ -1,6 +1,6 @@
-import { Command } from '../Command.mjs';
-import { get, getSessionId } from '../database.mjs';
-import { handleStringArray, nameIsKnown } from '../utils.mjs';
+import { Command } from '../helpers/Command.mjs';
+import { get, getSessionId } from '../services/database.mjs';
+import { handleStringArray, nameIsKnown } from '../helpers/utils.mjs';
 
 import { kpm } from './kpm.mjs';
 

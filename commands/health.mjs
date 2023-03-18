@@ -1,6 +1,6 @@
-import { Command } from '../Command.mjs';
-import { get, getSessionId } from '../database.mjs';
-import { handlePairs, nameIsKnown } from '../utils.mjs';
+import { Command } from '../helpers/Command.mjs';
+import { get, getSessionId } from '../services/database.mjs';
+import { handlePairs, nameIsKnown } from '../helpers/utils.mjs';
 
 const health = new Command('health', 'health Ted - Check health stats about Ted.', async (name, MOBILE) => {
   const isKnown = await nameIsKnown(name);

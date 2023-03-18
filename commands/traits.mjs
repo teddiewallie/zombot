@@ -1,6 +1,6 @@
-import { Command } from '../Command.mjs';
-import { getAll, getSessionId } from '../database.mjs';
-import { handleStringArray, pascalSpace, nameIsKnown } from '../utils.mjs';
+import { Command } from '../helpers/Command.mjs';
+import { getAll, getSessionId } from '../services/database.mjs';
+import { handleStringArray, pascalSpace, nameIsKnown } from '../helpers/utils.mjs';
 
 const traits = new Command('traits', 'traits Ted - Check Ted\'s traits.', async (name, MOBILE) => {
   const isKnown = await nameIsKnown(name);

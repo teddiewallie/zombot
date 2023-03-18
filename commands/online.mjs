@@ -1,6 +1,6 @@
-import { Command } from '../Command.mjs';
-import { handleStringArray } from '../utils.mjs';
-import { players } from '../rcon.mjs';
+import { Command } from '../helpers/Command.mjs';
+import { handleStringArray } from '../helpers/utils.mjs';
+import { players } from '../services/rcon.mjs';
 
 const online = new Command(
   'online',

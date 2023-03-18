@@ -1,10 +1,10 @@
-import config from './config.json' assert { type: 'json' };
+import config from '../config.json' assert { type: 'json' };
 
 import { Client, GatewayIntentBits, ActivityType } from 'discord.js';
-import { codify, spacer } from './utils.mjs';
+import { codify, spacer } from '../helpers/utils.mjs';
 import { players } from './rcon.mjs';
-import { Logger } from './logger.mjs';
-import { find } from './registry.mjs';
+import { Logger } from '../helpers/logger.mjs';
+import { find } from '../helpers/registry.mjs';
 
 const initDiscord = async () => {
   const {
