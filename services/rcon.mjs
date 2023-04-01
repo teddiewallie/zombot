@@ -23,13 +23,16 @@ const players = async () => {
   const logger = new Logger('rcon:players');
 
   let reply = '';
+  let rcon = null;
 
   try {
-    const rcon = await connect();
+    rcon = await connect();
     reply = await rcon.send('players');
     rcon.end();
   } catch (e) {
+    rcon?.end();
     logger.error(e);
+    return [];
   }
 
   reply = reply.split('\n');

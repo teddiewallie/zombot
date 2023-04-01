@@ -102,7 +102,7 @@ const parseVehicle = (line) => {
 };
 
 // [09-03-23 22:35:12.769] 76561198042014603 "sn1ckers" container +0 10920,10134,0 [Base.BookMetalWelding1].
-const parseItem = (line) => {
+const parseItem = async (line) => {
   const logger = new Logger('logwatch:parseItem');
 
   const entities = line.split(' ').map((entity) => cleanString(entity));
@@ -149,6 +149,7 @@ const tail = async (name, callback) => {
     }
   } catch (e) {
     logger.error(e);
+    setTimeout(() => tail(name, callback), FILEWAIT_MS);
   }
 };
 

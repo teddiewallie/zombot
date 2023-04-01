@@ -1,7 +1,10 @@
 import { Command } from '../helpers/Command.mjs';
-import { kills } from './kills.mjs';
-import { totalKills } from './totalKills.mjs';
 import { handlePairs, nameIsKnown } from '../helpers/utils.mjs';
+
+import {
+  kills,
+  totalKills
+} from './_index.mjs';
 
 const renderKills = new Command('renderKills', 'renderKills Ted - get session and total kills.', async (name, MOBILE) => {
   const isKnown = await nameIsKnown(name);

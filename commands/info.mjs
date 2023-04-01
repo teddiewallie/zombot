@@ -1,10 +1,12 @@
 import { Command } from '../helpers/Command.mjs';
 
-import { meta } from './meta.mjs';
-import { health } from './health.mjs';
-import { renderKills } from './renderKills.mjs';
-import { perks } from './perks.mjs';
-import { traits } from './traits.mjs';
+import {
+  meta,
+  health,
+  renderKills,
+  perks,
+  traits
+} from './_index.mjs';
 
 import { nameIsKnown } from '../helpers/utils.mjs';
 

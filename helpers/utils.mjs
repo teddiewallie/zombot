@@ -12,7 +12,10 @@ const spacer = (amount, string) => Array.from(Array(amount).keys()).map(() => st
 const blockify = (message) => `\`\`\`${message}\`\`\``;
 const codify = (message) => `\`${message}\``;
 const cleanString = (string) => string.replaceAll('[', '').replaceAll(']', '').replaceAll('"', '');
+const mapify = (coords) => `https://map.projectzomboid.com/#${coords.replaceAll(',', 'x')}`;
+const SEND_TO_DISCORD = true;
 
+const getChannel = async (id) => await global.client?.channels.cache.get(id);
 
 const logkeys = {
   ITEM: { DATE: 0, TIME: 1, ID: 2, NAME: 3, PLACE: 4, AMOUNT: 5, COORDS: 6, ITEMNAME: 7 },
@@ -79,6 +82,9 @@ export {
   pascalSpace,
   capitalFirst,
   handlePairs,
-  handleStringArray
+  handleStringArray,
+  mapify,
+  getChannel,
+  SEND_TO_DISCORD
 };
 

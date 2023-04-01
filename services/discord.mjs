@@ -59,7 +59,10 @@ const initDiscord = async () => {
   });
 
   await client.login(TOKEN);
-  global.getChannel = async (id) => await client.channels.cache.get(id);
+
+  global.client = client;
+
+  // global.getChannel = async (id) => await client.channels.cache.get(id);
   global.setActivity = async (message) => client.user.setActivity(message, { type: ActivityType.CUSTOM });
 };
 

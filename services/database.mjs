@@ -1,7 +1,14 @@
 import config from '../config.json' assert { type: 'json' };
 
-import { logkeys } from '../helpers/utils.mjs';
+import { logkeys, mapify, SEND_TO_DISCORD } from '../helpers/utils.mjs';
 import { Logger } from '../helpers/logger.mjs';
+
+import {
+  died,
+  shit,
+  piss
+} from '../helpers/dialogue.mjs';
+
 import sqlite3 from 'sqlite3';
 
 const getDb = () => global.database;
@@ -66,6 +73,27 @@ const handleItem = async (entities) => {
   const sessionId = await getSessionId(entities[keys.NAME]);
   run(`UPDATE session SET coords="${entities[keys.COORDS].replaceAll(',','x')}" WHERE id=${sessionId}`);
 
+
+  switch (entities[keys.ITEMNAME]) {
+    case 'UrinationHumanUrine':
+      if (entities[keys.PLACE] === 'floor' && entities[keys.AMOUNT] === '+1') {
+        logger.info(piss(entities[keys.NAME], mapify(entities[keys.COORDS])), SEND_TO_DISCORD);
+        const sessionId = await getSessionId(entities[keys.NAME]);
+        run(`INSERT INTO defecate (session_id, name, type, coords) VALUES (${sessionId},"${entities[keys.NAME]}","urine","${entities[keys.COORDS]}")`);
+      }
+
+      break;
+
+    case 'DefecationHumanFeces':
+      if (entities[keys.PLACE] === 'floor' && entities[keys.AMOUNT] === '+1') {
+        logger.info(shit(entities[keys.NAME], mapify(entities[keys.COORDS])), SEND_TO_DISCORD);
+        const sessionId = await getSessionId(entities[keys.NAME]);
+        run(`INSERT INTO defecate (session_id, name, type, coords) VALUES (${sessionId},"${entities[keys.NAME]}","feces","${entities[keys.COORDS]}")`);
+      }
+
+      break;
+  }
+
   logger.info(entities);
 };
 
@@ -129,7 +157,7 @@ const handlePerkLog = async(entities) => {
   if (payloadType.includes('Created')) {
     createSession(name);
   } else if (payloadType.includes('Died')) {
-    logger.info('DEAD');
+    logger.info(died(name, mapify(entities[keys.COORDS])), SEND_TO_DISCORD);
   }
 
   logger.info(entities);
@@ -196,6 +224,15 @@ const initDatabase = async () => {
   trait += 'name TEXT)';
   run(trait);
 
+  let defecate = '';
+  defecate += create('defecate');
+  defecate += 'session_id INTEGER, ';
+  defecate += 'name TEXT, ';
+  defecate += 'type TEXT, ';
+  defecate += 'coords TEXT, ';
+  defecate += 'timestamp DATETIME DEFAULT CURRENT_TIMESTAMP)';
+  run (defecate);
+
   return Promise.resolve();
 };
 
@@ -206,6 +243,7 @@ export {
   handlePerkLog,
   handleRconPlayers,
   get,
+  run,
   getAll,
   getSessionId
 };
